@@ -1,0 +1,26 @@
+#SPDX-FileCopyrightText: 2025 Johnny Jazeix
+# 
+# SPDX-License-Identifier: CC0-1.0
+
+version = 1
+SPDX-PackageName = "GCompris-server"
+SPDX-PackageSupplier = "GCompris <support@gcompris.net>"
+SPDX-PackageDownloadLocation = "https://invent.kde.org/education/gcompris_server_doc"
+
+[[annotations]]
+path = [".gitignore", ".gitattributes", "README.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "None"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "index.docbook"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2025 Timothée Giet", "2025 Johnny Jazeix"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "images/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 Johnny Jazeix"
+SPDX-License-Identifier = "GPL-3.0-or-later"

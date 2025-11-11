@@ -1,0 +1,631 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application>GCompris Teacher</application>">
+  <!ENTITY kappname "&gcompris_teacher;"><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE"> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teacher_doc" lang="&language;">
+
+<bookinfo>
+<title>The GCompris Teacher Administration Handbook</title>
+
+<authorgroup>
+<author>
+<personname>
+<firstname>Johnny</firstname>
+<surname>Jazeix</surname>
+</personname>
+</author>
+<author>
+<personname>
+<firstname>Timothée</firstname>
+<surname>Giet</surname>
+</personname>
+</author>
+
+<othercredit role="developer">
+<othername>The &gcompris; Team</othername>
+<contrib>Developers</contrib>
+</othercredit> 
+
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+</authorgroup>
+
+<legalnotice>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date>2025-11-30</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para>
+GCompris is a multi-activity educational software. This documentation is for the teacher administration tool we provide.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>education</keyword>
+<keyword>children</keyword>
+<keyword>games</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title>Overview</title>
+  <para>
+    The goal of GCompris server is to enable teachers to:
+  </para>
+  <itemizedlist>
+    <listitem><para>create and manage pupils groups.</para></listitem>
+    <listitem><para>create work plans for groups.</para></listitem>
+    <listitem><para>connect and send a work plan to pupils.</para></listitem>
+    <listitem><para>visualize the work results per group and pupil.</para></listitem>
+    <listitem><para>analyse pupils answers.</para></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title>Specifications</title>
+  <para>
+    The following section describes the different screens implementing
+    these functionalities.
+  </para>
+  <sect1 id="main-screen-overview">
+    <title>Main screen overview</title>
+    <para>
+      The main screen allows to access:
+    </para>
+    <itemizedlist>
+      <listitem><para>Dashboard page.</para></listitem>
+      <listitem><para>Manage pupils page.</para></listitem>
+      <listitem><para>Connect devices page.</para></listitem>
+      <listitem><para>Follow activities results page .</para></listitem>
+      <listitem><para>Manage datasets page.</para></listitem>
+      <listitem><para>Display results as charts page.</para></listitem>
+      <listitem><para>Settings page.</para></listitem>
+      <listitem><para>The Development (WIP) page only used for debug purposes and won’t be described here.</para></listitem>
+    </itemizedlist>
+    <para>
+      By default the Dashboard page is shown, containing the login
+      dialog, and the other pages buttons on the side are
+      greyed/disabled until a teacher account is logged in.
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="images/main_screen.png" />
+        </imageobject>
+        <textobject>
+          <phrase>main_screen</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+    <para>
+      An option to show/hide the title of the buttons in the menu
+      (sandwich icon) allows to save some space once the user knows the
+      meaning of each icon.<inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="images/main_screen_hamburger.png" />
+        </imageobject>
+        <textobject>
+          <phrase>main_screen_hamburger</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title>Dashboard - Login dialog</title>
+    <para>
+      To create a new database, input the database name and the
+      password. You’ll then be able to choose if you want to encrypt the
+      database (to avoid anyone to read it without the password).
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="images/main_screen_create_db.png" />
+        </imageobject>
+        <textobject>
+          <phrase>main_screen_create_db</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title>Manage groups and pupils</title>
+    <para>
+      This page allows to create the different pupils and groups for
+      your class. <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="images/pupils_groups.png" />
+        </imageobject>
+        <textobject>
+          <phrase>pupils_groups</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title>Create a group</title>
+      <para>
+        Click on the <quote>Add group</quote> button on the bottom right
+        and fill it with a name and optionally a description.
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/group_add.png" />
+          </imageobject>
+          <textobject>
+            <phrase>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title>Modify a group name or Delete it</title>
+      <para>
+        To edit or delete a group, hover it on the group list and the
+        <quote>Edit</quote> and <quote>Delete</quote> button will
+        appear.
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/group_delete_button.png" />
+          </imageobject>
+          <textobject>
+            <phrase>group_delete_button</phrase>
+          </textobject>
+        </mediaobject> Clicking on the <quote>Delete</quote>
+        button will allow you to delete the group. Note that the pupils
+        will be removed from the groups but not deleted from the
+        database. If you want to remove pupils, follow the next section.
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/group_delete_confirmation.png" />
+          </imageobject>
+          <textobject>
+            <phrase>group_delete_confirmation</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title>Create a single pupil</title>
+      <para>
+        Select <quote>Add a pupil</quote> to create a new pupil in the
+        database. There, you can select their name and the password to
+        connect from the clients. You can also directly add them in
+        pre-existing groups.<mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_create.png" />
+          </imageobject>
+          <textobject>
+            <phrase>pupil_create</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title>Create several pupils using csv strings / Export pupils in
+      a file</title>
+      <para>
+        You can directly import a list of pupils using a csv file.
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_import.png" />
+          </imageobject>
+          <textobject>
+            <phrase>pupil_import</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para>
+        Exporting a list of pupils is also possible: <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_export_csv.png" />
+          </imageobject>
+          <textobject>
+            <phrase>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title>Managing pupils</title>
+      <para>
+        The interface also proposes buttons to edit the pupils, add or
+        remove them from groups <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_add_to_group.png" />
+          </imageobject>
+          <textobject>
+            <phrase>pupil_add_to_group</phrase>
+          </textobject>
+        </mediaobject> <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_remove_from_group.png" />
+          </imageobject>
+          <textobject>
+            <phrase>pupil_remove_from_group</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para>
+        You can also delete pupils. Note that deleting a pupil does not
+        delete its group. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_delete.png" />
+          </imageobject>
+          <textobject>
+            <phrase>pupil_delete</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title>Connect devices</title>
+    <para>
+      Once the database is ready, it’s now time to communicate with the
+      different clients. The <quote>Connect devices</quote> window shows
+      the different groups and pupils. By default, no group is selected
+      so all the pupils are visible. Selecting a group will filter the
+      visible pupils to only work with this specific group.
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/connect_devices.png" />
+        </imageobject>
+        <textobject>
+          <phrase>connect_devices</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title>Configuration of the server and devices</title>
+      <para>
+        The teacher needs to configure the server and devices they want
+        to connect to before being able to connect. All the devices need
+        to be connected on the same network. On the server, go in the
+        <quote>Settings</quote> panel and choose a unique <quote>Server
+        ID</quote> (at least for the network) and a <quote>Port</quote>
+        (if you don’t know, keep the default one). <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/settings.png" />
+          </imageobject>
+          <textobject>
+            <phrase>settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para>
+        On GCompris devices side, go in the Preferences in the menu,
+        scroll to the bottom to find the <quote>Teacher’s server
+        config</quote> button. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/gcompris_teacher_config_button.png" />
+          </imageobject>
+          <textobject>
+            <phrase>gcompris_teacher_config_button</phrase>
+          </textobject>
+        </mediaobject> After clicking it, make sure to have the
+        same settings as the server: <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/gcompris_teacher_settings.png" />
+          </imageobject>
+          <textobject>
+            <phrase>gcompris_teacher_settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title>Daily connection workflow</title>
+      <para>
+        The connection workflow is the following: <emphasis>The teacher
+          asks the pupils to switch on their devices and press the
+          <quote>Connect devices</quote> button. </emphasis>On the device,
+        a new window will appear to ask confirmation to connect to the
+        server. Note that the device needs to be on the GCompris menu,
+        not on any activity or configuration panel.<mediaobject>
+          <imageobject>
+            <imagedata fileref="images/gcompris_connect.png" />
+          </imageobject>
+          <textobject>
+            <phrase>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem><para>After confirmation from the pupils, the
+              teacher selects which logins they want to send and press
+              <quote>Send login list</quote></para></listitem>
+          <listitem><para>The devices will display a new
+              window allowing to select the login they want.
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/gcompris_select_login.png" />
+                </imageobject>
+                <textobject>
+                  <phrase>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para></listitem>
+          <listitem><para>Once confirmed, a second window will open
+              to select the password <mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/gcompris_password.png" />
+                </imageobject>
+                <textobject>
+                  <phrase>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para></listitem>
+          <listitem><para>If the password is correct, the client
+              will have a green button on the bar for successful
+              connection<mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/gcompris_connect_ok.png" />
+                </imageobject>
+                <textobject>
+                  <phrase>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para></listitem>
+          <listitem><para> And the server will receive a
+              notification: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/connect_devices_password_correct_incorrect.png" />
+                </imageobject>
+                <textobject>
+                  <phrase>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para></listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        The different colors are:
+        <itemizedlist>
+          <listitem><para>Green: connected</para></listitem>
+          <listitem><para>Red: wrong password</para></listitem>
+          <listitem><para>Grey: disconnected (it was connected at some point
+              but got disconnected)</para></listitem>
+          <listitem><para>Transparent: nobody tried to connect using this login.</para></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/connect_devices_password_disconnected_not_connected.png" />
+          </imageobject>
+          <textobject>
+            <phrase>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title>Activities view</title>
+    <para>
+      This window allows to display the different results filtered by
+      date, groups, pupils and activities. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/activities.png" />
+        </imageobject>
+        <textobject>
+          <phrase>activities</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      The following image shows the results for the <quote>Vertical
+      subtraction</quote> activity (each activity which handles the
+      sending of data to the server has its own visualisation).
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/activities_results.png" />
+        </imageobject>
+        <textobject>
+          <phrase>activities_results</phrase>
+        </textobject>
+      </mediaobject> We can see the pupil did an incorrect input
+      on the first try and a correct on the second try and the
+      computation they have written to spot the error.
+    </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title>Dataset handling</title>
+    <para>
+      The dataset window allows teachers to create/update/delete
+      specific datasets for the activities to target specific needs,
+      send (or remove) them to the clients. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/datasets.png" />
+        </imageobject>
+        <textobject>
+          <phrase>datasets</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      One limitation for now is that only activities following the
+      GCompris dataset format can be edited (so no <quote>Grammatical
+      classes</quote>, <quote>Falling games</quote> for example). Here
+      is an example for the <quote>Binary Bulb</quote> activity. The
+      common part for all editors is the filling of the dataset name,
+      the goal and the difficulty. Then, each activity will have a
+      specific editor. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_create_update.png" />
+        </imageobject>
+        <textobject>
+          <phrase>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      The <quote>Instructions</quote> button on bottom left is provided
+      to help understanding how to fill the data if needed using.
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_instructions.png" />
+        </imageobject>
+        <textobject>
+          <phrase>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      If you want to delete a dataset, select it, press the
+      <quote>Remove dataset</quote> and confirm in the following window:
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_delete.png" />
+        </imageobject>
+        <textobject>
+          <phrase>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      If you have clients connected, you may want to send them a
+      specific dataset to be available on their side. Select the dataset
+      and press the <quote>Send to clients</quote> button. The list of
+      all the connected clients will be displayed and you will be able
+      to select to whom you send the dataset. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_send_client.png" />
+        </imageobject>
+        <textobject>
+          <phrase>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      ### Specific activities for the server We have created the
+      <quote>Multiple-choice questions</quote> activity that is only
+      visible when the device contains datasets. This activity allows
+      teachers to create diverse multiple-choice questionnaire on
+      various subjects. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/gcompris_multiple-choice_questions.png" />
+        </imageobject>
+        <textobject>
+          <phrase>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      The following image shows the results for the <quote>Vertical
+      subtraction</quote> activity (each activity which handles the
+      sending of data to the server has its own visualisation).
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/activities_results.png" />
+        </imageobject>
+        <textobject>
+          <phrase>activities_results</phrase>
+        </textobject>
+      </mediaobject> We can see the pupil did an incorrect input
+      on the first try and a correct on the second try and the
+      computation they have written to spot the error.
+    </para>
+  </sect1>
+  <sect1 id="charts-view">
+    <title>Charts view</title>
+    <para>
+      This window is similar to the Activity view and allows to display
+      the different results filtered by date, groups, pupils and
+      activities as charts. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/charts.png" />
+        </imageobject>
+        <textobject>
+          <phrase>charts</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para>
+      For now, the visualisation is really limited but will be improved
+      depending on the teacher feedback. After clicking on an activity
+      on the chart, we have a similar view as what is on the Activity
+      view where we can see all the results for a specific pupil:
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/charts_view_results_pupil.png" />
+        </imageobject>
+        <textobject>
+          <phrase>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject> Or for a specific activity:
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/charts_view_results_activity.png" />
+        </imageobject>
+        <textobject>
+          <phrase>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title>Settings</title>
+    <para>
+      The settings window allows to customize the server and get some
+      information on the current database and session.
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/settings.png" />
+        </imageobject>
+        <textobject>
+          <phrase>settings</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title>Credits and License</title>
+
+<para>
+&gcompris;
+</para>
+<para>
+Program copyright © 2000–2025 Timothée Giet and others
+</para>
+
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+
+&underFDL;               <!-- FDL: do not remove -->
+
+&underGPL;        	 <!-- GPL License -->
+
+</chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
