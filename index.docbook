@@ -2,8 +2,8 @@
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
   <!-- Define an entity for your application if it is not part of KDE
        Git -->
-  <!ENTITY gcompris "<application>GCompris Teacher</application>">
-  <!ENTITY kappname "&gcompris_teacher;"><!-- replace kmyapplication here
+  <!ENTITY gcompris "<application>GCompris Teachers</application>">
+  <!ENTITY kappname "&gcompris-teachers;"><!-- replace kmyapplication here
                                               do *not* replace kappname-->
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"> <!-- ONLY If you are writing non-English
@@ -13,10 +13,10 @@
   <!-- Do not define any other entities; instead, use the entities
        from entities/general.entities and en/user.entities. -->
 ]>
-<book id="gcompris_teacher_doc" lang="&language;">
+<book id="gcompris_teachers_doc" lang="&language;">
 
 <bookinfo>
-<title>The GCompris Teacher Administration Handbook</title>
+<title>The GCompris Teachers Administration Handbook</title>
 
 <authorgroup>
 <author>
@@ -57,7 +57,7 @@ for example 'xx.yy.zz'
 
 <abstract>
 <para>
-GCompris is a multi-activity educational software. This documentation is for the teacher administration tool we provide.
+GCompris is a multi-activity educational software. This documentation is for the gcompris-teachers administration tool we provide.
 </para>
 </abstract>
 
@@ -73,11 +73,11 @@ GCompris is a multi-activity educational software. This documentation is for the
 <chapter id="overview">
   <title>Overview</title>
   <para>
-    The goal of GCompris server is to enable teachers to:
+    The goal of gcompris-teachers is to enable teachers to:
   </para>
   <itemizedlist>
     <listitem><para>create and manage pupils groups.</para></listitem>
-    <listitem><para>create work plans for groups.</para></listitem>
+    <listitem><para>create specific work plans.</para></listitem>
     <listitem><para>connect and send a work plan to pupils.</para></listitem>
     <listitem><para>visualize the work results per group and pupil.</para></listitem>
     <listitem><para>analyse pupils answers.</para></listitem>
@@ -106,8 +106,8 @@ GCompris is a multi-activity educational software. This documentation is for the
     </itemizedlist>
     <para>
       By default the Dashboard page is shown, containing the login
-      dialog, and the other pages buttons on the side are
-      greyed/disabled until a teacher account is logged in.
+      dialog, and the side menu bar to access the other pages is
+      hidden until a teacher account is logged in.
       <inlinemediaobject>
         <imageobject>
           <imagedata fileref="images/main_screen.png" />
@@ -118,8 +118,8 @@ GCompris is a multi-activity educational software. This documentation is for the
       </inlinemediaobject>
     </para>
     <para>
-      An option to show/hide the title of the buttons in the menu
-      (sandwich icon) allows to save some space once the user knows the
+      A button to show/hide the title of the buttons in the side menu bar
+      (the sandwich icon) allows to save some space once the user knows the
       meaning of each icon.<inlinemediaobject>
         <imageobject>
           <imagedata fileref="images/main_screen_hamburger.png" />
@@ -133,7 +133,7 @@ GCompris is a multi-activity educational software. This documentation is for the
   <sect1 id="dashboard---login-dialog">
     <title>Dashboard - Login dialog</title>
     <para>
-      To create a new database, input the database name and the
+      To create a new teacher login and database, input the name and the
       password. You’ll then be able to choose if you want to encrypt the
       database (to avoid anyone to read it without the password).
       <inlinemediaobject>
@@ -162,8 +162,9 @@ GCompris is a multi-activity educational software. This documentation is for the
     <sect2 id="create-a-group">
       <title>Create a group</title>
       <para>
-        Click on the <quote>Add group</quote> button on the bottom right
-        and fill it with a name and optionally a description.
+        Click on the <quote>Add a group</quote> button on the bottom right
+        and in the dialog fill the <quote>Name</quote> and optionally
+        the <quote>Description</quote>.
         <mediaobject>
           <imageobject>
             <imagedata fileref="images/group_add.png" />
@@ -178,7 +179,7 @@ GCompris is a multi-activity educational software. This documentation is for the
       <title>Modify a group name or Delete it</title>
       <para>
         To edit or delete a group, hover it on the group list and the
-        <quote>Edit</quote> and <quote>Delete</quote> button will
+        <quote>Edit</quote> and <quote>Delete</quote> buttons will
         appear.
         <mediaobject>
           <imageobject>
@@ -204,10 +205,10 @@ GCompris is a multi-activity educational software. This documentation is for the
     <sect2 id="create-a-single-pupil">
       <title>Create a single pupil</title>
       <para>
-        Select <quote>Add a pupil</quote> to create a new pupil in the
-        database. There, you can select their name and the password to
+        Click on <quote>Add a pupil</quote> to create a new pupil in the
+        database. There, you can set the pupil's name and the password to
         connect from the clients. You can also directly add them in
-        pre-existing groups.<mediaobject>
+        pre-existing groups. <mediaobject>
           <imageobject>
             <imagedata fileref="images/pupil_create.png" />
           </imageobject>
@@ -218,7 +219,7 @@ GCompris is a multi-activity educational software. This documentation is for the
       </para>
     </sect2>
     <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
-      <title>Create several pupils using csv strings / Export pupils in
+      <title>Create several pupils using csv strings / Export pupils to
       a file</title>
       <para>
         You can directly import a list of pupils using a csv file.
@@ -245,8 +246,8 @@ GCompris is a multi-activity educational software. This documentation is for the
     <sect2 id="managing-pupils">
       <title>Managing pupils</title>
       <para>
-        The interface also proposes buttons to edit the pupils, add or
-        remove them from groups <mediaobject>
+        The interface also proposes buttons to edit pupils, add or
+        remove them from groups. <mediaobject>
           <imageobject>
             <imagedata fileref="images/pupil_add_to_group.png" />
           </imageobject>
@@ -279,7 +280,7 @@ GCompris is a multi-activity educational software. This documentation is for the
     <title>Connect devices</title>
     <para>
       Once the database is ready, it’s now time to communicate with the
-      different clients. The <quote>Connect devices</quote> window shows
+      different clients. The <quote>Connect devices</quote> page shows
       the different groups and pupils. By default, no group is selected
       so all the pupils are visible. Selecting a group will filter the
       visible pupils to only work with this specific group.
@@ -293,13 +294,13 @@ GCompris is a multi-activity educational software. This documentation is for the
       </mediaobject>
     </para>
     <sect2 id="configuration-of-the-server-and-devices">
-      <title>Configuration of the server and devices</title>
+      <title>Configuration of the server and client devices</title>
       <para>
-        The teacher needs to configure the server and devices they want
+        The teacher needs to configure the server and client devices they want
         to connect to before being able to connect. All the devices need
-        to be connected on the same network. On the server, go in the
-        <quote>Settings</quote> panel and choose a unique <quote>Server
-        ID</quote> (at least for the network) and a <quote>Port</quote>
+        to be connected on the same local network. On the server, go to the
+        <quote>Settings</quote> page and choose a unique <quote>Server
+        ID</quote> (at least unique for the local network) and a <quote>Port</quote>
         (if you don’t know, keep the default one). <mediaobject>
           <imageobject>
             <imagedata fileref="images/settings.png" />
@@ -310,8 +311,8 @@ GCompris is a multi-activity educational software. This documentation is for the
         </mediaobject>
       </para>
       <para>
-        On GCompris devices side, go in the Preferences in the menu,
-        scroll to the bottom to find the <quote>Teacher’s server
+        On GCompris devices side, go to the <quote>Configuration</quote> page from
+        the main menu, and scroll to the bottom to find the <quote>Teacher’s server
         config</quote> button. <mediaobject>
           <imageobject>
             <imagedata fileref="images/gcompris_teacher_config_button.png" />
@@ -334,11 +335,11 @@ GCompris is a multi-activity educational software. This documentation is for the
       <title>Daily connection workflow</title>
       <para>
         The connection workflow is the following: <emphasis>The teacher
-          asks the pupils to switch on their devices and press the
-          <quote>Connect devices</quote> button. </emphasis>On the device,
-        a new window will appear to ask confirmation to connect to the
-        server. Note that the device needs to be on the GCompris menu,
-        not on any activity or configuration panel.<mediaobject>
+        asks the pupils to switch on their devices and start GCompris, and then from the
+        <quote>Connect devices</quote> page press the <quote>Connect devices</quote>
+        button.</emphasis> On the client devices, a dialog will appear asking confirmation
+        to connect to the server. Note that client devices need to be on the GCompris main menu,
+        not on any activity or configuration page. <mediaobject>
           <imageobject>
             <imagedata fileref="images/gcompris_connect.png" />
           </imageobject>
@@ -348,10 +349,11 @@ GCompris is a multi-activity educational software. This documentation is for the
         </mediaobject>
         <itemizedlist>
           <listitem><para>After confirmation from the pupils, the
-              teacher selects which logins they want to send and press
+              teacher selects which logins they want to send from the
+              <quote>Pupils</quote> list and press
               <quote>Send login list</quote></para></listitem>
-          <listitem><para>The devices will display a new
-              window allowing to select the login they want.
+          <listitem><para>The client devices will display a new
+              dialog allowing to select the login they want.
               <mediaobject>
                 <imageobject>
                   <imagedata fileref="images/gcompris_select_login.png" />
@@ -361,8 +363,8 @@ GCompris is a multi-activity educational software. This documentation is for the
                 </textobject>
               </mediaobject>
           </para></listitem>
-          <listitem><para>Once confirmed, a second window will open
-              to select the password <mediaobject>
+          <listitem><para>Once confirmed, a second dialog will open
+              to enter the password. <mediaobject>
                 <imageobject>
                   <imagedata fileref="images/gcompris_password.png" />
                 </imageobject>
@@ -372,8 +374,8 @@ GCompris is a multi-activity educational software. This documentation is for the
               </mediaobject>
           </para></listitem>
           <listitem><para>If the password is correct, the client
-              will have a green button on the bar for successful
-              connection<mediaobject>
+              will see a green button on the bar indicating a successful
+              connection. <mediaobject>
                 <imageobject>
                   <imagedata fileref="images/gcompris_connect_ok.png" />
                 </imageobject>
@@ -415,9 +417,9 @@ GCompris is a multi-activity educational software. This documentation is for the
     </sect2>
   </sect1>
   <sect1 id="activities-view">
-    <title>Activities view</title>
+    <title>Activities</title>
     <para>
-      This window allows to display the different results filtered by
+      This page allows to display the different results filtered by
       date, groups, pupils and activities. <mediaobject>
         <imageobject>
           <imagedata fileref="images/activities.png" />
@@ -429,8 +431,8 @@ GCompris is a multi-activity educational software. This documentation is for the
     </para>
     <para>
       The following image shows the results for the <quote>Vertical
-      subtraction</quote> activity (each activity which handles the
-      sending of data to the server has its own visualisation).
+      subtraction</quote> activity (each activity which handles sending
+      data to the server has its own visualisation).
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/activities_results.png" />
@@ -438,17 +440,17 @@ GCompris is a multi-activity educational software. This documentation is for the
         <textobject>
           <phrase>activities_results</phrase>
         </textobject>
-      </mediaobject> We can see the pupil did an incorrect input
-      on the first try and a correct on the second try and the
-      computation they have written to spot the error.
+      </mediaobject> We can see the pupil entered an incorrect answer
+      on the first try and a correct answer on the second try, and the
+      answers details to spot the errors.
     </para>
   </sect1>
   <sect1 id="dataset-handling">
-    <title>Dataset handling</title>
+    <title>Datasets</title>
     <para>
-      The dataset window allows teachers to create/update/delete
+      The datasets page allows teachers to create/update/delete
       specific datasets for the activities to target specific needs,
-      send (or remove) them to the clients. <mediaobject>
+      and send/remove them to/from the clients. <mediaobject>
         <imageobject>
           <imagedata fileref="images/datasets.png" />
         </imageobject>
@@ -460,9 +462,9 @@ GCompris is a multi-activity educational software. This documentation is for the
     <para>
       One limitation for now is that only activities following the
       GCompris dataset format can be edited (so no <quote>Grammatical
-      classes</quote>, <quote>Falling games</quote> for example). Here
+      classes</quote> or <quote>Falling words</quote> for example). Here
       is an example for the <quote>Binary Bulb</quote> activity. The
-      common part for all editors is the filling of the dataset name,
+      common part of all activity editors contains fields to enter the dataset name,
       the goal and the difficulty. Then, each activity will have a
       specific editor. <mediaobject>
         <imageobject>
@@ -474,8 +476,8 @@ GCompris is a multi-activity educational software. This documentation is for the
       </mediaobject>
     </para>
     <para>
-      The <quote>Instructions</quote> button on bottom left is provided
-      to help understanding how to fill the data if needed using.
+      The <quote>Instructions</quote> button on the bottom left is provided
+      to give some specific information about how to fill the dataset when needed.
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dataset_instructions.png" />
@@ -486,8 +488,8 @@ GCompris is a multi-activity educational software. This documentation is for the
       </mediaobject>
     </para>
     <para>
-      If you want to delete a dataset, select it, press the
-      <quote>Remove dataset</quote> and confirm in the following window:
+      If you want to delete a dataset: select it, press the
+      <quote>Remove dataset</quote> button and confirm in the following dialog:
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dataset_delete.png" />
@@ -502,7 +504,7 @@ GCompris is a multi-activity educational software. This documentation is for the
       specific dataset to be available on their side. Select the dataset
       and press the <quote>Send to clients</quote> button. The list of
       all the connected clients will be displayed and you will be able
-      to select to whom you send the dataset. <mediaobject>
+      to select which will receive it. <mediaobject>
         <imageobject>
           <imagedata fileref="images/dataset_send_client.png" />
         </imageobject>
@@ -511,12 +513,13 @@ GCompris is a multi-activity educational software. This documentation is for the
         </textobject>
       </mediaobject>
     </para>
-    <para>
-      ### Specific activities for the server We have created the
-      <quote>Multiple-choice questions</quote> activity that is only
-      visible when the device contains datasets. This activity allows
-      teachers to create diverse multiple-choice questionnaire on
-      various subjects. <mediaobject>
+    <sect2 id="specific-activities">
+      <title>Specific activities for the server</title>
+      <para>
+      We have created the <quote>Multiple-choice questions</quote>
+      activity that is only visible when the device contains datasets for it.
+      This activity allows teachers to create multiple-choice questionnaires on
+      any topic. <mediaobject>
         <imageobject>
           <imagedata fileref="images/gcompris_multiple-choice_questions.png" />
         </imageobject>
@@ -524,27 +527,13 @@ GCompris is a multi-activity educational software. This documentation is for the
           <phrase>gcompris_multiple-choice_questions</phrase>
         </textobject>
       </mediaobject>
-    </para>
-    <para>
-      The following image shows the results for the <quote>Vertical
-      subtraction</quote> activity (each activity which handles the
-      sending of data to the server has its own visualisation).
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/activities_results.png" />
-        </imageobject>
-        <textobject>
-          <phrase>activities_results</phrase>
-        </textobject>
-      </mediaobject> We can see the pupil did an incorrect input
-      on the first try and a correct on the second try and the
-      computation they have written to spot the error.
-    </para>
+      </para>
+    </sect2>
   </sect1>
   <sect1 id="charts-view">
-    <title>Charts view</title>
+    <title>Charts</title>
     <para>
-      This window is similar to the Activity view and allows to display
+      The Charts page is similar to the Activities page and allows to display
       the different results filtered by date, groups, pupils and
       activities as charts. <mediaobject>
         <imageobject>
@@ -556,10 +545,11 @@ GCompris is a multi-activity educational software. This documentation is for the
       </mediaobject>
     </para>
     <para>
-      For now, the visualisation is really limited but will be improved
-      depending on the teacher feedback. After clicking on an activity
-      on the chart, we have a similar view as what is on the Activity
-      view where we can see all the results for a specific pupil:
+      For now, the visualization is really limited but will be improved
+      depending on teachers feedback. After clicking on an activity
+      on the chart, there is a view similar to what is shown on the Activities
+      page. If the <quote>Pupils</quote> tab is selected, you can see all the
+      results for a specific pupil:
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/charts_view_results_pupil.png" />
@@ -567,7 +557,8 @@ GCompris is a multi-activity educational software. This documentation is for the
         <textobject>
           <phrase>charts_view_results_pupil</phrase>
         </textobject>
-      </mediaobject> Or for a specific activity:
+      </mediaobject> If the <quote>Activities</quote> tab is selected,
+      you can see all the results for a specific activity:
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/charts_view_results_activity.png" />
@@ -581,7 +572,7 @@ GCompris is a multi-activity educational software. This documentation is for the
   <sect1 id="settings">
     <title>Settings</title>
     <para>
-      The settings window allows to customize the server and get some
+      The settings page allows to customize the interface and get some
       information on the current database and session.
       <mediaobject>
         <imageobject>

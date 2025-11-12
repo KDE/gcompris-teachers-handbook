@@ -1,4 +1,4 @@
-# [GCompris Teacher Administration Tool](https://gcompris.net)
+# [GCompris Teachers Administration Tool](https://gcompris.net)
 
 This is the official documentation repository for the GCompris-teachers tool.
 
