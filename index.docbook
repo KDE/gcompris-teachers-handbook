@@ -108,26 +108,26 @@ GCompris is a multi-activity educational software. This documentation is for the
       By default the Dashboard page is shown, containing the login
       dialog, and the side menu bar to access the other pages is
       hidden until a teacher account is logged in.
-      <inlinemediaobject>
+      <mediaobject>
         <imageobject>
           <imagedata fileref="images/main_screen.png" />
         </imageobject>
         <textobject>
           <phrase>main_screen</phrase>
         </textobject>
-      </inlinemediaobject>
+      </mediaobject>
     </para>
     <para>
       A button to show/hide the title of the buttons in the side menu bar
       (the sandwich icon) allows to save some space once the user knows the
-      meaning of each icon.<inlinemediaobject>
+      meaning of each icon.<mediaobject>
         <imageobject>
           <imagedata fileref="images/main_screen_hamburger.png" />
         </imageobject>
         <textobject>
           <phrase>main_screen_hamburger</phrase>
         </textobject>
-      </inlinemediaobject>
+      </mediaobject>
     </para>
   </sect1>
   <sect1 id="dashboard---login-dialog">
@@ -136,28 +136,28 @@ GCompris is a multi-activity educational software. This documentation is for the
       To create a new teacher login and database, input the name and the
       password. You’ll then be able to choose if you want to encrypt the
       database (to avoid anyone to read it without the password).
-      <inlinemediaobject>
+      <mediaobject>
         <imageobject>
           <imagedata fileref="images/main_screen_create_db.png" />
         </imageobject>
         <textobject>
           <phrase>main_screen_create_db</phrase>
         </textobject>
-      </inlinemediaobject>
+      </mediaobject>
     </para>
   </sect1>
   <sect1 id="manage-groups-and-pupils">
     <title>Manage groups and pupils</title>
     <para>
       This page allows to create the different pupils and groups for
-      your class. <inlinemediaobject>
+      your class. <mediaobject>
         <imageobject>
           <imagedata fileref="images/pupils_groups.png" />
         </imageobject>
         <textobject>
           <phrase>pupils_groups</phrase>
         </textobject>
-      </inlinemediaobject>
+      </mediaobject>
     </para>
     <sect2 id="create-a-group">
       <title>Create a group</title>
