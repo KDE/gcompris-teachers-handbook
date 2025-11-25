@@ -26,8 +26,8 @@ deploy:
     - git config --global --add safe.directory $CI_PROJECT_DIR
     - python3 -u ci-utilities/run-ci-build.py --project $CI_PROJECT_NAME --branch $CI_COMMIT_REF_NAME --platform Linux/Qt6/Shared
     - source _build/prefix.sh
-    - ./generate_all_html.sh
-    - ./generate_all_pdf.sh
+    - ./generate_all_html.sh $CI_PROJECT_NAME $CI_COMMIT_REF_NAME
+    - ./generate_all_pdf.sh $CI_PROJECT_NAME $CI_COMMIT_REF_NAME
   artifacts:
     expire_in: 2 weeks
     when: always
