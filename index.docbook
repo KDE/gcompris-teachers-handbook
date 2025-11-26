@@ -468,7 +468,7 @@ GCompris is a multi-activity educational software. This documentation is for the
       classes</quote> or <quote>Falling words</quote> for example).
       You can find the list of supported activities (which can send data or have a
       dataset editor) on this page of our development wiki:
-      <ulink  url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities">
+      <ulink  url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"/>
     </para>
     <para>
       Here is an example for the <quote>Binary Bulb</quote> activity. The
