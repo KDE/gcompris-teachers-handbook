@@ -465,8 +465,13 @@ GCompris is a multi-activity educational software. This documentation is for the
     <para>
       One limitation for now is that only activities following the
       GCompris dataset format can be edited (so no <quote>Grammatical
-      classes</quote> or <quote>Falling words</quote> for example). Here
-      is an example for the <quote>Binary Bulb</quote> activity. The
+      classes</quote> or <quote>Falling words</quote> for example).
+      You can find the list of supported activities (which can send data or have a
+      dataset editor) on this page of our development wiki:
+      <ulink  url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities">
+    </para>
+    <para>
+      Here is an example for the <quote>Binary Bulb</quote> activity. The
       common part of all activity editors contains fields to enter the dataset name,
       the goal and the difficulty. Then, each activity will have a
       specific editor. <mediaobject>
