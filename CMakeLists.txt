@@ -16,6 +16,4 @@ find_package(KF6DocTools REQUIRED)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
-include(KDEInstallDirs)
-
-kdoctools_create_handbook(doc/index.docbook INSTALL_DESTINATION ${KDE_INSTALL_DOCBUNDLEDIR}/en SUBDIR gcompris-server-doc)
+add_subdirectory(doc)

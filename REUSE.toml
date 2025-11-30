@@ -20,7 +20,7 @@ SPDX-FileCopyrightText = ["2025 Timothée Giet", "2025 Johnny Jazeix"]
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
-path = "doc/images/**"
+path = "doc/**.png"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 Johnny Jazeix"
 SPDX-License-Identifier = "GPL-3.0-or-later"
