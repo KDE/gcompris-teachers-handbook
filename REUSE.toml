@@ -14,13 +14,13 @@ SPDX-FileCopyrightText = "None"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
-path = "index.docbook"
+path = "doc/index.docbook"
 precedence = "aggregate"
 SPDX-FileCopyrightText = ["2025 Timothée Giet", "2025 Johnny Jazeix"]
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
-path = "images/**"
+path = "doc/images/**"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 Johnny Jazeix"
 SPDX-License-Identifier = "GPL-3.0-or-later"
