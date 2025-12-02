@@ -1,0 +1,664 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Catalan  "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>El manual del professorat d'administració del GCompris</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>L'equip del &gcompris;</othername>
+<contrib
+>Desenvolupadors</contrib>
+</othercredit
+> 
+
+&traductor.JosepMa.Ferrer; 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>30 de novembre de 2025</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>El GCompris és un programari educatiu multiactivitat. Aquesta documentació és per a l'eina d'administració gcompris-teachers que proporcionem. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>educació</keyword>
+<keyword
+>infants</keyword>
+<keyword
+>jocs</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Vista general</title>
+  <para
+>L'objectiu del gcompris-teachers és permetre als professors: </para>
+  <itemizedlist>
+    <listitem
+><para
+>crear i gestionar grups d'alumnes.</para
+></listitem>
+    <listitem
+><para
+>crear plans de treball específics.</para
+></listitem>
+    <listitem
+><para
+>connectar i enviar un pla de treball als alumnes.</para
+></listitem>
+    <listitem
+><para
+>visualitzar el resultat dels treballs per grup i alumne.</para
+></listitem>
+    <listitem
+><para
+>analitzar les respostes dels alumnes.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Especificacions</title>
+  <para
+>A la secció següent es descriuen les diferents pantalles que implementen aquestes funcionalitats. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Vista general de la pantalla principal</title>
+    <para
+>La pantalla principal permet accedir a: </para>
+    <itemizedlist>
+      <listitem
+><para
+>La pàgina del tauler.</para
+></listitem>
+      <listitem
+><para
+>La gestió de la pàgina dels alumnes.</para
+></listitem>
+      <listitem
+><para
+>La pàgina de connexió de dispositius.</para
+></listitem>
+      <listitem
+><para
+>Seguir la pàgina de resultats de les activitats.</para
+></listitem>
+      <listitem
+><para
+>Gestionar la pàgina de conjunts de dades.</para
+></listitem>
+      <listitem
+><para
+>Mostrar els resultats com a pàgina de gràfics.</para
+></listitem>
+      <listitem
+><para
+>Pàgina de configuració.</para
+></listitem>
+      <listitem
+><para
+>La pàgina de Desenvolupament (WIP) només s'utilitza per a finalitats de depuració i no es descriu aquí.</para
+></listitem>
+    </itemizedlist>
+    <para
+>De manera predeterminada es mostra la pàgina del tauler, que conté el diàleg d'inici de sessió, i la barra de menús lateral per a accedir a les altres pàgines s'oculta fins que s'hi connecti un compte de professor. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Un botó per a mostrar/ocultar el títol dels botons de la barra de menús lateral (la icona d'entrepà) permet estalviar espai una vegada que l'usuari conegui el significat de cada icona.<mediaobject>
+        <imageobject>
+          <imagedata fileref="images/main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_hamburger</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Tauler - Diàleg d'inici de sessió</title>
+    <para
+>Per a crear un inici de sessió i una base de dades de professor nou, introduïu el nom i la contrasenya. A continuació, podreu triar si voleu encriptar la base de dades (per a evitar que ningú la llegeixi sense la contrasenya). <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_create_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Gestió de grups i alumnes</title>
+    <para
+>Aquesta pàgina permet crear els alumnes i grups diferents de la vostra classe. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pupils_groups</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Crea un grup</title>
+      <para
+>Feu clic al botó «Afegeix un grup» a la part inferior dreta i al diàleg ompliu el «Nom» i opcionalment la «Descripció». <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Modifica un nom de grup o el suprimeix</title>
+      <para
+>Per a editar o suprimir un grup, passeu-hi per sobre a la llista de grups i apareixeran els botons «Edita» i «Suprimeix». <mediaobject
+> <imageobject
+> <imagedata fileref="images/group_delete_button.png"/> </imageobject
+> <textobject
+> <phrase
+>group_delete_button</phrase
+> </textobject
+> </mediaobject
+> Fent clic al botó «Suprimeix» es permetrà suprimir el grup. Tingueu en compte que els alumnes s'eliminaran dels grups però no se suprimiran de la base de dades. Si voleu eliminar els alumnes, seguiu la secció següent. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_confirmation</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Crea un alumne individual</title>
+      <para
+>Feu clic a «Afegeix un alumne» per a crear un alumne nou a la base de dades. Allí podeu establir el nom de l'alumne i la contrasenya per a connectar-se des dels clients. També podeu afegir-los directament en grups preexistents. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_create</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Creació de diversos alumnes utilitzant cadenes csv / Exportació d'alumnes a un fitxer</title>
+      <para
+>Podeu importar directament una llista d'alumnes utilitzant un fitxer csv. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_import</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>També és possible exportar una llista d'alumnes: <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Gestió d'alumnes</title>
+      <para
+>La interfície també proposa botons per editar els alumnes, afegir-los o eliminar-los dels grups. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_add_to_group</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_remove_from_group</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>També podeu suprimir alumnes. Tingueu en compte que suprimir un alumne no suprimeix el seu grup. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_delete</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Connecta dispositius</title>
+    <para
+>Un cop preparada la base de dades, és el moment de comunicar-se amb els diferents clients. La pàgina «Connecta dispositius» mostra els grups i alumnes diferents. De manera predeterminada, no se selecciona cap grup, així que tots els alumnes són visibles. Seleccionant un grup es filtraran els alumnes visibles que només treballen en aquest grup específic. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>connect_devices</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Configuració dels dispositius servidor i clients</title>
+      <para
+>El professor ha de configurar el servidor i els dispositius client als quals es vol connectar abans de poder connectar-se. Tots els dispositius cal que estiguin connectats a la mateixa xarxa local. Al servidor, aneu a la pàgina «Configuració» i trieu un «ID de servidor» (almenys únic per a la xarxa local) i un «Port» (si no ho sabeu, mantingueu el predeterminat). <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>configuració</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>A la banda dels dispositius del GCompris, aneu a la pàgina «Configuració» del menú principal i desplaceu-vos a la part inferior per a trobar el botó «Configuració del servidor de professors». <mediaobject
+> <imageobject
+> <imagedata fileref="images/gcompris_teacher_config_button.png"/> </imageobject
+> <textobject
+> <phrase
+>gcompris_teacher_config_button</phrase
+> </textobject
+> </mediaobject
+> Després de fer-hi clic, assegureu-vos de tenir la mateixa configuració que el servidor: <mediaobject
+> <imageobject
+> <imagedata fileref="images/gcompris_teacher_settings.png"/> </imageobject
+> <textobject
+> <phrase
+>gcompris_teacher_settings</phrase
+> </textobject
+> </mediaobject
+> També, si el dispositiu que executa el servidor o el client té un tallafoc, assegureu-vos d'obrir el port escollit a la configuració del tallafoc per a permetre que els dispositius es comuniquin. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Flux de treball diari de connexió</title>
+      <para
+>El flux de treball de connexió és el següent: <emphasis
+>El professor demana als alumnes que engeguin els seus dispositius i iniciïn el GCompris, i des de la pàgina «Connecta dispositius» premeu el botó «Connecta els dispositius».</emphasis
+> Als dispositius client, apareixerà un diàleg demanant confirmació per a connectar-se al servidor. Tingueu en compte que els dispositius client han d'estar al menú principal del GCompris, no a cap activitat o pàgina de configuració. <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Després de la confirmació per part dels alumnes, el professor selecciona quins inicis de sessió vol enviar des de la llista «Pupils» i prem «Envia la llista d'inici de sessió»</para
+></listitem>
+          <listitem
+><para
+>Els dispositius client mostraran un diàleg nou que permetrà seleccionar l'inici de sessió que vulguin. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Un cop confirmat, s'obrirà un segon diàleg per a introduir la contrasenya. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Si la contrasenya és correcta, el client veurà un botó verd a la barra indicant una connexió correcta. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>I el servidor rebrà una notificació: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="images/connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Els diferents colors són: <itemizedlist>
+          <listitem
+><para
+>Verd: connectat</para
+></listitem>
+          <listitem
+><para
+>Vermell: contrasenya incorrecta</para
+></listitem>
+          <listitem
+><para
+>Grey: desconnectat (en algun moment estava connectat però s'ha desconnectat)</para
+></listitem>
+          <listitem
+><para
+>Transparent: ningú ha intentat connectar utilitzant aquest inici de sessió.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Activitats</title>
+    <para
+>Aquesta pàgina permet mostrar els diferents resultats filtrats per data, grups, alumnes i activitats. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activitats</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>La imatge següent mostra els resultats de l'activitat de «Resta vertical» (cada activitat que gestiona l'enviament de dades al servidor té la seva pròpia visualització). <mediaobject
+> <imageobject
+> <imagedata fileref="images/activities_results.png"/> </imageobject
+> <textobject
+> <phrase
+>activities_results</phrase
+> </textobject
+> </mediaobject
+> Podem veure l'alumne que ha introduït una resposta incorrecta en el primer intent i una resposta correcta en el segon intent, i els detalls de les respostes per a detectar els errors. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Conjunts de dades</title>
+    <para
+>La pàgina de conjunts de dades permet als professors crear/actualitzar/suprimir conjunts de dades específics per a les activitats que es dirigeixen a necessitats específiques, i enviar-los o eliminar-los als/dels clients. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>conjunts de dades</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Una limitació per ara és que només es poden editar les activitats que segueixen el format de conjunt de dades del GCompris (de manera que no es poden editar «Classes gramaticals» o «Paraules que cauen», per exemple). Podeu trobar la llista d'activitats acceptades (que poden enviar dades o tenir un editor de conjunts de dades) en aquesta pàgina del nostre wiki de desenvolupament: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Aquest és un exemple per a l'activitat «Bombetes binàries». La part comuna de tots els editors d'activitats conté camps per a introduir el nom del conjunt de dades, l'objectiu i la dificultat. A continuació, cada activitat tindrà un editor específic. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Es proporciona el botó «Instruccions» a la part inferior esquerra per a donar informació específica sobre com omplir el conjunt de dades quan sigui necessari. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si voleu suprimir un conjunt de dades: seleccioneu-lo, premeu el botó «Elimina el conjunt de dades» i confirmeu-ho en el diàleg següent: <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si hi ha clients connectats, és possible que vulgueu enviar-los un conjunt de dades específic perquè estiguin disponibles a la seva banda. Seleccioneu el conjunt de dades i premeu el botó «Envia als clients». Es mostrarà la llista de tots els clients connectats i podreu seleccionar quins el rebran. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Activitats específiques per al servidor</title>
+      <para
+>Hem creat l'activitat «Preguntes d'elecció múltiple» que només és visible quan el dispositiu conté conjunts de dades per a això. Aquesta activitat permet als professors crear qüestionaris d'elecció múltiple sobre qualsevol tema. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Gràfics</title>
+    <para
+>La pàgina de gràfics és similar a la pàgina d'activitats i permet mostrar els diferents resultats filtrats per data, grups, alumnes i activitats com a gràfics. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gràfics</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Per ara, la visualització és força limitada, però es millorarà en funció dels comentaris del professorat. Després de fer clic sobre una activitat del gràfic, hi ha una vista similar a la que es mostra a la pàgina d'activitats. Si la pestanya «Alumnes» està seleccionada, podeu veure tots els resultats d'un alumne específic: <mediaobject
+> <imageobject
+> <imagedata fileref="images/charts_view_results_pupil.png"/> </imageobject
+> <textobject
+> <phrase
+>charts_view_results_pupil</phrase
+> </textobject
+> </mediaobject
+> Si la pestanya «Activitats» està seleccionada, podeu veure tots els resultats d'una activitat específica: <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Arranjament</title>
+    <para
+>La pàgina de configuració permet personalitzar la interfície i obtenir informació sobre la base de dades i la sessió actual. <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>configuració</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Crèdits i llicència</title>
+
+<para
+>&gcompris; </para>
+<para
+>Copyright del programa © 2000–2025 Timothée Giet i altres </para>
+
+<para
+>Traductor de la documentació: &credits.JosepMa.Ferrer;</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
