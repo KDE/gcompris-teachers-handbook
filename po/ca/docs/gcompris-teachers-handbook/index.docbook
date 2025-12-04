@@ -163,7 +163,7 @@ for example 'xx.yy.zz'
     <para
 >De manera predeterminada es mostra la pàgina del tauler, que conté el diàleg d'inici de sessió, i la barra de menús lateral per a accedir a les altres pàgines s'oculta fins que s'hi connecti un compte de professor. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/main_screen.png"/>
+          <imagedata fileref="main_screen.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -174,7 +174,7 @@ for example 'xx.yy.zz'
     <para
 >Un botó per a mostrar/ocultar el títol dels botons de la barra de menús lateral (la icona d'entrepà) permet estalviar espai una vegada que l'usuari conegui el significat de cada icona.<mediaobject>
         <imageobject>
-          <imagedata fileref="images/main_screen_hamburger.png"/>
+          <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -189,7 +189,7 @@ for example 'xx.yy.zz'
     <para
 >Per a crear un inici de sessió i una base de dades de professor nou, introduïu el nom i la contrasenya. A continuació, podreu triar si voleu encriptar la base de dades (per a evitar que ningú la llegeixi sense la contrasenya). <mediaobject>
         <imageobject>
-          <imagedata fileref="images/main_screen_create_db.png"/>
+          <imagedata fileref="main_screen_create_db.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -204,7 +204,7 @@ for example 'xx.yy.zz'
     <para
 >Aquesta pàgina permet crear els alumnes i grups diferents de la vostra classe. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/pupils_groups.png"/>
+          <imagedata fileref="pupils_groups.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -218,7 +218,7 @@ for example 'xx.yy.zz'
       <para
 >Feu clic al botó «Afegeix un grup» a la part inferior dreta i al diàleg ompliu el «Nom» i opcionalment la «Descripció». <mediaobject>
           <imageobject>
-            <imagedata fileref="images/group_add.png"/>
+            <imagedata fileref="group_add.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -233,7 +233,7 @@ for example 'xx.yy.zz'
       <para
 >Per a editar o suprimir un grup, passeu-hi per sobre a la llista de grups i apareixeran els botons «Edita» i «Suprimeix». <mediaobject
 > <imageobject
-> <imagedata fileref="images/group_delete_button.png"/> </imageobject
+> <imagedata fileref="group_delete_button.png"/> </imageobject
 > <textobject
 > <phrase
 >group_delete_button</phrase
@@ -241,7 +241,7 @@ for example 'xx.yy.zz'
 > </mediaobject
 > Fent clic al botó «Suprimeix» es permetrà suprimir el grup. Tingueu en compte que els alumnes s'eliminaran dels grups però no se suprimiran de la base de dades. Si voleu eliminar els alumnes, seguiu la secció següent. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/group_delete_confirmation.png"/>
+            <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -256,7 +256,7 @@ for example 'xx.yy.zz'
       <para
 >Feu clic a «Afegeix un alumne» per a crear un alumne nou a la base de dades. Allí podeu establir el nom de l'alumne i la contrasenya per a connectar-se des dels clients. També podeu afegir-los directament en grups preexistents. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_create.png"/>
+            <imagedata fileref="pupil_create.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -271,7 +271,7 @@ for example 'xx.yy.zz'
       <para
 >Podeu importar directament una llista d'alumnes utilitzant un fitxer csv. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_import.png"/>
+            <imagedata fileref="pupil_import.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -282,7 +282,7 @@ for example 'xx.yy.zz'
       <para
 >També és possible exportar una llista d'alumnes: <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_export_csv.png"/>
+            <imagedata fileref="pupil_export_csv.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -297,7 +297,7 @@ for example 'xx.yy.zz'
       <para
 >La interfície també proposa botons per editar els alumnes, afegir-los o eliminar-los dels grups. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_add_to_group.png"/>
+            <imagedata fileref="pupil_add_to_group.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -306,7 +306,7 @@ for example 'xx.yy.zz'
         </mediaobject
 > <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_remove_from_group.png"/>
+            <imagedata fileref="pupil_remove_from_group.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -317,7 +317,7 @@ for example 'xx.yy.zz'
       <para
 >També podeu suprimir alumnes. Tingueu en compte que suprimir un alumne no suprimeix el seu grup. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_delete.png"/>
+            <imagedata fileref="pupil_delete.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -333,7 +333,7 @@ for example 'xx.yy.zz'
     <para
 >Un cop preparada la base de dades, és el moment de comunicar-se amb els diferents clients. La pàgina «Connecta dispositius» mostra els grups i alumnes diferents. De manera predeterminada, no se selecciona cap grup, així que tots els alumnes són visibles. Seleccionant un grup es filtraran els alumnes visibles que només treballen en aquest grup específic. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/connect_devices.png"/>
+          <imagedata fileref="connect_devices.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -347,7 +347,7 @@ for example 'xx.yy.zz'
       <para
 >El professor ha de configurar el servidor i els dispositius client als quals es vol connectar abans de poder connectar-se. Tots els dispositius cal que estiguin connectats a la mateixa xarxa local. Al servidor, aneu a la pàgina «Configuració» i trieu un «ID de servidor» (almenys únic per a la xarxa local) i un «Port» (si no ho sabeu, mantingueu el predeterminat). <mediaobject>
           <imageobject>
-            <imagedata fileref="images/settings.png"/>
+            <imagedata fileref="settings.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -358,7 +358,7 @@ for example 'xx.yy.zz'
       <para
 >A la banda dels dispositius del GCompris, aneu a la pàgina «Configuració» del menú principal i desplaceu-vos a la part inferior per a trobar el botó «Configuració del servidor de professors». <mediaobject
 > <imageobject
-> <imagedata fileref="images/gcompris_teacher_config_button.png"/> </imageobject
+> <imagedata fileref="gcompris_teacher_config_button.png"/> </imageobject
 > <textobject
 > <phrase
 >gcompris_teacher_config_button</phrase
@@ -366,7 +366,7 @@ for example 'xx.yy.zz'
 > </mediaobject
 > Després de fer-hi clic, assegureu-vos de tenir la mateixa configuració que el servidor: <mediaobject
 > <imageobject
-> <imagedata fileref="images/gcompris_teacher_settings.png"/> </imageobject
+> <imagedata fileref="gcompris_teacher_settings.png"/> </imageobject
 > <textobject
 > <phrase
 >gcompris_teacher_settings</phrase
@@ -382,7 +382,7 @@ for example 'xx.yy.zz'
 >El professor demana als alumnes que engeguin els seus dispositius i iniciïn el GCompris, i des de la pàgina «Connecta dispositius» premeu el botó «Connecta els dispositius».</emphasis
 > Als dispositius client, apareixerà un diàleg demanant confirmació per a connectar-se al servidor. Tingueu en compte que els dispositius client han d'estar al menú principal del GCompris, no a cap activitat o pàgina de configuració. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/gcompris_connect.png"/>
+            <imagedata fileref="gcompris_connect.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -398,7 +398,7 @@ for example 'xx.yy.zz'
 ><para
 >Els dispositius client mostraran un diàleg nou que permetrà seleccionar l'inici de sessió que vulguin. <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/gcompris_select_login.png"/>
+                  <imagedata fileref="gcompris_select_login.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -411,7 +411,7 @@ for example 'xx.yy.zz'
 ><para
 >Un cop confirmat, s'obrirà un segon diàleg per a introduir la contrasenya. <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/gcompris_password.png"/>
+                  <imagedata fileref="gcompris_password.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -424,7 +424,7 @@ for example 'xx.yy.zz'
 ><para
 >Si la contrasenya és correcta, el client veurà un botó verd a la barra indicant una connexió correcta. <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/gcompris_connect_ok.png"/>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -437,7 +437,7 @@ for example 'xx.yy.zz'
 ><para
 >I el servidor rebrà una notificació: <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/connect_devices_password_correct_incorrect.png"/>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -469,7 +469,7 @@ for example 'xx.yy.zz'
         </itemizedlist>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/connect_devices_password_disconnected_not_connected.png"/>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -485,7 +485,7 @@ for example 'xx.yy.zz'
     <para
 >Aquesta pàgina permet mostrar els diferents resultats filtrats per data, grups, alumnes i activitats. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/activities.png"/>
+          <imagedata fileref="activities.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -496,7 +496,7 @@ for example 'xx.yy.zz'
     <para
 >La imatge següent mostra els resultats de l'activitat de «Resta vertical» (cada activitat que gestiona l'enviament de dades al servidor té la seva pròpia visualització). <mediaobject
 > <imageobject
-> <imagedata fileref="images/activities_results.png"/> </imageobject
+> <imagedata fileref="activities_results.png"/> </imageobject
 > <textobject
 > <phrase
 >activities_results</phrase
@@ -510,7 +510,7 @@ for example 'xx.yy.zz'
     <para
 >La pàgina de conjunts de dades permet als professors crear/actualitzar/suprimir conjunts de dades específics per a les activitats que es dirigeixen a necessitats específiques, i enviar-los o eliminar-los als/dels clients. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/datasets.png"/>
+          <imagedata fileref="datasets.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -525,7 +525,7 @@ for example 'xx.yy.zz'
     <para
 >Aquest és un exemple per a l'activitat «Bombetes binàries». La part comuna de tots els editors d'activitats conté camps per a introduir el nom del conjunt de dades, l'objectiu i la dificultat. A continuació, cada activitat tindrà un editor específic. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_create_update.png"/>
+          <imagedata fileref="dataset_create_update.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -536,7 +536,7 @@ for example 'xx.yy.zz'
     <para
 >Es proporciona el botó «Instruccions» a la part inferior esquerra per a donar informació específica sobre com omplir el conjunt de dades quan sigui necessari. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_instructions.png"/>
+          <imagedata fileref="dataset_instructions.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -547,7 +547,7 @@ for example 'xx.yy.zz'
     <para
 >Si voleu suprimir un conjunt de dades: seleccioneu-lo, premeu el botó «Elimina el conjunt de dades» i confirmeu-ho en el diàleg següent: <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_delete.png"/>
+          <imagedata fileref="dataset_delete.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -558,7 +558,7 @@ for example 'xx.yy.zz'
     <para
 >Si hi ha clients connectats, és possible que vulgueu enviar-los un conjunt de dades específic perquè estiguin disponibles a la seva banda. Seleccioneu el conjunt de dades i premeu el botó «Envia als clients». Es mostrarà la llista de tots els clients connectats i podreu seleccionar quins el rebran. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_send_client.png"/>
+          <imagedata fileref="dataset_send_client.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -572,7 +572,7 @@ for example 'xx.yy.zz'
       <para
 >Hem creat l'activitat «Preguntes d'elecció múltiple» que només és visible quan el dispositiu conté conjunts de dades per a això. Aquesta activitat permet als professors crear qüestionaris d'elecció múltiple sobre qualsevol tema. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/gcompris_multiple-choice_questions.png"/>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -588,7 +588,7 @@ for example 'xx.yy.zz'
     <para
 >La pàgina de gràfics és similar a la pàgina d'activitats i permet mostrar els diferents resultats filtrats per data, grups, alumnes i activitats com a gràfics. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/charts.png"/>
+          <imagedata fileref="charts.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -599,7 +599,7 @@ for example 'xx.yy.zz'
     <para
 >Per ara, la visualització és força limitada, però es millorarà en funció dels comentaris del professorat. Després de fer clic sobre una activitat del gràfic, hi ha una vista similar a la que es mostra a la pàgina d'activitats. Si la pestanya «Alumnes» està seleccionada, podeu veure tots els resultats d'un alumne específic: <mediaobject
 > <imageobject
-> <imagedata fileref="images/charts_view_results_pupil.png"/> </imageobject
+> <imagedata fileref="charts_view_results_pupil.png"/> </imageobject
 > <textobject
 > <phrase
 >charts_view_results_pupil</phrase
@@ -607,7 +607,7 @@ for example 'xx.yy.zz'
 > </mediaobject
 > Si la pestanya «Activitats» està seleccionada, podeu veure tots els resultats d'una activitat específica: <mediaobject>
         <imageobject>
-          <imagedata fileref="images/charts_view_results_activity.png"/>
+          <imagedata fileref="charts_view_results_activity.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -622,7 +622,7 @@ for example 'xx.yy.zz'
     <para
 >La pàgina de configuració permet personalitzar la interfície i obtenir informació sobre la base de dades i la sessió actual. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/settings.png"/>
+          <imagedata fileref="settings.png"/>
         </imageobject>
         <textobject>
           <phrase

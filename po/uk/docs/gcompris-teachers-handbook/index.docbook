@@ -177,7 +177,7 @@ for example 'xx.yy.zz'
     <para
 >Типово буде показано сторінку панелі приладів, на якій міститиметься діалогове вікно входу, а бічне меню для доступу до інших сторінок буде приховано, доки не буде виконано вхід до облікового запису вчителя. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/main_screen.png"/>
+          <imagedata fileref="main_screen.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -188,7 +188,7 @@ for example 'xx.yy.zz'
     <para
 >За допомогою кнопки для показу/приховування назв кнопок у бічному меню (піктограма сендвіча) можна заощадити місце, якщо призначення усіх піктограм відоме користувачеві.<mediaobject>
         <imageobject>
-          <imagedata fileref="images/main_screen_hamburger.png"/>
+          <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -203,7 +203,7 @@ for example 'xx.yy.zz'
     <para
 >Щоб створити обліковий запис і базу даних вчителя, введіть ім'я та пароль. Після цього ви зможете вибрати, чи хочете ви зашифрувати базу даних (щоб ніхто не міг її прочитати без пароля). <mediaobject>
         <imageobject>
-          <imagedata fileref="images/main_screen_create_db.png"/>
+          <imagedata fileref="main_screen_create_db.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -218,7 +218,7 @@ for example 'xx.yy.zz'
     <para
 >За допомогою цієї сторінки можна створювати записи учнів і груп для вашого класу. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/pupils_groups.png"/>
+          <imagedata fileref="pupils_groups.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -238,7 +238,7 @@ for example 'xx.yy.zz'
 >Опис</quote
 >. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/group_add.png"/>
+            <imagedata fileref="group_add.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -257,7 +257,7 @@ for example 'xx.yy.zz'
 >Вилучити</quote
 >. <mediaobject
 > <imageobject
-> <imagedata fileref="images/group_delete_button.png"/> </imageobject
+> <imagedata fileref="group_delete_button.png"/> </imageobject
 > <textobject
 > <phrase
 >group_delete_button</phrase
@@ -267,7 +267,7 @@ for example 'xx.yy.zz'
 >Вилучити</quote
 > надасть змогу вилучити групу. Зверніть увагу, що учнів буде видалено з груп, але не з бази даних. Якщо ви хочете вилучити записи учнів, виконайте дії з наступного розділу. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/group_delete_confirmation.png"/>
+            <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -284,7 +284,7 @@ for example 'xx.yy.zz'
 >Додати учня</quote
 >, щоб створити новий запис учня у базі даних. Там ви можете встановити ім'я учня та пароль для з'єднання з боку клієнтів. Ви також можете безпосередньо додавати їх до наявних груп. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_create.png"/>
+            <imagedata fileref="pupil_create.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -299,7 +299,7 @@ for example 'xx.yy.zz'
       <para
 >Ви можете безпосередньо імпортувати список учнів з файла csv. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_import.png"/>
+            <imagedata fileref="pupil_import.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -310,7 +310,7 @@ for example 'xx.yy.zz'
       <para
 >Також можна експортувати список учнів: <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_export_csv.png"/>
+            <imagedata fileref="pupil_export_csv.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -325,7 +325,7 @@ for example 'xx.yy.zz'
       <para
 >В інтерфейсі також передбачено кнопки для редагування записів учнів, додавання учнів до груп та вилучення їх з груп. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_add_to_group.png"/>
+            <imagedata fileref="pupil_add_to_group.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -334,7 +334,7 @@ for example 'xx.yy.zz'
         </mediaobject
 > <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_remove_from_group.png"/>
+            <imagedata fileref="pupil_remove_from_group.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -345,7 +345,7 @@ for example 'xx.yy.zz'
       <para
 >Також можна вилучати записи учнів. Зауважте, що вилучення запису учня не призведе до вилучення його групи. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/pupil_delete.png"/>
+            <imagedata fileref="pupil_delete.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -363,7 +363,7 @@ for example 'xx.yy.zz'
 >З'єднання з пристроями</quote
 > буде показано різні групи та запис учнів. Типово жодну з груп не буде позначено, тому буде показано усіх учнів. Якщо позначити групу, програма виконає фільтрування видимих записи ​​учнів, щоб ви могли працювати лише з вказаною групою. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/connect_devices.png"/>
+          <imagedata fileref="connect_devices.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -383,7 +383,7 @@ for example 'xx.yy.zz'
 >Порт</quote
 > (якщо ви не знаєте, залиште типовий порт). <mediaobject>
           <imageobject>
-            <imagedata fileref="images/settings.png"/>
+            <imagedata fileref="settings.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -398,7 +398,7 @@ for example 'xx.yy.zz'
 >Налаштування сервера вчителя</quote
 >. <mediaobject
 > <imageobject
-> <imagedata fileref="images/gcompris_teacher_config_button.png"/> </imageobject
+> <imagedata fileref="gcompris_teacher_config_button.png"/> </imageobject
 > <textobject
 > <phrase
 >gcompris_teacher_config_button</phrase
@@ -406,7 +406,7 @@ for example 'xx.yy.zz'
 > </mediaobject
 > Після натискання переконайтеся, що налаштування такі ж, як і на сервері: <mediaobject
 > <imageobject
-> <imagedata fileref="images/gcompris_teacher_settings.png"/> </imageobject
+> <imagedata fileref="gcompris_teacher_settings.png"/> </imageobject
 > <textobject
 > <phrase
 >gcompris_teacher_settings</phrase
@@ -426,7 +426,7 @@ for example 'xx.yy.zz'
 >.</emphasis
 > На клієнтських пристроях з'явиться діалогове вікно із запитом на підтвердження з'єднання з сервером. Зверніть увагу, що клієнтські пристрої мають бути в головному меню GCompris, а не на жодній сторінці вправи або налаштувань. <mediaobject>
           <imageobject>
-            <imagedata fileref="images/gcompris_connect.png"/>
+            <imagedata fileref="gcompris_connect.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -446,7 +446,7 @@ for example 'xx.yy.zz'
 ><para
 >На клієнтських пристроях буде показано нове діалогове вікно, за допомогою якого можна буде вибрати бажаний обліковий запис. <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/gcompris_select_login.png"/>
+                  <imagedata fileref="gcompris_select_login.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -459,7 +459,7 @@ for example 'xx.yy.zz'
 ><para
 >Після підтвердження програма відкриє друге діалогове вікно для введення пароля. <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/gcompris_password.png"/>
+                  <imagedata fileref="gcompris_password.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -472,7 +472,7 @@ for example 'xx.yy.zz'
 ><para
 >Якщо пароль вказано правильно, користувач клієнтського пристрою побачить зелену кнопку на панелі, що вказуватиме на успішне встановлення з'єднання. <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/gcompris_connect_ok.png"/>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -485,7 +485,7 @@ for example 'xx.yy.zz'
 ><para
 >І сервер отримає сповіщення: <mediaobject>
                 <imageobject>
-                  <imagedata fileref="images/connect_devices_password_correct_incorrect.png"/>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
@@ -517,7 +517,7 @@ for example 'xx.yy.zz'
         </itemizedlist>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/connect_devices_password_disconnected_not_connected.png"/>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
           </imageobject>
           <textobject>
             <phrase
@@ -533,7 +533,7 @@ for example 'xx.yy.zz'
     <para
 >За допомогою цієї сторінки можна переглянути різні результати з фільтруванням за датою, групами, учнями та вправами. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/activities.png"/>
+          <imagedata fileref="activities.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -546,7 +546,7 @@ for example 'xx.yy.zz'
 >Вертикальне віднімання</quote
 > (у кожної вправи, яка обробляє надсилання даних на сервер, є власна візуалізація). <mediaobject
 > <imageobject
-> <imagedata fileref="images/activities_results.png"/> </imageobject
+> <imagedata fileref="activities_results.png"/> </imageobject
 > <textobject
 > <phrase
 >activities_results</phrase
@@ -560,7 +560,7 @@ for example 'xx.yy.zz'
     <para
 >Сторінка наборів даних надає змогу вчителям створювати/оновлювати/вилучати певні набори даних для вправ, спрямованих на задоволення конкретних потреб, а також надсилати вправи клієнтам або вилучати зці вправи з них. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/datasets.png"/>
+          <imagedata fileref="datasets.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -581,7 +581,7 @@ for example 'xx.yy.zz'
 >Двійкова лампа</quote
 >. Загальна частина усіх редакторів завдань містить поля для введення назви набору даних, мети та рівня складності. Після заповнення цих даних кожне завдання матиме власний редактор. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_create_update.png"/>
+          <imagedata fileref="dataset_create_update.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -594,7 +594,7 @@ for example 'xx.yy.zz'
 >Настанови</quote
 > у лівому нижньому куті призведе до показу конкретних відомостей щодо того, як заповнити набір даних, якщо це потрібно. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_instructions.png"/>
+          <imagedata fileref="dataset_instructions.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -607,7 +607,7 @@ for example 'xx.yy.zz'
 >Вилучити набір даних</quote
 > та підтвердіть дію у наступному вікні: <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_delete.png"/>
+          <imagedata fileref="dataset_delete.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -620,7 +620,7 @@ for example 'xx.yy.zz'
 >Надіслати клієнтам</quote
 >. Буде показано список усіх з'єднаних клієнтів, і ви зможете вибрати ті з них, які його отримають. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dataset_send_client.png"/>
+          <imagedata fileref="dataset_send_client.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -636,7 +636,7 @@ for example 'xx.yy.zz'
 >Питання з вибором однієї правильної відповіді</quote
 >, яку буде показано лише тоді, коли пристрій містить набори даних для нього. Ця вправа надає змогу вчителям створювати анкети з будь-якої теми з вибором однієї правильної відповіді. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/gcompris_multiple-choice_questions.png"/>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -652,7 +652,7 @@ for example 'xx.yy.zz'
     <para
 >Сторінка «Діаграми» схожа на сторінку «Вправи» і надає змогу переглядати різні результати, відфільтровані за датою, групами, учнями та вправами, у вигляді діаграм. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/charts.png"/>
+          <imagedata fileref="charts.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -665,7 +665,7 @@ for example 'xx.yy.zz'
 >Учні</quote
 >, ви зможете побачити всі результати для певного учня: <mediaobject
 > <imageobject
-> <imagedata fileref="images/charts_view_results_pupil.png"/> </imageobject
+> <imagedata fileref="charts_view_results_pupil.png"/> </imageobject
 > <textobject
 > <phrase
 >charts_view_results_pupil</phrase
@@ -675,7 +675,7 @@ for example 'xx.yy.zz'
 >Вправи</quote
 >, ви зможете побачити всі результати для певної вправи: <mediaobject>
         <imageobject>
-          <imagedata fileref="images/charts_view_results_activity.png"/>
+          <imagedata fileref="charts_view_results_activity.png"/>
         </imageobject>
         <textobject>
           <phrase
@@ -690,7 +690,7 @@ for example 'xx.yy.zz'
     <para
 >За допомогою сторінки параметрів ви можете налаштувати інтерфейс і ознайомитися із деякими даними щодо поточної бази даних та сеансу. <mediaobject>
         <imageobject>
-          <imagedata fileref="images/settings.png"/>
+          <imagedata fileref="settings.png"/>
         </imageobject>
         <textobject>
           <phrase
