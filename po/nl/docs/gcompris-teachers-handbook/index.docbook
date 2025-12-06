@@ -1,0 +1,716 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>Het handboek voor beheer door docenten van GCompris</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Het team van &gcompris;</othername>
+<contrib
+>Ontwikkelaars</contrib>
+</othercredit
+> 
+
+&Freek.de.Kruijf; 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2025-11-30</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>GCompris is educatieve software voor meerdere activiteiten. Deze documentatie is het beheerhulpmiddel voor de docenten van gcompris dat wij leveren. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>onderwijs</keyword>
+<keyword
+>kinderen</keyword>
+<keyword
+>spellen</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Overzicht</title>
+  <para
+>Het doel van gcompris is te zorgen dat docenten: </para>
+  <itemizedlist>
+    <listitem
+><para
+>leerlingengroepen kunnen aanmaken en beheren.</para
+></listitem>
+    <listitem
+><para
+>specifieke werkplannen kunnen aanmaken.</para
+></listitem>
+    <listitem
+><para
+>kunnen verbinden en een werkplan naar leerlingen verzenden.</para
+></listitem>
+    <listitem
+><para
+>de werkresultaten per groep en leerling kunnen bekijken.</para
+></listitem>
+    <listitem
+><para
+>antwoorden van leerlingen kunnen analyseren.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Specificaties</title>
+  <para
+>De volgende sectie beschrijft de verschillende schermen die deze functies implementeren. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Overzicht van het hoofdscherm</title>
+    <para
+>Het hoofdscherm biedt toegang tot: </para>
+    <itemizedlist>
+      <listitem
+><para
+>Dashboardpagina.</para
+></listitem>
+      <listitem
+><para
+>Beheren van de pagina van de leerling.</para
+></listitem>
+      <listitem
+><para
+>Verbinden van pagina van apparaat.</para
+></listitem>
+      <listitem
+><para
+>Activiteiten van pagina met resultaten.</para
+></listitem>
+      <listitem
+><para
+>Beheren van pagina het gegevenssets.</para
+></listitem>
+      <listitem
+><para
+>Resultaten als een pagina met grafieken tonen.</para
+></listitem>
+      <listitem
+><para
+>Instellingenpagina.</para
+></listitem>
+      <listitem
+><para
+>De Pagina voor ontwikkeling (WIP) alleen gebruikt voor debuggen en zal hier niet beschreven worden.</para
+></listitem>
+    </itemizedlist>
+    <para
+>Standaard wordt de Dashboard-pagina weergegeven, met het aanmeldvenster en het zijbalkmenu, de toegang tot de andere pagina's is verborgen totdat er een docentaccount is aangemeld. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Een knop om de titel van de knoppen in het zijbalkmenu weer te geven/te verbergen (het sandwichpictogram) bespaart ruimte zodra de gebruiker de betekenis van elk pictogram kent.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_hamburger</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Dashboard - aanmelddialog</title>
+    <para
+>Om een ​​nieuwe aanmelding van een docent en database aan te maken, voert u de naam en het wachtwoord in. U kunt dan kiezen of u de database wilt versleutelen (om te voorkomen dat iemand deze zonder wachtwoord kan lezen). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_create_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Groepen en leerlingen beheren</title>
+    <para
+>Deze pagina biedt het aanmaken van de verschillende leerlingen en groepen voor uw klas. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pupils_groups</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Een groep aanmaken</title>
+      <para
+>Klik rechtsonder op de knop <quote
+>Groep toevoegen</quote
+> envul in het dialoogvenster de <quote
+>Naam</quote
+> en eventueel de<quote
+>Beschrijving</quote
+> in. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Een groepsnaam wijzigen of deze verwijderen</title>
+      <para
+>Om een ​​groep te bewerken of te verwijderen, beweegt u de muis over de groepslijst. De knoppen <quote
+>Bewerken</quote
+> en <quote
+>Verwijderen</quote
+> verschijnen. <mediaobject
+> <imageobject
+> <imagedata fileref="group_delete_button.png"/> </imageobject
+> <textobject
+> <phrase
+>group_delete_button</phrase
+> </textobject
+> </mediaobject
+>. Door op de knop <quote
+>Verwijderen</quote
+> te klikken kunt u de groep verwijderen. Let op: de leerlingen worden uit de groepen verwijderd, maar niet uit de database. Als u leerlingen wilt verwijderen, volgt u de volgende sectie. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_confirmation</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Een enkele leerling aanmaken</title>
+      <para
+>Klik op <quote
+>Een leerling toevoegen</quote
+> om een ​​nieuwe leerling in de database aan te maken. Daar kunt u de naam en het wachtwoord van de leerling instellen om verbinding te maken vanaf de clients. U kunt ze ook rechtstreeks toevoegen aan reeds bestaande groepen. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_create</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Meerdere leerlingen aanmaken met behulp van csv-tekenreeksen / leerlingen exporteren naar een bestand</title>
+      <para
+>U kunt een lijst met leerlingen rechtstreeks importeren met behulp van een csv-bestand. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_import</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Het exporteren van een leerlingenlijst is ook mogelijk: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Leerlingen beheren</title>
+      <para
+>De interface biedt ook knoppen om leerlingen te bewerken, toe te voegen of te verwijderen uit groepen. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_add_to_group</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_remove_from_group</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>U kunt ook leerlingen verwijderen. Houd er rekening mee dat het verwijderen van een leerling niet de groep verwijdert. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_delete</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Apparaten verbinden</title>
+    <para
+>Zodra de database klaar is, is het tijd om met de verschillende clients te communiceren. De pagina <quote
+>Apparaten verbinden</quote
+> toont de verschillende groepen en leerlingen. Standaard is er geen groep geselecteerd, dus alle leerlingen zijn zichtbaar. Door een groep te selecteren, worden de zichtbare leerlingen gefilterd om alleen met deze specifieke groep te werken. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>connect_devices</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Configuratie van de server- en clientapparaten</title>
+      <para
+>De docent moet de server en clientapparaten configureren waarmee hij verbinding wil maken voordat hij verbinding kan maken. Alle apparaten moeten op hetzelfde lokale netwerk zijn aangesloten. Ga op de server naar de pagina <quote
+>Instellingen</quote
+> en kies een unieke <quote
+>Server-ID</quote
+> (in ieder geval uniek voor het lokale netwerk) en een <quote
+>Poort</quote
+> (als u deze niet weet, behoudt u de standaardinstelling). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>instellingen</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Ga op de GCompris-apparatenpagina vanuit het hoofdmenu naar de pagina <quote
+>Configuratie</quote
+> en schuif naar beneden om de knop <quote
+>Serverconfiguratie docent</quote
+> te vinden. <mediaobject
+> <imageobject
+> <imagedata fileref="gcompris_teacher_config_button.png"/> </imageobject
+> <textobject
+> <phrase
+>gcompris_teacher_config_button</phrase
+> </textobject
+> </mediaobject
+>. Controleer na het klikken of de instellingen gelijk zijn aan die van de server: <mediaobject
+> <imageobject
+> <imagedata fileref="gcompris_teacher_settings.png"/> </imageobject
+> <textobject
+> <phrase
+>gcompris_teacher_settings</phrase
+> </textobject
+> </mediaobject
+> Als het apparaat waarop de server draait of de client een firewall heeft, zorg er dan voor dat de gekozen poort in de configuratie van de firewall is geopend, zodat de apparaten met elkaar kunnen communiceren. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Werkmethode van de dagelijkse verbinding</title>
+      <para
+>De werkmethode van de verbinding is als volgt: <emphasis
+>De docent vraagt ​​de leerlingen om hun apparaten aan te zetten en GCompris te starten. Vervolgens drukt u op de pagina <quote
+>Apparaten verbinden</quote
+> op de knop <quote
+>Apparaten verbinden</quote
+>.</emphasis
+> Op de clientapparaten verschijnt een dialoogvenster met de vraag om de verbinding met de server te bevestigen. Let op: clientapparaten moeten in het hoofdmenu van GCompris staan, niet op een activiteits- of configuratiepagina. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Na bevestiging van de leerlingen selecteert de leerkracht welke aanmeldgegevens hij wil verzenden uit de lijst <quote
+>Leerlingen</quote
+> en drukt op <quote
+>Aanmeldgegevens verzenden</quote
+>.</para
+></listitem>
+          <listitem
+><para
+>De clientapparaten tonen een nieuw dialoogvenster waarin ze de gewenste aanmelding kunnen selecteren. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Zodra u dit hebt bevestigd, wordt een tweede dialoogvenster geopend waarin u het wachtwoord kunt invoeren. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Als het wachtwoord juist is, ziet de client een groene knop op de balk, wat aangeeft dat de verbinding succesvol is. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>En de server zal een melding krijgen: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>De verschillende kleuren zijn: <itemizedlist>
+          <listitem
+><para
+>Groen: verbonden</para
+></listitem>
+          <listitem
+><para
+>Rood: fout wachtwoord</para
+></listitem>
+          <listitem
+><para
+>Grijs: verbinding verbroken (op een gegeven moment was er verbinding, maar de verbinding werd verbroken)</para
+></listitem>
+          <listitem
+><para
+>Transparant: niemand heeft geprobeerd verbinding te maken met deze aanmeldgegevens.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Activiteiten</title>
+    <para
+>Op deze pagina kunt u de verschillende resultaten bekijken, gefilterd op datum, groepen, leerlingen en activiteiten. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activiteiten</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>De volgende afbeelding toont de resultaten van de activiteit <quote
+>Verticaal aftrekken</quote
+> (elke activiteit die gegevens naar de server verzendt, heeft een eigen visualisatie). <mediaobject
+> <imageobject
+> <imagedata fileref="activities_results.png"/> </imageobject
+> <textobject
+> <phrase
+>activities_results</phrase
+> </textobject
+> </mediaobject
+> We kunnen zien dat de leerling bij de eerste poging een fout antwoord heeft gegeven en bij de tweede poging een goed antwoord en de antwoorddetails om de fouten op te sporen. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Gegevensverzamelingen</title>
+    <para
+>Op de pagina Gegevenssets kunnen docenten specifieke gegevenssets voor de activiteiten aanmaken, bijwerken en verwijderen om aan specifieke behoeften te voldoen en deze naar/van de cliënten verzenden/verwijderen. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gegevensverzamelingen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Een beperking is vooralsnog dat alleen activiteiten die het GCompris-gegevenssetformaat volgen, bewerkt kunnen worden (dus bijvoorbeeld geen <quote
+>Grammaticale klassen</quote
+> of <quote
+>Vallende woorden</quote
+>). De lijst met ondersteunde activiteiten (die gegevens kunnen versturen of een gegevensset-bewerker hebben) vindt u op deze pagina van onze ontwikkelingswiki: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Hier is een voorbeeld voor de activiteit <quote
+>Binaire lamp</quote
+>. Het algemene onderdeel van alle activiteitenbewerkers bevat velden om de naam van de gegevensset, het doel en de moeilijkheidsgraad in te voeren. Vervolgens heeft elke activiteit een specifieke bewerker. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>De knop <quote
+>Instructies</quote
+> linksonder is bedoeld om specifieke informatie te geven over hoe u de gegevensset, indien nodig, kunt invullen. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Als u een gegevensset wilt verwijderen: selecteer deze, klik op de knop <quote
+>Gegevensset verwijderen</quote
+> en bevestig in het volgende dialoogvenster: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Als u clients hebt verbonden, wilt u hen mogelijk een specifieke gegevensset sturen die beschikbaar moet zijn aan hun kant. Selecteer de gegevensset en klik op de knop <quote
+>Verzenden naar clients</quote
+>. De lijst met alle verbonden klanten wordt weergegeven en u kunt selecteren welke de gegevensset ontvangt. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Specifieke activiteiten voor de server</title>
+      <para
+>We hebben de activiteit <quote
+>Meerkeuzevragen</quote
+> gecreëerd, die alleen zichtbaar is wanneer het apparaat gegevenssets daarvoor bevat. Met deze activiteit kunnen docenten meerkeuzevragenlijsten over elk onderwerp maken.  <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Grafieken</title>
+    <para
+>De pagina Grafieken is vergelijkbaar met de pagina Activiteiten en biedt de mogelijkheid om de verschillende resultaten, gefilterd op datum, groepen, leerlingen en activiteiten, weer te geven in grafieken. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>grafieken</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>De visualisatie is momenteel nog beperkt, maar zal worden verbeterd op basis van de terugkoppeling van docenten. Nadat u op een activiteit in de grafiek hebt geklikt, verschijnt er een weergave die vergelijkbaar is met die op de pagina Activiteiten. Als het tabblad <quote
+>Leerlingen</quote
+> is geselecteerd, kunt u alle resultaten voor een specifieke leerling bekijken: <mediaobject
+> <imageobject
+> <imagedata fileref="charts_view_results_pupil.png"/> </imageobject
+> <textobject
+> <phrase
+>charts_view_results_pupil</phrase
+> </textobject
+> </mediaobject
+>. Als het tabblad <quote
+>Activiteiten</quote
+> is geselecteerd, kunt u alle resultaten voor een specifieke activiteit bekijken: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Instellingen</title>
+    <para
+>Op de instellingenpagina kunt u de interface aanpassen en informatie over de huidige gegevensbase en sessie opvragen. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>instellingen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Dankbetuigingen en licentie</title>
+
+<para
+>&gcompris; </para>
+<para
+>Programma copyright © 2000-2025 Timothée Giet en anderen </para>
+
+&meld.fouten;&vertaling.freek; &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
