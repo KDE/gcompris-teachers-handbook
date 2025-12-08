@@ -17,3 +17,4 @@ find_package(KF6DocTools REQUIRED)
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 add_subdirectory(doc)
+kdoctools_install(po)
