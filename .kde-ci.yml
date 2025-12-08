@@ -5,7 +5,3 @@ Dependencies:
     'require':
       'frameworks/extra-cmake-modules': '@latest-kf6'
       'frameworks/kdoctools': '@latest-kf6'
-
-Options:
-  only-setup-environment: True
-  only-build: True
