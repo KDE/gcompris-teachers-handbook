@@ -98,7 +98,7 @@ GCompris is a multi-activity educational software. This documentation is for the
       <listitem><para>Dashboard page.</para></listitem>
       <listitem><para>Manage pupils page.</para></listitem>
       <listitem><para>Connect devices page.</para></listitem>
-      <listitem><para>Follow activities results page .</para></listitem>
+      <listitem><para>Follow activities results page.</para></listitem>
       <listitem><para>Manage datasets page.</para></listitem>
       <listitem><para>Display results as charts page.</para></listitem>
       <listitem><para>Settings page.</para></listitem>
@@ -188,7 +188,10 @@ GCompris is a multi-activity educational software. This documentation is for the
           <textobject>
             <phrase>group_delete_button</phrase>
           </textobject>
-        </mediaobject> Clicking on the <quote>Delete</quote>
+        </mediaobject>
+      </para>
+      <para>
+        Clicking on the <quote>Delete</quote>
         button will allow you to delete the group. Note that the pupils
         will be removed from the groups but not deleted from the
         database. If you want to remove pupils, follow the next section.
@@ -329,6 +332,8 @@ GCompris is a multi-activity educational software. This documentation is for the
             <phrase>gcompris_teacher_settings</phrase>
           </textobject>
         </mediaobject>
+      </para>
+      <para>
         Also, if the device running the server or the client has a firewall, make
         sure to open the chosen port in the firewall configuration to let
         the devices communicate.
