@@ -476,7 +476,7 @@ GCompris is a multi-activity educational software. This documentation is for the
       <ulink  url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"/>
     </para>
     <para>
-      Here is an example for the <quote>Binary Bulb</quote> activity. The
+      Here is an example for the <quote>Binary bulbs</quote> activity. The
       common part of all activity editors contains fields to enter the dataset name,
       the goal and the difficulty. Then, each activity will have a
       specific editor. <mediaobject>
