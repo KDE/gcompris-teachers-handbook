@@ -231,15 +231,18 @@ for example 'xx.yy.zz'
       <title
 >Modifica un nom de grup o el suprimeix</title>
       <para
->Per a editar o suprimir un grup, passeu-hi per sobre a la llista de grups i apareixeran els botons «Edita» i «Suprimeix». <mediaobject
-> <imageobject
-> <imagedata fileref="group_delete_button.png"/> </imageobject
-> <textobject
-> <phrase
->group_delete_button</phrase
-> </textobject
-> </mediaobject
-> Fent clic al botó «Suprimeix» es permetrà suprimir el grup. Tingueu en compte que els alumnes s'eliminaran dels grups però no se suprimiran de la base de dades. Si voleu eliminar els alumnes, seguiu la secció següent. <mediaobject>
+>Per a editar o suprimir un grup, passeu-hi per sobre de la llista de grups i apareixeran els botons «Edita» i «Suprimeix». <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>En fer clic al botó «Suprimeix» podreu suprimir el grup. Tingueu en compte que els alumnes s'eliminaran dels grups però no s'eliminaran de la base de dades. Si voleu eliminar els alumnes, aneu a la secció següent. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
@@ -356,23 +359,29 @@ for example 'xx.yy.zz'
         </mediaobject>
       </para>
       <para
->A la banda dels dispositius del GCompris, aneu a la pàgina «Configuració» del menú principal i desplaceu-vos a la part inferior per a trobar el botó «Configuració del servidor de professors». <mediaobject
-> <imageobject
-> <imagedata fileref="gcompris_teacher_config_button.png"/> </imageobject
-> <textobject
-> <phrase
->gcompris_teacher_config_button</phrase
-> </textobject
-> </mediaobject
-> Després de fer-hi clic, assegureu-vos de tenir la mateixa configuració que el servidor: <mediaobject
-> <imageobject
-> <imagedata fileref="gcompris_teacher_settings.png"/> </imageobject
-> <textobject
-> <phrase
->gcompris_teacher_settings</phrase
-> </textobject
-> </mediaobject
-> També, si el dispositiu que executa el servidor o el client té un tallafoc, assegureu-vos d'obrir el port escollit a la configuració del tallafoc per a permetre que els dispositius es comuniquin. </para>
+>A la part dels dispositius del GCompris, aneu a la pàgina «Configuració» del menú principal i desplaceu-vos a la part inferior per a trobar el botó «Configuració del servidor de professors». <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_config_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Després de fer-hi clic, assegureu-vos de tenir la mateixa configuració que al servidor: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>A més, si el dispositiu que executa el servidor o el client té un tallafoc, assegureu-vos d'obrir el port escollit a la configuració del tallafoc per a permetre que els dispositius es comuniquin. </para>
     </sect2>
     <sect2 id="daily-connection-workflow">
       <title
@@ -494,15 +503,18 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->La imatge següent mostra els resultats de l'activitat de «Resta vertical» (cada activitat que gestiona l'enviament de dades al servidor té la seva pròpia visualització). <mediaobject
-> <imageobject
-> <imagedata fileref="activities_results.png"/> </imageobject
-> <textobject
-> <phrase
->activities_results</phrase
-> </textobject
-> </mediaobject
-> Podem veure l'alumne que ha introduït una resposta incorrecta en el primer intent i una resposta correcta en el segon intent, i els detalls de les respostes per a detectar els errors. </para>
+>La imatge següent mostra el resultat de l'activitat «Resta vertical» (cada activitat que gestiona l'enviament de dades al servidor té la seva pròpia visualització). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities_results</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Podem veure que l'alumne va introduir una resposta incorrecta en el primer intent i una resposta correcta en el segon intent, i els detalls de les respostes per a detectar errors. </para>
   </sect1>
   <sect1 id="dataset-handling">
     <title
@@ -597,15 +609,18 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Per ara, la visualització és força limitada, però es millorarà en funció dels comentaris del professorat. Després de fer clic sobre una activitat del gràfic, hi ha una vista similar a la que es mostra a la pàgina d'activitats. Si la pestanya «Alumnes» està seleccionada, podeu veure tots els resultats d'un alumne específic: <mediaobject
-> <imageobject
-> <imagedata fileref="charts_view_results_pupil.png"/> </imageobject
-> <textobject
-> <phrase
->charts_view_results_pupil</phrase
-> </textobject
-> </mediaobject
-> Si la pestanya «Activitats» està seleccionada, podeu veure tots els resultats d'una activitat específica: <mediaobject>
+>Per ara, la visualització és força limitada, però es millorarà en funció dels comentaris del professorat. Després de fer clic sobre una activitat del gràfic, hi ha una vista similar a la que es mostra a la pàgina d'activitats. Si la pestanya «Alumnes» està seleccionada, podeu veure tots els resultats d'un alumne específic: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si està seleccionada la pestanya «Activitats», podeu veure tots els resultats d'una activitat específica: <mediaobject>
         <imageobject>
           <imagedata fileref="charts_view_results_activity.png"/>
         </imageobject>

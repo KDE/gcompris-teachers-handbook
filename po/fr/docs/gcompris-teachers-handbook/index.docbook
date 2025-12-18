@@ -1,0 +1,747 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % French "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>Le manuel du logiciel d'administration de GCompris</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>L'équipe de &gcompris;</othername>
+<contrib
+>Développeurs</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><surname
+>L'équipe de traduction francophone de &kde;</surname
+><affiliation
+><address
+><email
+>kde-francophone@kde.org</email
+></address
+></affiliation
+><contrib
+>Traducteur</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2025-11-30</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; est un jeu éducatif multi-activités. Cette documentation décrit le logiciel d'administration gcompris-teachers que l'équipe fournit. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>education</keyword>
+<keyword
+>enfants</keyword>
+<keyword
+>jeux</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Vue d'ensemble</title>
+  <para
+>L'objectif de gcompris-teachers est de permettre aux professeurs de : </para>
+  <itemizedlist>
+    <listitem
+><para
+>créer et gérer des groupes d'élèves.</para
+></listitem>
+    <listitem
+><para
+>créer des plans de travail.</para
+></listitem>
+    <listitem
+><para
+>connecter et envoyer des plans de travail aux élèves.</para
+></listitem>
+    <listitem
+><para
+>voir les résultats du travail par groupes et par élèves.</para
+></listitem>
+    <listitem
+><para
+>analyser les réponses des élèves.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Spécifications</title>
+  <para
+>La section suivante décrit les différents écrans du logiciel </para>
+  <sect1 id="main-screen-overview">
+    <title
+>L'écran principal</title>
+    <para
+>L'écran principal permet d'accéder à : </para>
+    <itemizedlist>
+      <listitem
+><para
+>Tableau de bord.</para
+></listitem>
+      <listitem
+><para
+>Page de gestion des élèves.</para
+></listitem>
+      <listitem
+><para
+>Page de connexion aux appareils?</para
+></listitem>
+      <listitem
+><para
+>Page de suivi de résultats.</para
+></listitem>
+      <listitem
+><para
+>Page de gestion des jeux de données.</para
+></listitem>
+      <listitem
+><para
+>Page d'affichage des résultats avec des graphes.</para
+></listitem>
+      <listitem
+><para
+>Page de configuration.</para
+></listitem>
+      <listitem
+><para
+>Page de développement qui est utilisée seulement pour du déboggage et ne sera pas décrite ici.</para
+></listitem>
+    </itemizedlist>
+    <para
+>Par défaut, le tableau de bord est affiché, et contient les champs pour se connecter. Le menu sur le côté permettant d'accéder aux autres écrans est caché tant qu'aucun professeur n'est connecté. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>écran_principal</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Un bouton pour afficher/cacher le nom des écrans dans le menu (l'icone sandwich) permet de gagner un peu d'espace pour le logiciel une fois que le professeur connait la signification de chaque icone.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>icone hamburger de l'écran principal</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Tableau de bord - fenêtre de connexion</title>
+    <para
+>Pour créer un nouveau compte professeur et sa base de données, remplissez le nom et le mot de passe. Vous pourrez ensuite choisir si vous voulez que la base de données soit chiffrée (ce qui permet d'empêcher d'avoir les données des élèves en clair dans la base de données). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>écran principal de la création de la base de données</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Gérer les groupes et les élèves</title>
+    <para
+>Cette page permet de créer les différents élèves et groupes pour votre classe. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>groupes/élèves</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Créer un groupe</title>
+      <para
+>Cliquez sur le bouton <quote
+>Ajouter un groupe</quote
+> en bas à droite et dans la fenêtre remplissez le <quote
+>Nom</quote
+> and la <quote
+>Description</quote
+> (champ optionnel). <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>ajouter un groupe</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Modifier le nom d'un groupe ou le supprimer</title>
+      <para
+>Pour mettre à jour ou supprimer un groupe, survolez le dans la liste des groupes et les boutons <quote
+>Modifier</quote
+> et <quote
+>Supprimer</quote
+> vont apparaitre. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>bouton de suppression d'un groupe</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Cliquer sur le bouton <quote
+>Supprimer</quote
+> permettra de supprimer le groupe. Les élèes appartenant à des groupes supprimés ne seront pas supprimés, si vous souhaitez aussi retirer les élèves de la base de données, veuillez suivre la section suivante. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>confirmation de la suppression d'un groupe</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Créer un seul élève</title>
+      <para
+>Cliquez sur <quote
+>Ajouter un élève</quote
+> pour créer un nouvel élève dans la base de données. Vous pouvez dans cette fenêtre mettre un nom et mot de passe à l'élève pour qu'il puisse se connecter à partir de son appareil. Vous pouvez aussi l'ajouter dans des groupes qui existent déjà. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>créer un élève</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Créer plusieurs élèves en utilisant un fichier csv / exporter les élèves dans un fichier</title>
+      <para
+>Vous pouvez aussi directement importer une liste d'élèves en utilisant un fichier au format csv. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>import d'élèves</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Exporter une liste d'élèves est aussi possible : <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>export d'élèves en csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Gestion des élèves</title>
+      <para
+>L'interface propose aussi des boutons pour éditer les élèves, les ajouter ou retirer des groupes. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>ajouter un élève à un groupe</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>retirer un élève d'un groupe</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Vous pouvez aussi supprimer des élèves de votre base de données. Veuillez noter que supprimer un élève ne supprime pas les groupes auxquels il appartient. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>suppression d'élève</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Connecter les appareils</title>
+    <para
+>Une fois la base de données remplie, vous pouvez maintenant communiquer avec les différents appareils. La page <quote
+>Connexion appareils</quote
+> affiche les différents groupes et élèves. Par défaut, aucun groupe n'est sélectionné et tous les élèves sont visibles. Sélectionner un groupe filtrera les élèves visibles pour ne seulement afficher que ceux qui font partie de ce groupe. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>connecter les appareils</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Configuration du serveur et des appareils</title>
+      <para
+>Le professseur doit configurer le serveur et les appareils des élèves afin qu'ils puissent communiquer entre eux. Tous les appareils doivent être connectés au même réseau local. Dans le serveur, aller sur la page <quote
+>Configuration</quote
+> et choisissez un <quote
+>identifiant de serveur</quote
+> unique (au moins sur le réseau local) et un <quote
+>port</quote
+> (si vous ne savez pas, gardez la valeur par défaut). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>configuration</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Côté appareil GCompris, allez dans le menu de <quote
+>Configuration</quote
+> dans le menu principal et descendez à la fin pour trouver le bouton <quote
+>Configuration du serveur</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>bouton de configuration de gcompris_teachers</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Après avoir cliqué sur le bouton, vérifiez que vous avez bien la même configuration que le serveur : <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>configuration gcompris_teacher</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Si le serveur ou le client a un pare-feu, veuillez vous assurer que le port choisi dans la configuration du serveur permette la communication entre les différents appareils. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Routine de connexion quotidienne</title>
+      <para
+>La routine de connexion est la suivante : <emphasis
+>le professeur demande aux élèves d'allumer leurs appareils et démarrer GCompris, puis à partir de la page <quote
+>Connecter les appareils</quote
+>, appuyez sur le bouton <quote
+>Connecter les appareils</quote
+>.</emphasis
+> Sur les appareils des élèves, une fenêtre va s'afficher pour confirmer la demande de connexion au serveur. Pour que cela fonctionne, assurez-vous que les élèves aient GCompris sur la page du menu principal et ne sont ni dans une activité, ni la page de configuration. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connexion à GCompris</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Après confirmation des élèves, le professeur choisit quels sont les comptes qu'il souhaite envoyer à partir de la liste <quote
+>Élèves</quote
+> et appuie sur le bouton <quote
+>Envoyer la liste des comptes</quote
+></para
+></listitem>
+          <listitem
+><para
+>Les appareils vont maintenant afficher une nouvelle fenêtre permettant de choisir le compte sur lequel ils veulent se connecter. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>choix du compte dans GCompris</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Une fois validé, une deuxième fenêtre s'ouvrira pour demander le mot de passe. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>mot de passe dans GCompris</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Si le mot de passe est correct, l'indicateur dans la barre de GCompris passera au vert. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connexion ok avec le serveur</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Et le serveur recevra une notification : <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connexion ko avec le serveur car mauvais mot de passe</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Les différentes couleurs sont : <itemizedlist>
+          <listitem
+><para
+>Vert : connecté</para
+></listitem>
+          <listitem
+><para
+>Rouge : mauvais mot de passe</para
+></listitem>
+          <listitem
+><para
+>Gris : déconnecté (l'appareil était connecté mais est devenu déconnecté pendant la session)</para
+></listitem>
+          <listitem
+><para
+>Transparent : aucun élève n'a essayé de se connecter avec ce compte.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connexion ko avec le serveur car déconnexion ou non connecté</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Activités</title>
+    <para
+>Cette page permet d'afficher les résultats filtrés par date, groupe, élève et activité. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activités</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>L'image suivante montre les résultats pour l'activité <quote
+>Soustraction verticale</quote
+> (chaque activité gérant l'envoi de données au serveur à un affichage personnalisé). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>résultats des activités</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Nous pouvons voir que l'élève a rempli une une réponse incorrecte au premier essai puis une bonne au deuxième, et les réponses nous détaillent où est l'erreur. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Jeux de données</title>
+    <para
+>La page de jeux de données permet aux professeurs de créer/mettre à jour ou supprimer des jeux de données créés spéciquement pour certaines activités, ainsi que de les envoyer et retirer des clients. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>jeux de données</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Une limitation actuelle est que seules les activités suivant le format « Data.qml » peuvent avoir des jeux de données (donc pas encore possible pour les activités <quote
+>Classes grammaticales</quote
+> ou <quote
+>Les mots qui tombent</quote
+> par exemple). Vous pouvez trouver la liste des activités qui prennent en charge la personnalisation sur la page de notre wiki : <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Voici un exemple pour l'activité <quote
+>Les nombres binaires</quote
+>. Une partie générique partagée par tous les éditeurs permet de remplir les champs correspondant au nom du jeu de données, son but et sa difficulté. Ensuite, chaque activité aura un éditeur personnalisé. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>créer/mettre à jour les jeux de données</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Le bouton <quote
+>Instructions</quote
+> en bas à gauche donne des informations spécifiques sur comment remplir les données quand c'est nécessaire. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>instructions pour les jeux de données</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si vous souhaitez supprimer un jeu de données : sélectionnez le, appuyez sur le bouton <quote
+>Supprimer le jeu de données</quote
+> et confirmez dans la fenêtre suivante : <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>suppression de jeux de données</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si vous avez des clients connectés, vous pouvez vouloir leur envoyer des jeux de données. Sélectionnez les jeux de données que vous souhaitez envoyer et appuyez sur le bouton <quote
+>Envoyer aux clients</quote
+>. La liste des clients connectés va s'afficher et vous pourrez sélectionner à qui vous souhaitez envoyer les jeux de données. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>envoi de jeux de données</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Activités spécifiques au serveur</title>
+      <para
+>Nous avons développé l'activité <quote
+>Questions à choix multiples</quote
+> qui est seulement visible sur les appareils lorsqu'ils contiennent des jeux de données spécifiques à cette activité. Cette activité permet aux professeurs de créer des questionnaires à choix multiples sur n'importe quel sujet. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activité questions choix multiples</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Graphes</title>
+    <para
+>La page des graphes ressemble pour le moment à la page des activités et permet d'afficher les résultats en filtrant soit par la date, les groupes, les élèves ou les activités sous forme de graphes. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>graphes</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Pour le moment, la visualisation est très limitée mais sera améliorée dès qu'on aura des retours de professeurs. Après avoir cliqué sur une activité, la visualisation est similaire à celle de la page d'activités. Si l'onglet <quote
+>élèves</quote
+> est actif, vous verrez les résultats pour un élève spécifique : <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>résultat pour un élève</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si l'onglet <quote
+>Activités</quote
+> est actif, vous verrez les résultats pour une activité spécifique : <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>résultat pour une activité</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Configuration</title>
+    <para
+>La page de configuration permet de personnaliser l'interface et avoir des informations supplémentaires sur la base de données et la session en cours. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>configuration</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Remerciements et licence</title>
+
+<para
+>&gcompris; </para>
+<para
+>Licence du programme pour 2000 - 2025 : Timothée Giet et autres </para>
+
+<para
+>Traduction française : l'équipe de traduction francophone de KDE <email
+>kde-francophone@kde.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

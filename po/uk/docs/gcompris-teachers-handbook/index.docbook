@@ -255,15 +255,18 @@ for example 'xx.yy.zz'
 >Змінити</quote
 > і <quote
 >Вилучити</quote
->. <mediaobject
-> <imageobject
-> <imagedata fileref="group_delete_button.png"/> </imageobject
-> <textobject
-> <phrase
->group_delete_button</phrase
-> </textobject
-> </mediaobject
-> Натискання кнопки <quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Кнопка вилучення групи</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Натискання кнопки <quote
 >Вилучити</quote
 > надасть змогу вилучити групу. Зверніть увагу, що учнів буде видалено з груп, але не з бази даних. Якщо ви хочете вилучити записи учнів, виконайте дії з наступного розділу. <mediaobject>
           <imageobject>
@@ -396,23 +399,29 @@ for example 'xx.yy.zz'
 >Налаштування</quote
 > у головному меню та погортайте вниз, щоб знайти кнопку <quote
 >Налаштування сервера вчителя</quote
->. <mediaobject
-> <imageobject
-> <imagedata fileref="gcompris_teacher_config_button.png"/> </imageobject
-> <textobject
-> <phrase
->gcompris_teacher_config_button</phrase
-> </textobject
-> </mediaobject
-> Після натискання переконайтеся, що налаштування такі ж, як і на сервері: <mediaobject
-> <imageobject
-> <imagedata fileref="gcompris_teacher_settings.png"/> </imageobject
-> <textobject
-> <phrase
->gcompris_teacher_settings</phrase
-> </textobject
-> </mediaobject
-> Також, якщо на пристрої, на якому працює сервер або клієнт, працює брандмауер, переконайтеся, що ви відкрили вибраний порт у налаштуваннях брандмауера, щоб дозволити пристроям взаємодіяти. </para>
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Кнопка налаштовування для учителя у gcompris</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Після натискання переконайтеся, що налаштування такі ж, як і на сервері: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Параметри учителя у gcompris</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Також, якщо на пристрої, на якому працює сервер або клієнт, працює брандмауер, переконайтеся, що ви відкрили вибраний порт у налаштуваннях брандмауера, щоб дозволити пристроям взаємодіяти. </para>
     </sect2>
     <sect2 id="daily-connection-workflow">
       <title
@@ -544,15 +553,18 @@ for example 'xx.yy.zz'
     <para
 >На наведеному нижче зображенні показано результати для вправи <quote
 >Вертикальне віднімання</quote
-> (у кожної вправи, яка обробляє надсилання даних на сервер, є власна візуалізація). <mediaobject
-> <imageobject
-> <imagedata fileref="activities_results.png"/> </imageobject
-> <textobject
-> <phrase
->activities_results</phrase
-> </textobject
-> </mediaobject
-> Ми бачимо, що учень ввів неправильну відповідь з першої спроби та правильну відповідь з другої, а також подробиці відповідей, які надають змогу виявити помилки. </para>
+> (у кожної вправи, яка обробляє надсилання даних на сервер, є власна візуалізація) <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Результати вправи</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Ми бачимо, що учень ввів неправильну відповідь з першої спроби та правильну відповідь з другої, а також подробиці відповідей, які надають змогу виявити помилки. </para>
   </sect1>
   <sect1 id="dataset-handling">
     <title
@@ -578,7 +590,7 @@ for example 'xx.yy.zz'
 > </para>
     <para
 >Ось приклад для завдання <quote
->Двійкова лампа</quote
+>Двійкові лампи</quote
 >. Загальна частина усіх редакторів завдань містить поля для введення назви набору даних, мети та рівня складності. Після заповнення цих даних кожне завдання матиме власний редактор. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_create_update.png"/>
@@ -663,15 +675,18 @@ for example 'xx.yy.zz'
     <para
 >У поточній версії візуалізацію обмежено, але її буде удосконалено, залежно від відгуків вчителів. Після натискання на пункті вправи на діаграмі з’явиться панель, подібна до тієї, яку показано на сторінці «Вправи». Якщо вибрано вкладку <quote
 >Учні</quote
->, ви зможете побачити всі результати для певного учня: <mediaobject
-> <imageobject
-> <imagedata fileref="charts_view_results_pupil.png"/> </imageobject
-> <textobject
-> <phrase
->charts_view_results_pupil</phrase
-> </textobject
-> </mediaobject
-> Якщо вибрано вкладку <quote
+>, ви зможете побачити всі результати для певного учня: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Діаграма перегляду результатів виконання вправи учнем</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Якщо вибрано вкладку <quote
 >Вправи</quote
 >, ви зможете побачити всі результати для певної вправи: <mediaobject>
         <imageobject>
