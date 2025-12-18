@@ -119,7 +119,7 @@ GCompris is a multi-activity educational software. This documentation is for the
     </para>
     <para>
       A button to show/hide the title of the buttons in the side menu bar
-      (the sandwich icon) allows to save some space once the user knows the
+      (the hamburger icon) allows to save some space once the user knows the
       meaning of each icon.<mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_hamburger.png" />
