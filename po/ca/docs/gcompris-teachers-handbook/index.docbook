@@ -172,7 +172,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Un botó per a mostrar/ocultar el títol dels botons de la barra de menús lateral (la icona d'entrepà) permet estalviar espai una vegada que l'usuari conegui el significat de cada icona.<mediaobject>
+>Un botó per a mostrar/ocultar el títol dels botons de la barra de menús lateral (la icona d'hamburguesa) permet estalviar espai una vegada que l'usuari conegui el significat de cada icona.<mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>

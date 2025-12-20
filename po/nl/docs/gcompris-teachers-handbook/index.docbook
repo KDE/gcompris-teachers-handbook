@@ -141,7 +141,7 @@ for example 'xx.yy.zz'
 ></listitem>
       <listitem
 ><para
->Activiteiten van pagina met resultaten.</para
+>Pagina met resultaten van volgen van activiteiten.</para
 ></listitem>
       <listitem
 ><para
@@ -172,7 +172,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Een knop om de titel van de knoppen in het zijbalkmenu weer te geven/te verbergen (het sandwichpictogram) bespaart ruimte zodra de gebruiker de betekenis van elk pictogram kent.<mediaobject>
+>Een knop om de titel van de knoppen in het zijbalkmenu weer te geven/te verbergen (het hamburgerpictogram) bespaart ruimte zodra de gebruiker de betekenis van elk pictogram kent.<mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>
@@ -237,21 +237,24 @@ for example 'xx.yy.zz'
       <title
 >Een groepsnaam wijzigen of deze verwijderen</title>
       <para
->Om een ​​groep te bewerken of te verwijderen, beweegt u de muis over de groepslijst. De knoppen <quote
+>Om een ​​groep te bewerken of te verwijderen, beweeg de muis eroverheen in de groepenlijst. De knoppen <quote
 >Bewerken</quote
 > en <quote
 >Verwijderen</quote
-> verschijnen. <mediaobject
-> <imageobject
-> <imagedata fileref="group_delete_button.png"/> </imageobject
-> <textobject
-> <phrase
->group_delete_button</phrase
-> </textobject
-> </mediaobject
->. Door op de knop <quote
+> verschijnen dan. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>groep_verwijder_knop</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Door op de knop <quote
 >Verwijderen</quote
-> te klikken kunt u de groep verwijderen. Let op: de leerlingen worden uit de groepen verwijderd, maar niet uit de database. Als u leerlingen wilt verwijderen, volgt u de volgende sectie. <mediaobject>
+> te klikken, kunt u de groep verwijderen. Houd er rekening mee dat de leerlingen uit de groepen worden verwijderd, maar niet uit de database. Als u leerlingen wilt verwijderen, volg dan de instructies in het volgende gedeelte. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
@@ -378,27 +381,33 @@ for example 'xx.yy.zz'
         </mediaobject>
       </para>
       <para
->Ga op de GCompris-apparatenpagina vanuit het hoofdmenu naar de pagina <quote
+>Ga op de zijde met GCompris-apparaten naar de pagina <quote
 >Configuratie</quote
-> en schuif naar beneden om de knop <quote
->Serverconfiguratie docent</quote
-> te vinden. <mediaobject
-> <imageobject
-> <imagedata fileref="gcompris_teacher_config_button.png"/> </imageobject
-> <textobject
-> <phrase
->gcompris_teacher_config_button</phrase
-> </textobject
-> </mediaobject
->. Controleer na het klikken of de instellingen gelijk zijn aan die van de server: <mediaobject
-> <imageobject
-> <imagedata fileref="gcompris_teacher_settings.png"/> </imageobject
-> <textobject
-> <phrase
->gcompris_teacher_settings</phrase
-> </textobject
-> </mediaobject
-> Als het apparaat waarop de server draait of de client een firewall heeft, zorg er dan voor dat de gekozen poort in de configuratie van de firewall is geopend, zodat de apparaten met elkaar kunnen communiceren. </para>
+> vanuit het hoofdmenu en scroll naar beneden om de knop <quote
+>Docentenserverconfiguratie</quote
+> te vinden. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_docenten_configuratie_knop</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Zorg er na het klikken voor dat u dezelfde instellingen hebt als de server: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_docenten_instellingen</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Als het apparaat waarop de server of de client draait een firewall heeft, zorg er dan voor dat u de gekozen poort in de firewallconfiguratie opent, zodat de apparaten met elkaar kunnen communiceren. </para>
     </sect2>
     <sect2 id="daily-connection-workflow">
       <title
@@ -528,17 +537,20 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->De volgende afbeelding toont de resultaten van de activiteit <quote
+>De volgende afbeelding toont de resultaten voor de activiteit <quote
 >Verticaal aftrekken</quote
-> (elke activiteit die gegevens naar de server verzendt, heeft een eigen visualisatie). <mediaobject
-> <imageobject
-> <imagedata fileref="activities_results.png"/> </imageobject
-> <textobject
-> <phrase
->activities_results</phrase
-> </textobject
-> </mediaobject
-> We kunnen zien dat de leerling bij de eerste poging een fout antwoord heeft gegeven en bij de tweede poging een goed antwoord en de antwoorddetails om de fouten op te sporen. </para>
+> (elke activiteit die gegevens naar de server zendt, heeft zijn eigen visualisatie). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activiteiten_resultaten</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>We kunnen zien dat de leerling bij de eerste poging een onjuist antwoord heeft gegeven en bij de tweede poging een correct antwoord en de details van de antwoorden maken het mogelijk om de fouten te ontdekken. </para>
   </sect1>
   <sect1 id="dataset-handling">
     <title
@@ -564,7 +576,7 @@ for example 'xx.yy.zz'
 > </para>
     <para
 >Hier is een voorbeeld voor de activiteit <quote
->Binaire lamp</quote
+>Binaire lampen</quote
 >. Het algemene onderdeel van alle activiteitenbewerkers bevat velden om de naam van de gegevensset, het doel en de moeilijkheidsgraad in te voeren. Vervolgens heeft elke activiteit een specifieke bewerker. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_create_update.png"/>
@@ -649,15 +661,18 @@ for example 'xx.yy.zz'
     <para
 >De visualisatie is momenteel nog beperkt, maar zal worden verbeterd op basis van de terugkoppeling van docenten. Nadat u op een activiteit in de grafiek hebt geklikt, verschijnt er een weergave die vergelijkbaar is met die op de pagina Activiteiten. Als het tabblad <quote
 >Leerlingen</quote
-> is geselecteerd, kunt u alle resultaten voor een specifieke leerling bekijken: <mediaobject
-> <imageobject
-> <imagedata fileref="charts_view_results_pupil.png"/> </imageobject
-> <textobject
-> <phrase
->charts_view_results_pupil</phrase
-> </textobject
-> </mediaobject
->. Als het tabblad <quote
+> is geselecteerd, kunt u alle resultaten voor een specifieke leerling bekijken: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>grafiek_weergave_resultaten_activiteit</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Als het tabblad <quote
 >Activiteiten</quote
 > is geselecteerd, kunt u alle resultaten voor een specifieke activiteit bekijken: <mediaobject>
         <imageobject>

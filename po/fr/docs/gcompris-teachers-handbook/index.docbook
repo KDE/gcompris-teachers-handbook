@@ -149,7 +149,7 @@ for example 'xx.yy.zz'
 ></listitem>
       <listitem
 ><para
->Page de connexion aux appareils?</para
+>Page de connexion aux appareils.</para
 ></listitem>
       <listitem
 ><para
@@ -184,7 +184,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Un bouton pour afficher/cacher le nom des écrans dans le menu (l'icone sandwich) permet de gagner un peu d'espace pour le logiciel une fois que le professeur connait la signification de chaque icone.<mediaobject>
+>Un bouton pour afficher/cacher le nom des écrans dans le menu (l'icone hamburger) permet de gagner un peu d'espace pour le logiciel une fois que le professeur connait la signification de chaque icone.<mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>
@@ -266,7 +266,7 @@ for example 'xx.yy.zz'
       <para
 >Cliquer sur le bouton <quote
 >Supprimer</quote
-> permettra de supprimer le groupe. Les élèes appartenant à des groupes supprimés ne seront pas supprimés, si vous souhaitez aussi retirer les élèves de la base de données, veuillez suivre la section suivante. <mediaobject>
+> permettra de supprimer le groupe. Les élèves appartenant à des groupes supprimés ne seront pas supprimés, si vous souhaitez aussi retirer les élèves de la base de données, veuillez suivre la section suivante. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
@@ -362,7 +362,7 @@ for example 'xx.yy.zz'
     <para
 >Une fois la base de données remplie, vous pouvez maintenant communiquer avec les différents appareils. La page <quote
 >Connexion appareils</quote
-> affiche les différents groupes et élèves. Par défaut, aucun groupe n'est sélectionné et tous les élèves sont visibles. Sélectionner un groupe filtrera les élèves visibles pour ne seulement afficher que ceux qui font partie de ce groupe. <mediaobject>
+> affiche les différents groupes et élèves. Par défaut, aucun groupe n'est sélectionné et tous les élèves sont visibles. Sélectionner un groupe filtrera les élèves visibles pour n'afficher que ceux qui font partie de ce groupe. <mediaobject>
         <imageobject>
           <imagedata fileref="connect_devices.png"/>
         </imageobject>
@@ -428,10 +428,10 @@ for example 'xx.yy.zz'
 >La routine de connexion est la suivante : <emphasis
 >le professeur demande aux élèves d'allumer leurs appareils et démarrer GCompris, puis à partir de la page <quote
 >Connecter les appareils</quote
->, appuyez sur le bouton <quote
+>, appuie sur le bouton <quote
 >Connecter les appareils</quote
 >.</emphasis
-> Sur les appareils des élèves, une fenêtre va s'afficher pour confirmer la demande de connexion au serveur. Pour que cela fonctionne, assurez-vous que les élèves aient GCompris sur la page du menu principal et ne sont ni dans une activité, ni la page de configuration. <mediaobject>
+> Sur les appareils des élèves, une fenêtre va s'afficher pour confirmer la demande de connexion au serveur. Pour que cela fonctionne, assurez-vous que les élèves aient GCompris sur la page du menu principal et ne sont ni dans une activité, ni dans une page de configuration. <mediaobject>
           <imageobject>
             <imagedata fileref="gcompris_connect.png"/>
           </imageobject>
@@ -568,7 +568,7 @@ for example 'xx.yy.zz'
     <title
 >Jeux de données</title>
     <para
->La page de jeux de données permet aux professeurs de créer/mettre à jour ou supprimer des jeux de données créés spéciquement pour certaines activités, ainsi que de les envoyer et retirer des clients. <mediaobject>
+>La page de jeux de données permet aux professeurs de créer/mettre à jour ou supprimer des jeux de données créés spécifiquement pour certaines activités, ainsi que de les envoyer et retirer des clients. <mediaobject>
         <imageobject>
           <imagedata fileref="datasets.png"/>
         </imageobject>
