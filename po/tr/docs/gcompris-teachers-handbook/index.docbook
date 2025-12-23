@@ -1,0 +1,693 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Turkish "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>GCompris Öğretmenler Yönetim El Kitabı</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>&gcompris; Takımı</othername>
+<contrib
+>Geliştiriciler</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Emir</firstname
+><surname
+>SARI</surname
+><affiliation
+><address
+><email
+>emir_sari@icloud.com</email
+></address
+></affiliation
+><contrib
+>Çeviri</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2025‒11‒30</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>GCompris, çok etkinlikli bir eğitim yazılımıdır. Bu belge, sağladığımız gcompris-teachers yönetim aracı içindir. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>eğitim</keyword>
+<keyword
+>çocuklar</keyword>
+<keyword
+>oyunlar</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Genel Görünüm</title>
+  <para
+>gcompris-teachers’ın amacı öğretmenlerin şunları yapabilmelerini sağlamaktır: </para>
+  <itemizedlist>
+    <listitem
+><para
+>Öğrenci grupları oluşturmak ve yönetmek</para
+></listitem>
+    <listitem
+><para
+>Belirli çalışma planları oluşturmak.</para
+></listitem>
+    <listitem
+><para
+>Öğrencilere bağlanıp onlara çalışma planları göndermek.</para
+></listitem>
+    <listitem
+><para
+>Grup ve öğrenci başına olarak şekilde çalışmaları görselleştirmek.</para
+></listitem>
+    <listitem
+><para
+>Öğrencilerin yanıtlarını çözümlemek.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Belirtimler</title>
+  <para
+>Aşağıdaki bölümde bu işlevleri uygulayan farklı ekranlar açıklanmaktadır. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Ana ekran genel görünümü</title>
+    <para
+>Ana ekran şunlara erişim sağlar: </para>
+    <itemizedlist>
+      <listitem
+><para
+>Gösterge Paneli sayfası</para
+></listitem>
+      <listitem
+><para
+>Öğrencileri yönetim sayfası</para
+></listitem>
+      <listitem
+><para
+>Aygıt bağlama sayfası</para
+></listitem>
+      <listitem
+><para
+>Etkinlik sonuçlarını takip sayfası</para
+></listitem>
+      <listitem
+><para
+>Veri kümelerini yönetim sayfası</para
+></listitem>
+      <listitem
+><para
+>Sonuçları çizelgeler olarak görüntüleme sayfası</para
+></listitem>
+      <listitem
+><para
+>Ayarlar sayfası</para
+></listitem>
+      <listitem
+><para
+>Geliştirme (Yapım aşamasında) sayfası yalnızca hata ayıklama amacıyla kullanılır ve burada açıklanmayacaktır.</para
+></listitem>
+    </itemizedlist>
+    <para
+>Varsayılan olarak, giriş iletişim kutusunu içeren Gösterge Paneli sayfası görüntülenir ve diğer sayfalara erişmek için kullanılan yan menü çubuğu, bir öğretmen hesabı oturum açana kadar gizli kalır. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Yan menü çubuğundaki (hamburger simgesi) düğmelerin başlıklarını gösterme/gizleme düğmesi, kullanıcı her simgenin anlamını bildiğinde yer tasarrufu sağlamaya olanak tanır.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_hamburger</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Gösterge Paneli — Oturum açma iletişim kutusu</title>
+    <para
+>Yeni bir öğretmen girişi ve veritabanı oluşturmak için adı ve parolayı girin. Ardından, veritabanını şifrelemek isteyip istemediğinizi (parola olmadan kimsenin okumasını önlemek için) seçebileceksiniz. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_create_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Grupları ve öğrencileri yönet</title>
+    <para
+>Bu sayfa, sınıfınız için farklı öğrenciler ve gruplar oluşturmanıza olanak tanır. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pupils_groups</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Grup oluştur</title>
+      <para
+>Sağ alt köşedeki “Grup ekle” düğmesine tıklayın ve açılan iletişim kutusunda “Ad” ve isteğe bağlı olarak “Açıklama” alanlarını doldurun. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Grup adında değişiklik yap veya onu sil</title>
+      <para
+>Bir grubu düzenlemek veya silmek için grup listesinde grubun üzerine gelin; “Düzenle” ve “Sil” düğmeleri görünecektir. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>“Sil” düğmesine tıklayarak grubu silebilirsiniz. Öğrencilerin gruplardan çıkarılacağını; ancak veritabanından silinmeyeceğini unutmayın. Öğrencileri kaldırmak istiyorsanız sonraki bölüme geçin. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_confirmation</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Tek bir öğrenci oluştur</title>
+      <para
+>Veritabanına yeni bir öğrenci eklemek için “Öğrenci ekle” seçeneğine tıklayın. Orada, öğrencinin adını ve istemcilerden bağlanmak için gerekli parolayı belirleyebilirsiniz. Ayrıca, öğrencileri önceden var olan gruplara doğrudan ekleyebilirsiniz. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_create</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>CSV dizileri kullanarak birden fazla öğrenci oluştur/bir dosyaya dışa aktar</title>
+      <para
+>Bir CSV dosyası kullanarak doğrudan öğrenci listesi içe aktarabilirsiniz. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_import</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Öğrencilerin listesini dışa aktarmak da olanaklıdır: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Öğrencileri yönetmek</title>
+      <para
+>Arayüz ayrıca öğrencileri düzenlemek, gruplara eklemek veya gruplardan çıkarmak için düğmeler de sunmaktadır. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_add_to_group</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_remove_from_group</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Öğrencileri de silebilirsiniz. Ancak, bir öğrenciyi silmenin, ait olduğu grubu silmediğini unutmayın. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_delete</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Aygıtlar bağla</title>
+    <para
+>Veritabanı hazır olduğunda, artık farklı istemcilerle iletişim kurma zamanı gelir. “Aygıtlar bağla” sayfası, farklı grupları ve öğrencileri gösterir. Öntanımlı olarak, hiçbir grup seçili değildir, bu nedenle tüm öğrenciler görünür durumdadır. Bir grup seçmek, görünür öğrencileri süzerek yalnızca bu belirli grupla çalışmayı sağlar. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>connect_devices</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Sunucu ve istemci aygıtlarının yapılandırılması</title>
+      <para
+>Öğretmenin, bağlantı kurabilmek için önce bağlanmak istediği sunucu ve istemci aygıtlarını yapılandırması gerekir. Tüm aygıtların aynı yerel ağa bağlı olması şarttır. Sunucuda, “Ayarlar” sayfasına gidin ve benzersiz bir “Sunucu kimliği” (en azından yerel ağ için benzersiz) ve bir “Kapı” seçin (bilmiyorsanız öntanımlıyı kullanın). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>GCompris aygıtları tarafında, ana menüden “Yapılandırma” sayfasına gidin ve “Öğretmenin sunucu yapılandırması” düğmesini bulmak için aşağı sarın. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_config_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Tıkladıktan sonra, sunucuyla aynı ayarlara sahip olduğunuzdan emin olun: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Ayrıca, sunucu veya istemciyi çalıştıran aygıtta bir güvenlik duvarı varsa aygıtların iletişim kurabilmesi için güvenlik duvarı yapılandırmasında seçilen kapıyı açtığınızdan emin olun. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Günlük bağlantı iş akışı</title>
+      <para
+>Bağlantı iş akışı şu şekildedir: Öğretmen öğrencilerden aygıtlarını açmalarını ve GCompris’i başlatmalarını, ardından “Aygıtlar bağla” sayfasından “Aygıtlar bağla” düğmesine basmalarını ister. İstemci aygıtlarda, sunucuya bağlanmak için onay isteyen bir iletişim kutusu görünecektir. İstemci aygıtların herhangi bir etkinlik veya yapılandırma sayfasında değil, GCompris ana menüsünde olması gerektiğini unutmayın. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Öğrencilerden onay alındıktan sonra, öğretmen “Öğrenciler” listesinden göndermek istediği oturum açma bilgilerini seçer ve “Oturum açma listesini gönder” düğmesine basar.</para
+></listitem>
+          <listitem
+><para
+>İstemci aygıtlarında, istedikleri oturum açma yöntemini seçmelerine olanak tanıyan yeni bir iletişim kutusu görüntülenecektir. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Onaylandıktan sonra, parolayı girmeniz için ikinci bir iletişim kutusu açılacaktır. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Parola doğruysa istemci bağlantının başarılı olduğunu gösteren yeşil bir düğme görecektir. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Sonrasında sunucuya bir bildirim gönderilecektir: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Renklerin açıklamaları: <itemizedlist>
+          <listitem
+><para
+>Yeşil: Bağlı</para
+></listitem>
+          <listitem
+><para
+>Kırmızı: Yanlış parola</para
+></listitem>
+          <listitem
+><para
+>Gri: Bağlantı kesildi (bir ara bağlıydı; ancak sonrasında koptu)</para
+></listitem>
+          <listitem
+><para
+>Saydam: Bu oturum açma bilgileriyle kimse bağlanmayı denemedi</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Etkinlikler</title>
+    <para
+>Bu sayfa; tarih, gruplar, öğrenciler ve etkinliklere göre süzülmüş farklı sonuçları görüntülemenizi sağlar. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Aşağıdaki görsel, “Dikey çıkarma” etkinliğinin sonuçlarını göstermektedir (sunucuya veri göndermeyi ele alan her etkinliğin kendi görselleştirmesi vardır). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities_results</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Öğrencinin ilk denemede yanlış, ikinci denemede ise doğru yanıt verdiğini ve hataları tespit etmek için yanıtların ayrıntılarını görebiliyoruz. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Veri kümeleri</title>
+    <para
+>Veri kümeleri sayfası, öğretmenlerin belirli gereksinimleri karşılamak üzere etkinlikler için özel veri kümeleri oluşturmasına/güncellemesine/silmesi ve bunları istemcilere göndermesine/onlardan kaldırmasına olanak tanır. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>datasets</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Şimdilik bir sınırlama olarak, yalnızca GCompris veri kümesi biçimini izleyen etkinliklerin düzenlenebilmesidir (örneğin “Dilbilgisi sınıflandırmaları” veya “Düşen sözcükler” düzenlenemez). Desteklenen etkinliklerin (veri gönderebilen veya veri kümesi düzenleyicisine sahip olan) listesini geliştirme vikimizin bu sayfasında bulabilirsiniz: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>İşte “İkili ampuller” etkinliği için bir örnek. Tüm etkinlik düzenleyicilerinin ortak kısmı, veri kümesi adını, hedefi ve zorluğu girmek için alanlar içerir. Ardından, her etkinliğin kendine özgü bir düzenleyicisi olacaktır. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Sol alt köşedeki “Yönergeler” düğmesi, gerektiğinde veri kümesini nasıl dolduracağınıza dair bazı özel bilgiler vermek için sağlanmıştır. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Bir veri kümesini silmek istiyorsanız: Kümeyi seçin, “Veri kümesini kaldır” düğmesine basın ve açılan iletişim kutusunda onaylayın: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Bağlı istemcileriniz varsa onlara kendi taraflarında kullanılabilir olması için belirli bir veri kümesini göndermek isteyebilirsiniz. Veri kümesini seçin ve “İstemcilere gönder” düğmesine basın. Bağlı tüm istemcilerin listesi görüntülenecek ve hangilerinin alacağını seçebileceksiniz. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Sunucu için belirli etkinlikler</title>
+      <para
+>Yalnızca aygıtlarda bu etkinliğe ait veri kümeleri bulunduğunda görülebilen “Çoktan seçmeli sorular” etkinliğini oluşturduk. Bu etkinlik, öğretmenlerin herhangi bir konuda çoktan seçmeli sorular oluşturmasına olanak tanır. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Çizelgeler</title>
+    <para
+>Çizelgeler sayfası, Etkinlikler sayfasına benzer ve tarih, gruplar, öğrenciler ve etkinliklere göre süzülmüş farklı sonuçları grafikler halinde görüntülemenizi sağlar. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Şimdilik görselleştirme oldukça sınırlı; ancak öğretmenlerin geri bildirimlerine bağlı olarak geliştirilecektir. Grafikteki bir etkinliğe tıkladıktan sonra, Etkinlikler sayfasında gösterilene benzer bir görünüm elde edersiniz. “Öğrenciler” sekmesi seçilirse belirli bir öğrenciye ait tüm sonuçları görebilirsiniz: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>“Etkinlikler” sekmesi seçiliyse belirli bir etkinliğe ait tüm sonuçları görebilirsiniz: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Ayarlar</title>
+    <para
+>Ayarlar sayfası, arayüzü özelleştirmenize ve geçerli veritabanı ve oturum hakkında bazı bilgiler edinmenize olanak tanır. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>settings</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Emeği Geçenler ve Lisans</title>
+
+<para
+>&gcompris; </para>
+<para
+>Program telif hakkı © 2000–2025 Timothée Giet ve diğerleri </para>
+
+<para
+>Çeviri: Emir SARI<email
+>emir_sari@icloud.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
