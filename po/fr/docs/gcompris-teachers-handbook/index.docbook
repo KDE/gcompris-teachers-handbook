@@ -104,7 +104,7 @@ for example 'xx.yy.zz'
   <title
 >Vue d'ensemble</title>
   <para
->L'objectif de gcompris-teachers est de permettre aux professeurs de : </para>
+>L'objectif de gcompris-teachers est de permettre aux enseignants de : </para>
   <itemizedlist>
     <listitem
 ><para
@@ -173,7 +173,7 @@ for example 'xx.yy.zz'
 ></listitem>
     </itemizedlist>
     <para
->Par défaut, le tableau de bord est affiché, et contient les champs pour se connecter. Le menu sur le côté permettant d'accéder aux autres écrans est caché tant qu'aucun professeur n'est connecté. <mediaobject>
+>Par défaut, le tableau de bord est affiché, et contient les champs pour se connecter. Le menu sur le côté permettant d'accéder aux autres écrans est caché tant qu'aucun enseignant n'est connecté. <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen.png"/>
         </imageobject>
@@ -184,7 +184,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Un bouton pour afficher/cacher le nom des écrans dans le menu (l'icone hamburger) permet de gagner un peu d'espace pour le logiciel une fois que le professeur connait la signification de chaque icone.<mediaobject>
+>Un bouton pour afficher/cacher le nom des écrans dans le menu (l'icone hamburger) permet de gagner un peu d'espace pour le logiciel une fois que l'enseignant connait la signification de chaque icone.<mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>
@@ -199,7 +199,7 @@ for example 'xx.yy.zz'
     <title
 >Tableau de bord - fenêtre de connexion</title>
     <para
->Pour créer un nouveau compte professeur et sa base de données, remplissez le nom et le mot de passe. Vous pourrez ensuite choisir si vous voulez que la base de données soit chiffrée (ce qui permet d'empêcher d'avoir les données des élèves en clair dans la base de données). <mediaobject>
+>Pour créer un nouveau compte enseignant et sa base de données, remplissez le nom et le mot de passe. Vous pourrez ensuite choisir si vous voulez que la base de données soit chiffrée (ce qui permet d'empêcher d'avoir les données des élèves en clair dans la base de données). <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_create_db.png"/>
         </imageobject>
@@ -426,7 +426,7 @@ for example 'xx.yy.zz'
 >Routine de connexion quotidienne</title>
       <para
 >La routine de connexion est la suivante : <emphasis
->le professeur demande aux élèves d'allumer leurs appareils et démarrer GCompris, puis à partir de la page <quote
+>l'enseignant demande aux élèves d'allumer leurs appareils et démarrer GCompris, puis à partir de la page <quote
 >Connecter les appareils</quote
 >, appuie sur le bouton <quote
 >Connecter les appareils</quote
@@ -443,7 +443,7 @@ for example 'xx.yy.zz'
         <itemizedlist>
           <listitem
 ><para
->Après confirmation des élèves, le professeur choisit quels sont les comptes qu'il souhaite envoyer à partir de la liste <quote
+>Après confirmation des élèves, l'enseignant choisit quels sont les comptes qu'il souhaite envoyer à partir de la liste <quote
 >Élèves</quote
 > et appuie sur le bouton <quote
 >Envoyer la liste des comptes</quote
@@ -568,7 +568,7 @@ for example 'xx.yy.zz'
     <title
 >Jeux de données</title>
     <para
->La page de jeux de données permet aux professeurs de créer/mettre à jour ou supprimer des jeux de données créés spécifiquement pour certaines activités, ainsi que de les envoyer et retirer des clients. <mediaobject>
+>La page de jeux de données permet aux enseignants de créer/mettre à jour ou supprimer des jeux de données créés spécifiquement pour certaines activités, ainsi que de les envoyer et retirer des clients. <mediaobject>
         <imageobject>
           <imagedata fileref="datasets.png"/>
         </imageobject>
@@ -644,7 +644,7 @@ for example 'xx.yy.zz'
       <para
 >Nous avons développé l'activité <quote
 >Questions à choix multiples</quote
-> qui est seulement visible sur les appareils lorsqu'ils contiennent des jeux de données spécifiques à cette activité. Cette activité permet aux professeurs de créer des questionnaires à choix multiples sur n'importe quel sujet. <mediaobject>
+> qui est seulement visible sur les appareils lorsqu'ils contiennent des jeux de données spécifiques à cette activité. Cette activité permet aux enseignants de créer des questionnaires à choix multiples sur n'importe quel sujet. <mediaobject>
         <imageobject>
           <imagedata fileref="gcompris_multiple-choice_questions.png"/>
         </imageobject>
@@ -671,7 +671,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Pour le moment, la visualisation est très limitée mais sera améliorée dès qu'on aura des retours de professeurs. Après avoir cliqué sur une activité, la visualisation est similaire à celle de la page d'activités. Si l'onglet <quote
+>Pour le moment, la visualisation est très limitée mais sera améliorée dès qu'on aura des retours d'enseignants. Après avoir cliqué sur une activité, la visualisation est similaire à celle de la page d'activités. Si l'onglet <quote
 >élèves</quote
 > est actif, vous verrez les résultats pour un élève spécifique : <mediaobject>
         <imageobject>

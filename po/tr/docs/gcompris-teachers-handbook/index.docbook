@@ -201,7 +201,7 @@ for example 'xx.yy.zz'
     <title
 >Gösterge Paneli — Oturum açma iletişim kutusu</title>
     <para
->Yeni bir öğretmen girişi ve veritabanı oluşturmak için adı ve parolayı girin. Ardından, veritabanını şifrelemek isteyip istemediğinizi (parola olmadan kimsenin okumasını önlemek için) seçebileceksiniz. <mediaobject>
+>Yeni bir öğretmen girişi ve veri tabanı oluşturmak için adı ve parolayı girin. Ardından, veri tabanını şifrelemek isteyip istemediğinizi (parola olmadan kimsenin okumasını önlemek için) seçebileceksiniz. <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_create_db.png"/>
         </imageobject>
@@ -256,7 +256,7 @@ for example 'xx.yy.zz'
         </mediaobject>
       </para>
       <para
->“Sil” düğmesine tıklayarak grubu silebilirsiniz. Öğrencilerin gruplardan çıkarılacağını; ancak veritabanından silinmeyeceğini unutmayın. Öğrencileri kaldırmak istiyorsanız sonraki bölüme geçin. <mediaobject>
+>“Sil” düğmesine tıklayarak grubu silebilirsiniz. Öğrencilerin gruplardan çıkarılacağını; ancak veri tabanından silinmeyeceğini unutmayın. Öğrencileri kaldırmak istiyorsanız sonraki bölüme geçin. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
@@ -271,7 +271,7 @@ for example 'xx.yy.zz'
       <title
 >Tek bir öğrenci oluştur</title>
       <para
->Veritabanına yeni bir öğrenci eklemek için “Öğrenci ekle” seçeneğine tıklayın. Orada, öğrencinin adını ve istemcilerden bağlanmak için gerekli parolayı belirleyebilirsiniz. Ayrıca, öğrencileri önceden var olan gruplara doğrudan ekleyebilirsiniz. <mediaobject>
+>Veri tabanına yeni bir öğrenci eklemek için “Öğrenci ekle” seçeneğine tıklayın. Orada, öğrencinin adını ve istemcilerden bağlanmak için gerekli parolayı belirleyebilirsiniz. Ayrıca, öğrencileri önceden var olan gruplara doğrudan ekleyebilirsiniz. <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_create.png"/>
           </imageobject>
@@ -348,7 +348,7 @@ for example 'xx.yy.zz'
     <title
 >Aygıtlar bağla</title>
     <para
->Veritabanı hazır olduğunda, artık farklı istemcilerle iletişim kurma zamanı gelir. “Aygıtlar bağla” sayfası, farklı grupları ve öğrencileri gösterir. Öntanımlı olarak, hiçbir grup seçili değildir, bu nedenle tüm öğrenciler görünür durumdadır. Bir grup seçmek, görünür öğrencileri süzerek yalnızca bu belirli grupla çalışmayı sağlar. <mediaobject>
+>Veri tabanı hazır olduğunda, artık farklı istemcilerle iletişim kurma zamanı gelir. “Aygıtlar bağla” sayfası, farklı grupları ve öğrencileri gösterir. Öntanımlı olarak, hiçbir grup seçili değildir, bu nedenle tüm öğrenciler görünür durumdadır. Bir grup seçmek, görünür öğrencileri süzerek yalnızca bu belirli grupla çalışmayı sağlar. <mediaobject>
         <imageobject>
           <imagedata fileref="connect_devices.png"/>
         </imageobject>
@@ -647,7 +647,7 @@ for example 'xx.yy.zz'
     <title
 >Ayarlar</title>
     <para
->Ayarlar sayfası, arayüzü özelleştirmenize ve geçerli veritabanı ve oturum hakkında bazı bilgiler edinmenize olanak tanır. <mediaobject>
+>Ayarlar sayfası, arayüzü özelleştirmenize ve geçerli veri tabanı ve oturum hakkında bazı bilgiler edinmenize olanak tanır. <mediaobject>
         <imageobject>
           <imagedata fileref="settings.png"/>
         </imageobject>
