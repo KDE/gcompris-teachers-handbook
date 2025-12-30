@@ -1,0 +1,695 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Spanish "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>Manual de gestión docente de GCompris</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>El equipo de &gcompris;</othername>
+<contrib
+>Desarrolladores</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Eloy</firstname
+><surname
+>Cuadra</surname
+><affiliation
+><address
+><email
+>ecuadra@eloihr.net</email
+></address
+></affiliation
+><contrib
+>Traducción</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2025-11-30</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>GCompris es un software educativo multiactividad. Esta documentación se refiere a la herramienta de gestión gcompris-teachers que ofrecemos. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>educación</keyword>
+<keyword
+>niños</keyword>
+<keyword
+>juegos</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Resumen</title>
+  <para
+>El objetivo de gcompris-teachers es que los profesores puedan: </para>
+  <itemizedlist>
+    <listitem
+><para
+>Crear y gestionar grupos de alumnos.</para
+></listitem>
+    <listitem
+><para
+>Crear planes de trabajo específicos.</para
+></listitem>
+    <listitem
+><para
+>Conectar y enviar un plan de trabajo a los alumnos.</para
+></listitem>
+    <listitem
+><para
+>Visualizar el resultado del trabajo por grupo y por alumno.</para
+></listitem>
+    <listitem
+><para
+>Analizar las respuestas de los alumnos.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Especificaciones</title>
+  <para
+>La siguiente sección describe las distintas pantallas que implementan estas funcionalidades. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Vista general de la pantalla principal</title>
+    <para
+>La pantalla principal permite acceder a: </para>
+    <itemizedlist>
+      <listitem
+><para
+>La página del «Tablero de mando».</para
+></listitem>
+      <listitem
+><para
+>La página de gestión de los alumnos.</para
+></listitem>
+      <listitem
+><para
+>La página de conexión de dispositivos.</para
+></listitem>
+      <listitem
+><para
+>Página de seguimiento del resultado de las actividades.</para
+></listitem>
+      <listitem
+><para
+>La página de gestión de conjuntos de datos.</para
+></listitem>
+      <listitem
+><para
+>La página que muestra el resultado como gráfica.</para
+></listitem>
+      <listitem
+><para
+>La página de preferencias.</para
+></listitem>
+      <listitem
+><para
+>La página de Desarrollo (WIP) solo se usa con propósitos de depuración y no se describirá aquí.</para
+></listitem>
+    </itemizedlist>
+    <para
+>La página que se muestra de forma predeterminada es la del «Tablero de mando», que contiene el diálogo de inicio de sesión. La barra de menú lateral que permite acceder al resto de páginas está oculta hasta que el profesor inicia sesión en su cuenta. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Un botón para mostrar/ocultar el título de los botones en la barra de menú lateral (el icono de hamburguesa) permite ahorrar espacio una vez que el usuario conoce el significado de cada icono.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_hamburger</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Tablero de mando: diálogo de inicio de sesión</title>
+    <para
+>Para crear un nuevo nombre de usuario y una nueva base de datos para profesores, introduzca el nombre y la contraseña. Podrá elegir si desea cifrar la base de datos (para evitar que alguien acceda a ella sin la contraseña). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_create_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Gestión de grupos y de alumnos</title>
+    <para
+>Esta página permite crear a los distintos alumnos y grupos de la clase. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pupils_groups</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Crear un grupo</title>
+      <para
+>Pulse el botón «Añadir un grupo» de la parte inferior derecha y rellene en el diálogo el «Nombre» y, opcionalmente, la «Descripción». <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Modificar el nombre de un grupo o borrarlo</title>
+      <para
+>Para editar o borrar un grupo, sitúe el cursor sobre él en la lista de grupos para que aparezcan los botones «Editar» y «Borrar». <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Pulse el botón «Borrar» para borrar el grupo. Tenga en cuenta que los alumnos se eliminarán de los grupos, aunque no se borrarán de la base de datos. Si quiere eliminar alumnos, consulte la siguiente sección. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_confirmation</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Crear un único alumno</title>
+      <para
+>Pulse «Añadir un alumno» para crear un nuevo alumno en la base de datos. Podrá definir el nombre del alumno y la contraseña para conectarse desde los clientes. También puede añadirlo directamente a grupos preexistentes. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_create</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Crear varios alumnos usando cadenas CSV / Exportar alumnos a un archivo</title>
+      <para
+>Puede importar directamente una lista de alumnos usando un archivo CSV. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_import</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>También se puede exportar una lista de alumnos: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Gestión de alumnos</title>
+      <para
+>La interfaz también propone botones para editar alumnos, añadirlos a grupos o eliminarlos de ellos. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_add_to_group</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_remove_from_group</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>También puede borrar alumnos. Tenga en cuenta que borrar un alumno no borra su grupo. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_delete</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Conectar dispositivos</title>
+    <para
+>Tras preparar la base de datos, llega el momento de comunicarse con los distintos clientes. La página «Conectar dispositivos» muestra los distintos grupos y alumnos. No hay ningún grupo seleccionado por omisión, por lo que todos los alumnos están visibles. Al seleccionar un grupo se filtrarán los alumnos visibles para trabajar solo con dicho grupo. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>connect_devices</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Configuración del servidor y de los dispositivos clientes</title>
+      <para
+>El profesor debe configurar el servidor y los dispositivos clientes a los que quiera conectarse antes de poder establecer la conexión. Todos los dispositivos deben estar conectados a la misma red local. En el servidor, vaya a la página «Preferencias» y elija un «ID de servidor» único (al menos, único para la red local) y un «Puerto» (si no lo sabe, deje el predeterminado). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>ajustes</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>En el lado de los dispositivos de GCompris, vaya a la página «Configuración» usando el menú principal y desplácese hasta el final para encontrar el botón «Configurar el servidor del profesor». <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_config_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Tras pulsarlo, asegúrese de usar los mismos ajustes que el servidor. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Además, si el dispositivo que ejecuta el servidor o el cliente dispone de un cortafuegos, asegúrese de abrir el puerto escogido en la configuración del cortafuegos para que los dispositivos puedan comunicarse. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Proceso de conexión diario</title>
+      <para
+>El proceso de conexión es el siguiente: <emphasis
+>el profesor pide a los alumnos que enciendan sus dispositivos y que inicien GCompris, que vayan a la página «Conectar dispositivos» y pulsen el botón «Conectar dispositivo».</emphasis
+> En los dispositivos clientes se mostrará un diálogo que pedirá confirmación para conectare al servidor. Tenga en cuenta que los dispositivos clientes deben estar en el menú principal de GCompris, no en alguna actividad ni en la página de configuración. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Tras la confirmación por parte de los alumnos, el profesor seleccionará los inicios de sesión que quiera enviar en la lista de «Alumnos» y pulsará «Enviar lista de inicios de sesión».</para
+></listitem>
+          <listitem
+><para
+>Los dispositivos clientes mostrarán un nuevo diálogo que les permitirá seleccionar el inicio de sesión que prefieran. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Tras confirmarlo, se mostrará un segundo diálogo para introducir la contraseña. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Si la contraseña es correcta, el cliente verá un botón verde en la barra para indicar que se ha conectado correctamente. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Y el servidor recibirá la notificación: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Los distintos colores son: <itemizedlist>
+          <listitem
+><para
+>Verde: conectado</para
+></listitem>
+          <listitem
+><para
+>Rojo: contraseña incorrecta</para
+></listitem>
+          <listitem
+><para
+>Gris: desconectado (estuvo conectado en algún momento, pero ya está desconectado)</para
+></listitem>
+          <listitem
+><para
+>Transparente: nadie ha intentado conectarse usando este inicio de sesión.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Actividades</title>
+    <para
+>Esta página permite mostrar los distintos resultados filtrados por fecha, grupos, alumnos y actividades. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>actividades</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>La siguiente imagen muestra el resultado de la actividad «Resta vertical» (cada actividad que pueda enviar datos al servidor tiene su propia visualización). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities_results</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Podemos ver que el alumno ha introducido una respuesta incorrecta en el primer intento y una respuesta correcta en el segundo, así como los detalles de las respuestas para detectar los errores. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Conjuntos de datos</title>
+    <para
+>La página de conjuntos de datos permite a los profesores crear, actualizar o borrar conjuntos de datos específicos para las actividades destinadas a satisfacer necesidades específicas, y enviarlos o eliminarlos de los clientes. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>conjuntos de datos</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Una limitación actual es que solo de pueden editar las actividades que sigan el formato de conjuntos de datos de GCompris (por ejemplo, no se incluyen «Clases gramaticales» ni «Palabras que caen»). Puede encontrar la lista de actividades permitidas (que pueden enviar datos o tienen un editor de conjuntos de datos) en esta página de nuestra wiki de desarrollo: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+>. </para>
+    <para
+>Aquí tiene un ejemplo de la actividad «Bombillas binarias». La sección común de todos los editores de actividades contiene campos para introducir el nombre del conjunto de datos, el objetivo y la dificultad. Cada actividad tendrá un editor específico. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>El botón «Instrucciones» de la parte inferior izquierda se proporciona para mostrar información específica sobre cómo rellenar el conjunto de datos cuando sea necesario. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si quiere borrar un conjunto de datos: selecciónelo, pulse el botón «Eliminar conjunto de datos» y confirme en el siguiente diálogo: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si tiene clientes conectados, puede enviarles un conjunto de datos específico para que esté disponible en su lado. Seleccione el conjunto de datos y pulse el botón «Enviar a los clientes». Se mostrará la lista de todos los clientes conectados y podrá seleccionar cuáles lo recibirán. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Actividades específicas para el servidor</title>
+      <para
+>Hemos creado la actividad «Preguntas de opción múltiple», que solo es visible cuando el dispositivo contiene conjuntos de datos. Esta actividad permite a los profesores crear cuestionarios de opción múltiple sobre cualquier tema. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Gráficos</title>
+    <para
+>La página de «Gráficos» es similar a la página de «Actividades» y permite mostrar los diferentes resultados filtrados por fecha, grupos, alumnos y actividades en forma de gráficos. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gráficos</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Por ahora, la visualización es bastante limitada, pero se mejorará según los comentarios de los profesores. Al hacer clic en una actividad del gráfico, se muestra una vista similar a la de la página «Actividades». Si se selecciona la pestaña «Alumnos», se pueden ver todos los resultados de un determinado alumno: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Si está seleccionada la pestaña «Actividades», puede ver todos los resultados de una determinada actividad: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Ajustes</title>
+    <para
+>La página de ajustes permite personalizar la interfaz y obtener cierta información sobre la base de datos y la sesión actuales. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>ajustes</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Créditos y licencia</title>
+
+<para
+>&gcompris; </para>
+<para
+>Copyright del programa © 2000–2025 Timothée Giet y otros </para>
+
+<para
+>Traducido por Eloy Cuadra<email
+>ecuadra@eloihr.net</email
+>.</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
