@@ -1,0 +1,749 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Italian "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>Manuale per l'amministrazione degli insegnanti di GCompris</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>La squadra di &gcompris;</othername>
+<contrib
+>Sviluppatori</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Vincenzo</firstname
+> <surname
+>Reale</surname
+> <affiliation
+><address
+><email
+>smart2128vr@gmail.com</email
+></address
+></affiliation
+> <contrib
+>Traduzione del documento</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>30/11/2025</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>GCompris è un software didattico multi-attività. Questa documentazione riguarda lo strumento di amministrazione gcompris-teachers che forniamo. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>educazione</keyword>
+<keyword
+>bambini</keyword>
+<keyword
+>giochi</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Panoramica</title>
+  <para
+>L'obiettivo di gcompris-teachers è consentire agli insegnanti di: </para>
+  <itemizedlist>
+    <listitem
+><para
+>creare e gestire gruppi di alunni.</para
+></listitem>
+    <listitem
+><para
+>creare piani di lavoro specifici.</para
+></listitem>
+    <listitem
+><para
+>connettersi e inviare un piano di lavoro agli alunni.</para
+></listitem>
+    <listitem
+><para
+>visualizzare i risultati del lavoro per gruppo e per alunno.</para
+></listitem>
+    <listitem
+><para
+>analizzare le risposte degli alunni.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Specifiche</title>
+  <para
+>Nella sezione seguente vengono descritte le diverse schermate che implementano queste funzionalità. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Panoramica della schermata principale</title>
+    <para
+>La schermata principale consente di accedere a: </para>
+    <itemizedlist>
+      <listitem
+><para
+>Pagina del cruscotto.</para
+></listitem>
+      <listitem
+><para
+>Gestire la pagina degli alunni.</para
+></listitem>
+      <listitem
+><para
+>Pagina Connetti dispositivi.</para
+></listitem>
+      <listitem
+><para
+>Seguire la pagina dei risultati delle attività.</para
+></listitem>
+      <listitem
+><para
+>Pagina Gestisci insiemi di dati.</para
+></listitem>
+      <listitem
+><para
+>Visualizza i risultati come grafici nella pagina.</para
+></listitem>
+      <listitem
+><para
+>Pagina delle impostazioni.</para
+></listitem>
+      <listitem
+><para
+>La pagina Sviluppo (WIP) è utilizzata solo per scopi di debug e non sarà descritta qui.</para
+></listitem>
+    </itemizedlist>
+    <para
+>Per impostazione predefinita viene visualizzata la pagina Cruscotto, contenente la finestra di accesso, mentre la barra dei menu laterale per accedere alle altre pagine è nascosta finché non si effettua l'accesso con un account insegnante. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Un pulsante per mostrare/nascondere il titolo dei pulsanti nella barra del menu laterale (l'icona ad hamburger) consente di risparmiare spazio una volta che l'utente conosce il significato di ciascuna icona.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Cruscotto - Finestra di accesso</title>
+    <para
+>Per creare una nuova banca dati e un nuovo accesso per gli insegnanti, inserire il nome e la password. Sarà possibile quindi scegliere se cifrare la banca dati (per evitare che qualcuno possa leggerla senza la password). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_create_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Gestire gruppi e alunni</title>
+    <para
+>Questa pagina consente di creare i diversi alunni e gruppi per la propria classe. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pupils_groups</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Creare un gruppo</title>
+      <para
+>Fare clic sul pulsante <quote
+>Aggiungi un gruppo</quote
+> in basso a destra e nella finestra inserire il <quote
+>Nome</quote
+> e, facoltativamente, la <quote
+>Descrizione</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Modificare il nome di un gruppo o eliminarlo</title>
+      <para
+>Per modificare o eliminare un gruppo, passare il puntatore sopra l'elenco dei gruppi e appariranno i pulsanti <quote
+>Modifica</quote
+> e <quote
+>Elimina</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Facendo clic sul pulsante <quote
+>Elimina</quote
+> sarà possibile eliminare il gruppo. Notare che gli alunni saranno rimossi dai gruppi, ma non dalla banca dati. Per rimuovere degli alunni, seguire la sezione successiva. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Creare un singolo alunno</title>
+      <para
+>Fare clic su <quote
+>Aggiungi un alunno</quote
+> per creare un nuovo alunno nella banca dati. Successivamente, è possibile impostare il nome dell'alunno e la password per connettersi dai client. È possibile anche aggiungerlo direttamente a gruppi pre-esistenti. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Creare più alunni utilizzando stringhe csv / Esportare gli alunni in un file</title>
+      <para
+>È possibile importare direttamente un elenco di alunni utilizzando un file csv. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>È anche possibile esportare un elenco di alunni: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Gestire gli alunni</title>
+      <para
+>L'interfaccia propone anche pulsanti per modificare gli alunni, aggiungerli o rimuoverli dai gruppi. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>È anche possibile eliminare gli alunni. Tenere presente che l'eliminazione di un allievo non elimina il suo gruppo. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Connettere i dispositivi</title>
+    <para
+>Una volta che la banca dati è pronta, è il momento di comunicare con i diversi client. La pagina <quote
+>Connetti dispositivi</quote
+> mostra i diversi gruppi e alunni. Per impostazione predefinita, non è selezionato alcun gruppo, quindi tutti gli alunni sono visibili. Selezionando un gruppo, gli alunni visibili saranno filtrati in modo da funzionare solo con quel gruppo specifico. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Visualizza i risultati come grafici nella pagina.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Configurazione dei dispositivi server e client</title>
+      <para
+>L'insegnante deve configurare il server e i dispositivi client a cui desidera connettersi prima di potersi connettere. Tutti i dispositivi devono essere connessi alla stessa rete locale. Sul server, portarsi sulla pagina <quote
+>Impostazioni</quote
+> e scegliere un <quote
+>ID server</quote
+> univoco (almeno univoco per la rete locale) e una <quote
+>Porta</quote
+> (se non è nota, mantenere quella predefinita). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>impostazioni</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Per quanto riguarda i dispositivi GCompris, portarsi alla pagina <quote
+>Configurazione</quote
+> dal menu principale e scorrere fino in fondo per trovare il pulsante <quote
+>Configurazione del server dell'insegnante</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_config_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Dopo aver fatto clic, assicurarsi di avere le stesse impostazioni del server: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Inoltre, se il dispositivo che esegue il server o il client dispone di un firewall, assicurarsi di aprire la porta scelta nella configurazione del firewall per consentire ai dispositivi di comunicare. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Flusso di lavoro di connessione giornaliero</title>
+      <para
+>Il flusso di lavoro per la connessione è il seguente: <emphasis
+>L'insegnante chiede agli studenti di accendere i propri dispositivi e avviare GCompris, quindi dalla pagina <quote
+>Connetti dispositivi</quote
+> premere il pulsante <quote
+>Connetti dispositivi</quote
+>.</emphasis
+> Sui dispositivi client, apparirà una finestra che chiede conferma per la connessione al server. Si noti che i dispositivi client devono essere nel menu principale di GCompris, non in alcuna pagina di attività o configurazione. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Dopo la conferma degli alunni, l'insegnante seleziona quali accessi desidera inviare dall'elenco <quote
+>Alunni</quote
+> e preme <quote
+>Invia elenco accessi</quote
+></para
+></listitem>
+          <listitem
+><para
+>I dispositivi client visualizzeranno una nuova finestra che consentirà loro di selezionare l'accesso desiderato. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Una volta confermata, si aprirà una seconda finestra per inserire la password. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Se la password è corretta, il client vedrà un pulsante verde sulla barra che indica la connessione avvenuta correttamente. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>E il server riceverà una notifica: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>I diversi colori sono: <itemizedlist>
+          <listitem
+><para
+>Verde: connesso</para
+></listitem>
+          <listitem
+><para
+>Rosso: password errata</para
+></listitem>
+          <listitem
+><para
+>Grigio: disconnesso (era connesso fino a un certo momento, ma è stato disconnesso)</para
+></listitem>
+          <listitem
+><para
+>Trasparente: nessuno ha provato a connettersi utilizzando questa estensione.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Attività</title>
+    <para
+>Questa pagina consente di visualizzare i diversi risultati filtrati per data, gruppi, alunni e attività. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>attività</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>L'immagine seguente mostra i risultati dell'attività <quote
+>Sottrazione verticale</quote
+> (ogni attività che gestisce l'invio di dati al server ha la propria visualizzazione). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities_results</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Possiamo vedere che l'alunno ha inserito una risposta errata al primo tentativo e una risposta corretta al secondo tentativo, e i dettagli delle risposte per individuare gli errori. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Insiemi di dati</title>
+    <para
+>La pagina degli insiemi di dati consente agli insegnanti di creare/aggiornare/eliminare insiemi di dati specifici per le attività, per soddisfare esigenze specifiche, e di inviarli/rimuoverli dai client. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Insiemi di dati</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Una limitazione per ora è che possono essere modificate solo le attività che seguono il formato dell'insieme di dati di GCompris (quindi niente <quote
+>Classi grammaticali</quote
+> o <quote
+>Parole cadenti</quote
+>, ad esempio). Puoi trovare l'elenco delle attività supportate (che possono inviare dati o avere un editor di insiemi di dati) in questa pagina del nostro wiki di sviluppo: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Ecco un esempio per l'attività <quote
+>Lampadine binarie</quote
+>. La parte comune di tutti gli editor di attività contiene campi per inserire il nome dell'insieme di dati, l'obiettivo e la difficoltà. Ogni attività avrà quindi un editor specifico. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Il pulsante <quote
+>Istruzioni</quote
+> in basso a sinistra serve a fornire informazioni specifiche su come compilare l'insieme di dati quando necessario. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Se si desidera eliminare un insieme di dati: selezionarlo, premere il pulsante <quote
+>Rimuovi insieme di dati</quote
+> e confermare nella seguente finestra: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Se sono presenti client connessi, si potrebbe voler inviare un insieme di dati specifico per metterlo a loro disposizione. Selezionare l'insieme di dati e premere il pulsante <quote
+>Invia ai client</quote
+>. Sarà visualizzato l'elenco di tutti i client connessi e sarà possibile selezionare chi riceverà l'insieme di dati. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Attività specifiche per il server</title>
+      <para
+>Abbiamo creato l'attività <quote
+>Domande a risposta multipla</quote
+>, visibile solo quando il dispositivo contiene i relativi insiemi di dati. Questa attività consente agli insegnanti di creare questionari a risposta multipla su qualsiasi argomento. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Grafici</title>
+    <para
+>La pagina Grafici è simile alla pagina Attività e consente di visualizzare i diversi risultati filtrati per data, gruppi, alunni e attività come grafici. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>grafici</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Per ora, la visualizzazione è molto limitata, ma sarà migliorata in base al riscontro degli insegnanti. Dopo aver fatto clic su un'attività nel grafico, si apre una vista simile a quella mostrata nella pagina Attività. Se è selezionata la scheda <quote
+>Alunni</quote
+>, è possibile visualizzare tutti i risultati per un alunno specifico: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Se è selezionata la scheda <quote
+>Attività</quote
+>, sarà possibile visualizzare tutti i risultati per un'attività specifica: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Impostazioni</title>
+    <para
+>La pagina delle impostazioni consente di personalizzare l'interfaccia e di ottenere alcune informazioni sulla banca dati e sulla sessione correnti. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>impostazioni</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Riconoscimenti e licenza</title>
+
+<para
+>&gcompris; </para>
+<para
+>Copyright del programma © 2000-2025 Timothée Giet e altri </para>
+
+<para
+>Traduzione italiana di Vincenzo Reale <email
+>smart2128vr@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
