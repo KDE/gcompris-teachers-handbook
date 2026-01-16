@@ -167,10 +167,6 @@ for example 'xx.yy.zz'
 ><para
 >Page de configuration.</para
 ></listitem>
-      <listitem
-><para
->Page de développement qui est utilisée seulement pour du déboggage et ne sera pas décrite ici.</para
-></listitem>
     </itemizedlist>
     <para
 >Par défaut, le tableau de bord est affiché, et contient les champs pour se connecter. Le menu sur le côté permettant d'accéder aux autres écrans est caché tant qu'aucun enseignant n'est connecté. <mediaobject>
