@@ -1,0 +1,745 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Greek "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>Εγχειρίδιο Διαχείρισης Εκπαιδευτικών GCompris</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Η Ομάδα GCompris</othername>
+<contrib
+>Προγραμματιστές</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Yannis</firstname
+><surname
+>Kaskamanidis</surname
+><affiliation
+><address
+><email
+>kiolalis@gmail.com</email
+></address
+></affiliation
+><contrib
+>μετάφραση</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2025-11-30</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>Το GCompris είναι ένα εκπαιδευτικό λογισμικό πολλαπλών δραστηριοτήτων. Αυτή η τεκμηρίωση αφορά το εργαλείο διαχείρισης gcompris-teachers που παρέχουμε. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>εκπαίδευση</keyword>
+<keyword
+>παιδιά</keyword>
+<keyword
+>παιχνίδια</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Επισκόπηση</title>
+  <para
+>Στόχος του gcompris-teachers είναι να επιτρέψει στους εκπαιδευτικούς να: </para>
+  <itemizedlist>
+    <listitem
+><para
+>δημιουργούν και διαχειρίζονται ομάδες μαθητών.</para
+></listitem>
+    <listitem
+><para
+>δημιουργούν συγκεκριμένα σχέδια εργασίας.</para
+></listitem>
+    <listitem
+><para
+>συνδέουν και αποστέλλουν ένα σχέδιο εργασίας στους μαθητές.</para
+></listitem>
+    <listitem
+><para
+>οπτικοποιούν τα αποτελέσματα εργασίας ανά ομάδα και μαθητή.</para
+></listitem>
+    <listitem
+><para
+>αναλύουν τις απαντήσεις των μαθητών.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Προδιαγραφές</title>
+  <para
+>Η ακόλουθη ενότητα περιγράφει τις διάφορες οθόνες που υλοποιούν αυτές τις λειτουργίες. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Επισκόπηση κύριας οθόνης</title>
+    <para
+>Η κύρια οθόνη επιτρέπει την πρόσβαση σε: </para>
+    <itemizedlist>
+      <listitem
+><para
+>Σελίδα πίνακα ελέγχου.</para
+></listitem>
+      <listitem
+><para
+>Σελίδα διαχείρισης μαθητών.</para
+></listitem>
+      <listitem
+><para
+>Σελίδα σύνδεσης συσκευών.</para
+></listitem>
+      <listitem
+><para
+>Σελίδα παρακολούθησης αποτελεσμάτων δραστηριοτήτων.</para
+></listitem>
+      <listitem
+><para
+>Σελίδα διαχείρισης συνόλων δεδομένων.</para
+></listitem>
+      <listitem
+><para
+>Σελίδα εμφάνισης αποτελεσμάτων ως γραφήματα.</para
+></listitem>
+      <listitem
+><para
+>Σελίδα ρυθμίσεων.</para
+></listitem>
+    </itemizedlist>
+    <para
+>Εξ ορισμού, εμφανίζεται η σελίδα του πίνακα ελέγχου, που περιέχει τη φόρμα σύνδεσης, και η πλαϊνή γραμμή μενού για την πρόσβαση στις άλλες σελίδες είναι κρυφή μέχρι να συνδεθεί ένας λογαριασμός εκπαιδευτικού. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>κύρια_οθόνη</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Ένα κουμπί για εμφάνιση/απόκρυψη του τίτλου των κουμπιών στην πλαϊνή γραμμή μενού (το εικονίδιο του χάμπουργκερ) επιτρέπει την εξοικονόμηση χώρου μόλις ο χρήστης γνωρίζει τη σημασία κάθε εικονιδίου.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>κύρια_οθόνη_hamburger</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Πίνακας Ελέγχου - Φόρμα Σύνδεσης</title>
+    <para
+>Για να δημιουργήσετε μια νέα σύνδεση εκπαιδευτικού και βάση δεδομένων, εισαγάγετε το όνομα και τον κωδικό πρόσβασης. Στη συνέχεια, θα μπορείτε να επιλέξετε αν θέλετε να κρυπτογραφήσετε τη βάση δεδομένων (για να αποφύγετε την ανάγνωσή της χωρίς τον κωδικό πρόσβασης). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>κύρια_οθόνη_δημιουργία_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Διαχείριση ομάδων και μαθητών</title>
+    <para
+>Αυτή η σελίδα επιτρέπει τη δημιουργία των διαφορετικών μαθητών και ομάδων για την τάξη σας. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>μαθητές_ομάδες</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Δημιουργία ομάδας</title>
+      <para
+>Κάντε κλικ στο κουμπί <quote
+>Προσθήκη ομάδας</quote
+> κάτω δεξιά και στο παράθυρο διαλόγου συμπληρώστε το <quote
+>Όνομα</quote
+> και προαιρετικά την <quote
+>Περιγραφή</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>ομάδα_προσθήκη</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Τροποποίηση ονόματος ομάδας ή Διαγραφή της</title>
+      <para
+>Για να επεξεργαστείτε ή να διαγράψετε μια ομάδα, τοποθετήστε τον δείκτη του ποντικιού πάνω της στη λίστα ομάδων και θα εμφανιστούν τα κουμπιά <quote
+>Επεξεργασία</quote
+> και <quote
+>Διαγραφή</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>κουμπί_διαγραφής_ομάδας</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Κάνοντας κλικ στο κουμπί <quote
+>Διαγραφή</quote
+> θα μπορέσετε να διαγράψετε την ομάδα. Σημειώστε ότι οι μαθητές θα αφαιρεθούν από τις ομάδες αλλά δεν θα διαγραφούν από τη βάση δεδομένων. Αν θέλετε να αφαιρέσετε μαθητές, ακολουθήστε την επόμενη ενότητα. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>επιβεβαίωση_διαγραφής_ομάδας</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Δημιουργία μεμονωμένου μαθητή</title>
+      <para
+>Κάντε κλικ στο <quote
+>Προσθήκη μαθητή</quote
+> για να δημιουργήσετε έναν νέο μαθητή στη βάση δεδομένων. Εκεί, μπορείτε να ορίσετε το όνομα του μαθητή και τον κωδικό πρόσβασης για σύνδεση από τους πελάτες. Μπορείτε επίσης να τους προσθέσετε απευθείας σε προϋπάρχουσες ομάδες. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>δημιουργία_μαθητή</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Δημιουργία πολλών μαθητών χρησιμοποιώντας συμβολοσειρές csv / Εξαγωγή μαθητών σε αρχείο</title>
+      <para
+>Μπορείτε να εισαγάγετε απευθείας μια λίστα μαθητών χρησιμοποιώντας ένα αρχείο csv. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>εισαγωγή_μαθητή</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Είναι επίσης δυνατή η εξαγωγή μιας λίστας μαθητών: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>εξαγωγή_μαθητή_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Διαχείριση μαθητών</title>
+      <para
+>Η διεπαφή προτείνει επίσης κουμπιά για την επεξεργασία μαθητών, την προσθήκη ή αφαίρεσή τους από ομάδες. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>προσθήκη_μαθητή_σε_ομάδα</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>αφαίρεση_μαθητή_από_ομάδα</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Μπορείτε επίσης να διαγράψετε μαθητές. Σημειώστε ότι η διαγραφή ενός μαθητή δεν διαγράφει την ομάδα του. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>διαγραφή_μαθητή</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Σύνδεση συσκευών</title>
+    <para
+>Μόλις η βάση δεδομένων είναι έτοιμη, είναι ώρα να επικοινωνήσετε με τις διάφορες συσκευές πελάτες. Η σελίδα <quote
+>Σύνδεση συσκευών</quote
+> εμφανίζει τις διάφορες ομάδες και μαθητές. Από προεπιλογή, καμία ομάδα δεν είναι επιλεγμένη, οπότε όλοι οι μαθητές είναι ορατοί. Η επιλογή μιας ομάδας θα φιλτράρει τους ορατούς μαθητές ώστε να εργάζεστε μόνο με αυτήν τη συγκεκριμένη ομάδα. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>σύνδεση_συσκευών</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Ρύθμιση συσκευών διακομιστή και πελάτη</title>
+      <para
+>Ο εκπαιδευτικός πρέπει να ρυθμίσει τις συσκευές διακομιστή και πελάτη που θέλει να συνδέσει πριν μπορέσει να συνδεθεί. Όλες οι συσκευές πρέπει να είναι συνδεδεμένες στο ίδιο τοπικό δίκτυο. Στον διακομιστή, μεταβείτε στη σελίδα <quote
+>Ρυθμίσεις</quote
+> και επιλέξτε ένα μοναδικό <quote
+>Αναγνωριστικό διακομιστή</quote
+> (τουλάχιστον μοναδικό για το τοπικό δίκτυο) και μια <quote
+>Θύρα</quote
+> (αν δεν γνωρίζετε, κρατήστε την προεπιλεγμένη). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>ρυθμίσεις</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Από την πλευρά των συσκευών GCompris, μεταβείτε στη σελίδα <quote
+>Ρύθμιση</quote
+> από το κύριο μενού και κάντε κύλιση προς τα κάτω για να βρείτε το κουμπί <quote
+>Ρύθμιση διακομιστή εκπαιδευτικού</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>κουμπί_ρύθμισης_διακομιστή_gcompris</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Μετά το κλικ σε αυτό, βεβαιωθείτε ότι έχετε τις ίδιες ρυθμίσεις με τον διακομιστή: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>ρυθμίσεις_διακομιστή_gcompris</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Επίσης, εάν η συσκευή που εκτελεί τον διακομιστή ή τον πελάτη έχει τείχος προστασίας, βεβαιωθείτε ότι έχετε ανοίξει την επιλεγμένη θύρα στη διαμόρφωση του τείχους προστασίας για να επιτρέψετε την επικοινωνία των συσκευών. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Καθημερινή ροή σύνδεσης</title>
+      <para
+>Η ροή σύνδεσης είναι η εξής: <emphasis
+>Ο εκπαιδευτικός ζητά από τους μαθητές να ενεργοποιήσουν τις συσκευές τους και να ξεκινήσουν το GCompris, και στη συνέχεια από τη σελίδα <quote
+>Σύνδεση συσκευών</quote
+> πατάει το κουμπί <quote
+>Σύνδεση συσκευών</quote
+>.</emphasis
+> Στις συσκευές πελάτες, θα εμφανιστεί ένα παράθυρο διαλόγου που θα ζητά επιβεβαίωση για σύνδεση στον διακομιστή. Σημειώστε ότι οι συσκευές πελάτες πρέπει να βρίσκονται στο κύριο μενού του GCompris, όχι σε κάποια δραστηριότητα ή σελίδα ρύθμισης. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>σύνδεση_gcompris</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Μετά την επιβεβαίωση από τους μαθητές, ο εκπαιδευτικός επιλέγει ποια στοιχεία σύνδεσης θέλει να στείλει από τη λίστα <quote
+>Μαθητές</quote
+> και πατάει <quote
+>Αποστολή λίστας σύνδεσης</quote
+></para
+></listitem>
+          <listitem
+><para
+>Οι συσκευές πελάτες θα εμφανίσουν ένα νέο παράθυρο διαλόγου που θα επιτρέπει την επιλογή του στοιχείου σύνδεσης που θέλουν. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Μόλις επιβεβαιωθεί, θα ανοίξει ένα δεύτερο παράθυρο για την εισαγωγή του κωδικού πρόσβασης. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Εάν ο κωδικός πρόσβασης είναι σωστός, ο πελάτης θα δει ένα πράσινο κουμπί στη γραμμή που υποδεικνύει επιτυχή σύνδεση. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Και ο διακομιστής θα λάβει μια ειδοποίηση: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Τα διαφορετικά χρώματα είναι: <itemizedlist>
+          <listitem
+><para
+>Πράσινο: συνδεδεμένο</para
+></listitem>
+          <listitem
+><para
+>Κόκκινο: λανθασμένος κωδικός πρόσβασης</para
+></listitem>
+          <listitem
+><para
+>Γκρι: αποσυνδεδεμένο (ήταν συνδεδεμένο κάποια στιγμή αλλά αποσυνδέθηκε)</para
+></listitem>
+          <listitem
+><para
+>Διαφανές: κανείς δεν προσπάθησε να συνδεθεί χρησιμοποιώντας αυτήν τη σύνδεση.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Δραστηριότητες</title>
+    <para
+>Αυτή η σελίδα επιτρέπει την εμφάνιση των διαφόρων αποτελεσμάτων φιλτραρισμένων κατά ημερομηνία, ομάδες, μαθητές και δραστηριότητες. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Η παρακάτω εικόνα δείχνει τα αποτελέσματα για τη δραστηριότητα <quote
+>Κάθετη αφαίρεση</quote
+> (κάθε δραστηριότητα που χειρίζεται την αποστολή δεδομένων στον διακομιστή έχει τη δική της οπτικοποίηση). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities_results</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Μπορούμε να δούμε ότι ο μαθητής έδωσε μια λανθασμένη απάντηση στην πρώτη προσπάθεια και μια σωστή απάντηση στη δεύτερη προσπάθεια, καθώς και τις λεπτομέρειες των απαντήσεων για να εντοπιστούν τα λάθη. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Σύνολα δεδομένων</title>
+    <para
+>Η σελίδα συνόλων δεδομένων επιτρέπει στους εκπαιδευτικούς να δημιουργούν/ενημερώνουν/διαγράφουν συγκεκριμένα σύνολα δεδομένων για τις δραστηριότητες ώστε να στοχεύουν σε συγκεκριμένες ανάγκες, και να τα στέλνουν/αφαιρούν από τους πελάτες. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>datasets</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Ένας περιορισμός προς το παρόν είναι ότι μόνο οι δραστηριότητες που ακολουθούν τη μορφή συνόλου δεδομένων του GCompris μπορούν να επεξεργαστούν (οπότε όχι <quote
+>Γραμματικές κλάσεις</quote
+> ή <quote
+>Πεσμένες λέξεις</quote
+> για παράδειγμα). Μπορείτε να βρείτε τη λίστα των υποστηριζόμενων δραστηριοτήτων (που μπορούν να στείλουν δεδομένα ή να έχουν πρόγραμμα επεξεργασίας συνόλου δεδομένων) σε αυτήν τη σελίδα του wiki ανάπτυξής μας: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Εδώ είναι ένα παράδειγμα για τη δραστηριότητα <quote
+>Δυαδικοί λαμπτήρες</quote
+>. Το κοινό μέρος όλων των προγραμμάτων επεξεργασίας δραστηριοτήτων περιέχει πεδία για την εισαγωγή του ονόματος του συνόλου δεδομένων, του στόχου και της δυσκολίας. Στη συνέχεια, κάθε δραστηριότητα θα έχει ένα συγκεκριμένο πρόγραμμα επεξεργασίας. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Το κουμπί <quote
+>Οδηγίες</quote
+> κάτω αριστερά παρέχεται για να δώσει κάποιες συγκεκριμένες πληροφορίες σχετικά με το πώς να συμπληρώσετε το σύνολο δεδομένων όταν χρειάζεται. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Εάν θέλετε να διαγράψετε ένα σύνολο δεδομένων: επιλέξτε το, πατήστε το κουμπί <quote
+>Αφαίρεση συνόλου δεδομένων</quote
+> και επιβεβαιώστε στο ακόλουθο παράθυρο: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Εάν έχετε συνδεδεμένους πελάτες, μπορεί να θέλετε να τους στείλετε ένα συγκεκριμένο σύνολο δεδομένων για να είναι διαθέσιμο από την πλευρά τους. Επιλέξτε το σύνολο δεδομένων και πατήστε το κουμπί <quote
+>Αποστολή σε πελάτες</quote
+>. Θα εμφανιστεί η λίστα όλων των συνδεδεμένων πελατών και θα μπορείτε να επιλέξετε ποιοι θα το λάβουν. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Ειδικές δραστηριότητες για τον διακομιστή</title>
+      <para
+>Δημιουργήσαμε τη δραστηριότητα <quote
+>Ερωτήσεις πολλαπλής επιλογής</quote
+> η οποία είναι ορατή μόνο όταν η συσκευή περιέχει σύνολα δεδομένων για αυτήν. Αυτή η δραστηριότητα επιτρέπει στους εκπαιδευτικούς να δημιουργούν ερωτηματολόγια πολλαπλής επιλογής σε οποιοδήποτε θέμα. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Γραφήματα</title>
+    <para
+>Η σελίδα Γραφήματα είναι παρόμοια με τη σελίδα Δραστηριότητες και επιτρέπει την εμφάνιση των διαφόρων αποτελεσμάτων φιλτραρισμένων κατά ημερομηνία, ομάδες, μαθητές και δραστηριότητες ως γραφήματα. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Προς το παρόν, η οπτικοποίηση είναι πολύ περιορισμένη, αλλά θα βελτιωθεί ανάλογα με τα σχόλια των εκπαιδευτικών. Μετά το κλικ σε μια δραστηριότητα στο γράφημα, υπάρχει μια προβολή παρόμοια με αυτή που εμφανίζεται στη σελίδα Δραστηριότητες. Εάν είναι επιλεγμένη η καρτέλα <quote
+>Μαθητές</quote
+>, μπορείτε να δείτε όλα τα αποτελέσματα για έναν συγκεκριμένο μαθητή: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Εάν είναι επιλεγμένη η καρτέλα <quote
+>Δραστηριότητες</quote
+>, μπορείτε να δείτε όλα τα αποτελέσματα για μια συγκεκριμένη δραστηριότητα: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>προβολή αποτελεσμάτων δραστηριότητας γραφημάτων</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Ρυθμίσεις</title>
+    <para
+>Η σελίδα ρυθμίσεων επιτρέπει την προσαρμογή της διεπαφής και την λήψη πληροφοριών για την τρέχουσα βάση δεδομένων και συνεδρία. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>ρυθμίσεις</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Συντελεστές και Άδεια</title>
+
+<para
+>&gcompris; </para>
+<para
+>Πνευματικά δικαιώματα προγράμματος © 2000–2025 Timothée Giet και άλλοι </para>
+
+<para
+>Yannis Kaskamanidis<email
+>kiolalis@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

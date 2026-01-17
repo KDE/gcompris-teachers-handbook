@@ -1,0 +1,745 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>GCompris administratorski priručnik za učitelje</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>&gcompris; tim</othername>
+<contrib
+>Razvojni programeri</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Igor</firstname
+><surname
+>Dobrača</surname
+><affiliation
+><address
+><email
+>igor.dobraca@gmail.com</email
+></address
+></affiliation
+><contrib
+>Prijevod</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2025-11-30</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>GCompris je višenamjenski obrazovni softver. Ova dokumentacija služi za korištenje gcompris-teachers administrativnog alata. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>obrazovanje</keyword>
+<keyword
+>djeca</keyword>
+<keyword
+>igre</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Pregled</title>
+  <para
+>Svrha gcompris-teachers aplikacije je omogućiti učiteljima da: </para>
+  <itemizedlist>
+    <listitem
+><para
+>stvaraju i upravljaju grupama učenika</para
+></listitem>
+    <listitem
+><para
+>izrade konkretne radne planove</para
+></listitem>
+    <listitem
+><para
+>umreže aplikacije i pošalju plan rada učenicima</para
+></listitem>
+    <listitem
+><para
+>vizualiziraju rezultate rada po grupi i učeniku</para
+></listitem>
+    <listitem
+><para
+>analiziraju odgovore učenika.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Specifikacije</title>
+  <para
+>Sljedeće poglavlje opisuje različite uslikane zaslone koji implementiraju prethodno navedene funkcionalnosti. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Pregled glavnog zaslona</title>
+    <para
+>Glavni zaslon omogućuje pristup sljedećim stranicama: </para>
+    <itemizedlist>
+      <listitem
+><para
+>nadzornoj ploči</para
+></listitem>
+      <listitem
+><para
+>upravljanju učenicima</para
+></listitem>
+      <listitem
+><para
+>povezivanju uređaja</para
+></listitem>
+      <listitem
+><para
+>praćenju rezultata aktivnosti</para
+></listitem>
+      <listitem
+><para
+>upravljanju skupovima podataka</para
+></listitem>
+      <listitem
+><para
+>prikazu rezultata s grafikonima</para
+></listitem>
+      <listitem
+><para
+>postavkama</para
+></listitem>
+    </itemizedlist>
+    <para
+>Zadano će se prikazati Nadzorna ploča koja sadrži dijalog za prijavu, a bočna traka izbornika koja omogućuje pristup ostalim stranicama je skrivena dok se učitelj ne prijavi na sustav. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Gumb za prikaz/skrivanje naziva u bočnoj traci izbornika (ikona hamburgera) omogućuje uštedu prostora nakon što korisnik nauči značenje svake ikone.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_hamburger</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Nadzorna ploča - Dijalog za prijavu</title>
+    <para
+>Za stvaranje nove prijave i baze podataka učitelja, unesite ime i lozinku. Tada ćete moći odlučiti želite li šifrirati bazu podataka (kako je nitko ne bi čitao bez lozinke). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_create_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Upravljanje grupama i učenicima</title>
+    <para
+>Ova stranica omogućuje stvaranje popisa učenika ali i grupa. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pupils_groups</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Stvori grupu</title>
+      <para
+>Kliknite na gumb <quote
+>Dodaj grupu</quote
+> u donjem desnom kutu i u dijalogu navedite <quote
+>Ime</quote
+> učenika i ako treba možete dodate <quote
+>Opis</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Uređivanje ili brisanje grupe</title>
+      <para
+>Za uređivanje ili brisanje grupe, zadržite pokazivač miša na popisu grupa i pojavit će se ikone <quote
+>Uredi</quote
+> i <quote
+>Izbriši</quote
+> . <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Klikom na gumb <quote
+>Obriši</quote
+> možete obrisati grupu. Napomena: učenici će biti uklonjeni iz grupa, ali ne i iz baze podataka. Ako ih želite ukloniti iz baze podataka, pogledajte sljedeće poglavlje. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_confirmation</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Dodavanje jednog učenika</title>
+      <para
+>Kliknite na <quote
+>Dodaj učenika</quote
+> kako biste dodali novog učenika u bazu podataka. Tamo možete postaviti ime učenika i lozinku za povezivanje. Učenik možete pritom odmah i dodati u već postojeće grupe. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_create</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Stvaranje učenika koristeći CSV datoteku / Izvoz popisa učenike u CSV datoteku</title>
+      <para
+>Možete izravno uvesti popis učenika koristeći CSV datoteku. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_import</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Moguće je također i izvoziti popis učenika: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Upravljanje učenicima</title>
+      <para
+>Sučelje također nudi tipke za uređivanje učenika, dodavanje ili uklanjanje iz grupa. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_add_to_group</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_remove_from_group</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Također možete izbrisati učenike. Napomena: brisanje učenika ne briše i grupu u kojoj se isti nalazi. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_delete</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Povezivanje uređaja</title>
+    <para
+>Jednom kada je baza podataka spremna, vrijeme je za komunikaciju s različitim klijentima. Stranica <quote
+>Povezivanje uređaja</quote
+> prikazuje različite grupe i učenike. Po zadanim postavkama, nijedna grupa nije odabrana pa su svi učenici vidljivi. Odabir grupe filtrira vidljive učenike tako da upravljanje se odnosi samo na odabranu skupinu. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>connect_devices</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Konfiguracija poslužiteljskih i klijentskih uređaja</title>
+      <para
+>Prije povezivanje učitelj mora konfigurirati poslužitelj i klijentske uređaje za koje želi omogućiti povezivanje. Svi uređaji moraju biti spojeni na istu lokalnu mrežu. Na poslužitelju idite na stranicu <quote
+>Postavke</quote
+> i odaberite <quote
+>jedinstveni ID servera</quote
+> (treba biti jedinstven unutar lokalne mreže) i <quote
+>port</quote
+> (ako je ne znate, ostavite zadano). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Na uređaju s GCompris-om, idite na <quote
+>Konfiguracija</quote
+>iz glavnog izbornika i na dnu pronaći ćete opciju <quote
+>Konfiguracija učiteljskog poslužitelja</quote
+> . <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_config_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Provjerite imate li iste postavke kao i na poslužitelju: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Također, ako uređaj koji pokreće server ili klijent ima vatrozid, obavezno otvorite odabrani port u konfiguraciji vatrozida kako bi uređaji mogli komunicirati. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Postupak povezivanja</title>
+      <para
+>Postupak povezivanja je sljedeći: <emphasis
+>Učitelj traži od učenika da uključe svoje uređaje i pokrenu GCompris, a zatim na stranici <quote
+>Poveži uređaj </quote
+> pritisne gumb <quote
+>Poveži uređaje</quote
+> .</emphasis
+> Na klijentskim uređajima pojavit će se dijalog s potvrdom povezivanja na server. Imajte na umu da klijentski uređaji moraju biti u glavnom izborniku GComprisa, a ne unutar neke aktivnosti ili konfiguracije. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Nakon potvrde od strane učenika, učitelj odabire učenike s <quote
+>popisa učenika</quote
+> i pritisne <quote
+>Pošalji prijave</quote
+></para
+></listitem>
+          <listitem
+><para
+>Klijentski uređaji prikazat će novi dijaloški okvir koji omogućuje odabir željene prijave. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Nakon potvrde, otvorit će se dijaloški okvir za unos lozinke. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Ukoliko je lozinka točna, klijent će na traci vidjeti zeleni gumb koji označava uspješnu povezanost. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Poslužitelj će također primiti obavijest. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Različite boje označavaju sljedeće: <itemizedlist>
+          <listitem
+><para
+>Zelena: povezano</para
+></listitem>
+          <listitem
+><para
+>Crvena: pogrešna lozinka</para
+></listitem>
+          <listitem
+><para
+>Siva: isključena (uređaj je bio spojen u nekom trenutku, ali veza se prekinula)</para
+></listitem>
+          <listitem
+><para
+>Transparentna: nitko se nije pokušao spojiti putem ove prijave.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Aktivnosti</title>
+    <para
+>Ova stranica omogućuje prikaz različitih rezultata filtriranih prema datumu, grupama, učenicima i aktivnostima. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Sljedeća slika prikazuje rezultate za aktivnost <quote
+>vertikalnog oduzimanja</quote
+> (svaka aktivnost koja šalje podatke serveru ima vlastitu vizualizaciju). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities_results</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Možemo vidjeti da je učenik prvi put unio netočan odgovor, a drugi put točan. Vidljivi su i detalje odgovora kako bismo uočili pogreške. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Skupovi podataka</title>
+    <para
+>Stranica skupova podataka omogućuje učiteljima da stvaraju/ažuriraju/brišu specifične skupove podataka za aktivnosti kako bi zadovoljili specifične potrebe te ih šalju/uklanjaju klijentima. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>datasets</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Jedno od ograničenja za sada je da se mogu uređivati samo aktivnosti koje imaju GCompris format skupa podataka (dakle, primjerice bez <quote
+>gramatičkih klasa</quote
+> ili <quote
+>Padajućih riječi</quote
+>). Popis podržanih aktivnosti (koje mogu slati podatke ili imaju uređivač skupa podataka) možete pronaći na stranici našeg razvojnog wikija: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Evo primjera aktivnosti <quote
+>Binarne žarulje</quote
+> . Zajednički dio svih uređivača aktivnosti sadrži polja za unos naziva skupa podataka, cilja i težine. Zatim će svaka aktivnost imati svoj specifični uređivač. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Gumb <quote
+>Upute</quote
+> u donjem lijevom kutu pruža specifične informacije o tome kako oformiti skup podataka. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Ako želite izbrisati skup podataka: odaberite ga, pritisnite gumb <quote
+>Ukloni skup podataka</quote
+> i potvrdite u sljedećem dijalogu: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Ako imate povezane klijente, možda biste im htjeli poslati specifičan skup podataka. Odaberite skup podataka i pritisni gumb <quote
+>Pošalji klijentima</quote
+> . Prikazat će se popis svih povezanih klijenata i moći ćete odabrati tko će ga primiti. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Specifične aktivnosti za poslužitelj</title>
+      <para
+>Kreirali smo aktivnost <quote
+>Pitanja s višestrukim izborom</quote
+> koja je vidljiva samo kada uređaj sadrži skupove podataka za nju. Ova aktivnost omogućuje nastavnicima izradu pitanja s višestrukim izborom na bilo koju temu. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Grafikoni</title>
+    <para
+>Stranica Grafikoni slična je stranici Aktivnosti i omogućuje prikaz različitih rezultata filtriranih po datumu, grupama, učenicima i aktivnostima. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Za sada je vizualizacija dosta ograničena, ali će se poboljšati ovisno o povratnim informacijama učitelja. Nakon klika na aktivnost na grafikonu, pojavljuje se prikaz sličan onome prikazanom na stranici Aktivnosti. Ako je kartica <quote
+>Učenici</quote
+> odabrana, možete vidjeti sve rezultate za određenog učenika: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Ako je kartica <quote
+>Aktivnosti</quote
+> odabrana, možete vidjeti sve rezultate za određenu aktivnost: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Postavke</title>
+    <para
+>Stranica s postavkama omogućuje prilagodbu sučelja i dobivanje informacija o trenutnoj bazi podataka i sesiji. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>settings</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Zasluge i licenca</title>
+
+<para
+>&gcompris; </para>
+<para
+>Autorska prava © programa 2000.–2025. Timothée Giet i drugi </para>
+
+<para
+>Prijevod GCompris-teachers aplikacije i dokumentacije: Igor Dobrača<email
+>igor.dobraca@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
