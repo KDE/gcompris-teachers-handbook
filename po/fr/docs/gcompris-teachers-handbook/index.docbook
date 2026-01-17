@@ -72,7 +72,7 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025-11-30</date>
+>30-11-2025</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
@@ -153,7 +153,7 @@ for example 'xx.yy.zz'
 ></listitem>
       <listitem
 ><para
->Page de suivi de résultats.</para
+>Page de suivi des résultats des activités.</para
 ></listitem>
       <listitem
 ><para
@@ -186,7 +186,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->icone hamburger de l'écran principal</phrase>
+>icône en hamburger de l'écran principal</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -479,7 +479,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->connexion ok avec le serveur</phrase>
+>connexion effective avec le serveur</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -667,7 +667,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Pour le moment, la visualisation est très limitée mais sera améliorée dès qu'on aura des retours d'enseignants. Après avoir cliqué sur une activité, la visualisation est similaire à celle de la page d'activités. Si l'onglet <quote
+>Pour le moment, l'affichage est très limité mais sera améliorée dès qu'on aura des retours d'enseignants. Après avoir cliqué sur une activité, l'affichage est similaire à celle de la page d'activités. Si l'onglet <quote
 >élèves</quote
 > est actif, vous verrez les résultats pour un élève spécifique : <mediaobject>
         <imageobject>
@@ -718,10 +718,10 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Licence du programme pour 2000 - 2025 : Timothée Giet et autres </para>
+>Licence du programme pour 2000 - 2025 par Timothée Giet et autres personnes </para>
 
 <para
->Traduction française : l'équipe de traduction francophone de KDE <email
+>Traduction française par l'équipe de traduction francophone de KDE <email
 >kde-francophone@kde.org</email
 ></para
 > &underFDL; &underGPL; </chapter>

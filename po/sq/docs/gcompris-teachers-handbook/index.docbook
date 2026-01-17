@@ -1,0 +1,743 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>Doracaku i Administrimit të “GCompris Teachers”</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Ekipi i &gcompris;-së</othername>
+<contrib
+>Zhvillues</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><surname
+>Ekipi ipërkthimit në shqip të&kde;-së</surname
+><affiliation
+><address
+><email
+>kde-i18n-sq@kde.org</email
+></address
+></affiliation
+><contrib
+>Përkthyes</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>30.11.2025</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.0</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>GCompris-ja është një program edukativ me shumë veprimtari. Ky dokumentim është për mjetin administrativ gcompris-teachers që ne ofrojmë. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>edukim</keyword>
+<keyword
+>fëmijë</keyword>
+<keyword
+>lojëra</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Përmbledhje</title>
+  <para
+>Synimi i gcompris-teachers është t’u bëjë të mundur mësuesve të: </para>
+  <itemizedlist>
+    <listitem
+><para
+>krijoni dhe administroni grupe nxënësish.</para
+></listitem>
+    <listitem
+><para
+>krijoni plane specifike pune.</para
+></listitem>
+    <listitem
+><para
+>lidhni nxënës dhe dërgojuni një plan pune.</para
+></listitem>
+    <listitem
+><para
+>vizualizoni përfundime pune për grup dhe nxënës.</para
+></listitem>
+    <listitem
+><para
+>analizoni përgjigje nxënësish.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Specifikime</title>
+  <para
+>Pjesa vijuese përshkruar skenat e ndryshme që sendërtojnë këto funksione. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Përmbledhje e skenës kryesore</title>
+    <para
+>Skena kryesore lejon të përdoret: </para>
+    <itemizedlist>
+      <listitem
+><para
+>Faqja e pultit.</para
+></listitem>
+      <listitem
+><para
+>Administroni faqen e nxënësve.</para
+></listitem>
+      <listitem
+><para
+>Faqja “Lidhni pajisje”.</para
+></listitem>
+      <listitem
+><para
+>Ndiqni faqe përfundimesh veprimtarish</para
+></listitem>
+      <listitem
+><para
+>Administroni faqe grupesh të dhënash.</para
+></listitem>
+      <listitem
+><para
+>Shfaqi përfundimet si një faqe grafikësh.</para
+></listitem>
+      <listitem
+><para
+>Faqe rregullimesh.</para
+></listitem>
+    </itemizedlist>
+    <para
+>Si parazgjedhje, shfaqet faqja Pult, që përmban dialogun e hyrjeve, ndërsa shtylla e menusë anësore për kalim te faqe të tjera është e fshehur, deri sa të jetë bërë hyrje te një llogari mësuesi. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>skena_kryesore</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Një buton për shfaqje/fshehje të titullit të shtyllës së menusë anësore (ikona hamburger) lejon të kursehet ca vend, pasi përdoruesit të dinë domethënien e secilës ikonë.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>menuja_hamburger_e_skenës_kryesore</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Pult - Dialog hyrjesh</title>
+    <para
+>Që të krijoni kredenciale të reja mësuesi dhe bazë të dhënash, jepni emrin dhe fjalëkalimin. Mandej do të jeni në gjendje të zgjidhni nëse dëshironi të fshehtëzohet baza e të dhënave (që të shmanget leximi i saj nga cilido pa fjalëkalimin). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>krijoni_bd_skena_kryesore</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Administroni grupe dhe nxënës</title>
+    <para
+>Kjo faqe lejon krijimin e nxënësve dhe grupeve të ndryshëm për klasën tuaj. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>grupe_nxënësish</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Krijoni një grup</title>
+      <para
+>Klikoni mbi butonin <quote
+>Shtoni një grup</quote
+> poshtë djathtas dhe te dialogu plotësoni <quote
+>Emrin</quote
+> dhe, në daçi, <quote
+>Përshkrimin</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>shtim_grupi</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Ndryshoni emrin e një grupi, ose Fshijeni</title>
+      <para
+>Që të përpunoni, ose fshini një grup, kaloni kursorin sipër tij dhe do të shfaqen butonat <quote
+>Përpunoni</quote
+> dhe <quote
+>Fshije</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>buton_fshirjeje_grupesh</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Klikimi mbi butonin <quote
+>Fshije</quote
+> do t’ju lejojë të fshini grupin. Kini parasysh se nxënësit do të hiqen prej grupeve, por s’do të fshihen në bazën e të dhënavese. Nëse doni të hiqni nxënës, ndiqni pjesën pasuese. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>ripohim_fshirjeje_grupi</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Krijoni një nxënës</title>
+      <para
+>Që të krijoni një nxënës të ri te baza e të dhënave, klikoni mbi <quote
+>Shtoni një nxënës</quote
+>. Atje mund të caktoni emrin dhe fjalëkalimin e nxënësit për t’u lidhur nga klientët. Mundeni edhe t’i shtoni drejtpërdrejt te grupe paraparkë. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>krijim_nxënësi</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Krijoni disa nxënës duke përdorur vargje csv / Eksportoni nxënës në një kartelë</title>
+      <para
+>Duke përdorur një kartelë csv, mundeni të importoni drejtpërdrejt një listë nxënësish. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>importim_nxënësish</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Është e mundshme edhe eksportimi i një liste nxënësish: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>eksportim_nxënësish_si_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Administrim nxënësish</title>
+      <para
+>Ndërfaqja propozon gjithashtu butona për përpunim nxënësish, shtim, ose heqje të tyre nga grupe. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>shtim_nxënësi_te_grup</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>heqje_nxënësi_nga_grupi</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Mundeni edhe të fshini nxënës. Kini parasysh se një nxënës s’fshin dot grupin e vet. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>fshirje_nxënësi</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Lidhni pajisje</title>
+    <para
+>Pasi të jetë gati baza e të dhënave, tani është koha të komunikoni me klientë të ndryshëm. Faqja <quote
+>Pajisje të lidhura</quote
+> shfaq grupet e ndryshme dhe nxënësit. Si parazgjedhje, s’ka ndonjë grup të përzgjedhur, ndaj janë të dukshëm krejt nxënësit. Përzgjedhja e një grupi do të sjellë filtrimin e nxënësve të dukshëm për të lënë vetëm ata që punojnë në këtë grup specifik. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>lidhni_pajisje</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Formësim i shërbyesit dhe pajisjeve klient</title>
+      <para
+>Lypset që mësuesi të formësojë pajisjet shërbyes dhe klientë që dëshirohet të lidhen, para se të jenë në gjendje të lidhen. Duhet që krejt pajisjet të lidhen në të njëjtin rrjet vendor. Te shërbyesi, kaloni te faqja <quote
+>Rregullime</quote
+> dhe zgjidhni një <quote
+>ID Shërbyesi</quote
+> unike (të paktën unike për rrjetin vendor) dhe një <quote
+>Portë</quote
+> (nëse s’dini si, mbani atë parazgjedhje). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>rregullime</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Te ana e pajisjeve GCompris, kaloni te faqja <quote
+>Formësim</quote
+> që nga menuja kryesore dhe shkoni drejt fundit të gjeni butonin <quote
+>Formësim shërbyesi mësuesi</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>buton_formësimi_gcompris_teacher</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Pasi ta klikoni, sigurohuni se keni të njëjtat rregullimet si shërbyesi: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>rregullime_gcompris-je_për_mësuesin</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Tjetër, nëse pajisja që xhiron shërbyesin, ose klientin ka një “firewall”, garantoni hapjen e portës së zgjedhur te formësimi i firewall-it, që të lejohen pajisjet të komunikojnë. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Rrjedhë pune e përditshme lidhjesh</title>
+      <para
+>Rrjedha e punës me lidhjet është si vijon: <emphasis
+>Mësuesi u kërkon nxënësve të ndezin pajisjet e tyre dhe të nisin GCompris-në dhe mandej, nga faqja <quote
+>Lidhni pajisje</quote
+> të shtypin butonin <quote
+>Lidhni pajisjet</quote
+>.</emphasis
+> Te pajisjet klient do të shfaqet një dialog që kërkon të ripohohet lidhja me shërbyesin. Kini parasysh se pajisjet klient duhet të gjenden te menuja kyesore e GCompris-së, jo te ndonjë faqe veprimtarie apo formësimi. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>lidhje_gcompris-je</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>Pas ripohimit nga nxënësit, mësuesi përzgjedh cilat kredenciale hyrjeje duan të dërgojnë nga lista <quote
+>Nxënës</quote
+> dhe shtyp <quote
+>Dërgo listë kredecialesh hyrjeje</quote
+></para
+></listitem>
+          <listitem
+><para
+>Pajisjet klient do të shfaqin një dialog të ri që lejon të përzgjidhen kredencialet për hyrje që duan. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>përzgjidhni_kredenciale_hyrjeje_gcompris</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Pasi të ripohohet, do të hapet një dialog i dytë për të dhënë fjalëkalimin. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>fjalëkalim_gcompris-je</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Nëse fjalëkalimi është i saktë, klienti do të shohë te shtylla një buton të gjelbër, çka tregon një lidhje të suksesshme. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>lidhje_gcompris-je_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Dhe shërbyesi do të marrë një njoftim: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>fjalëkalim_lidhjeje_pajisjeje_i_saktë_i_passktë</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Ngjyrat e ndryshme janë: <itemizedlist>
+          <listitem
+><para
+>E gjelbër: i lidhur</para
+></listitem>
+          <listitem
+><para
+>E kuqe: fjalëkalim i gabuar</para
+></listitem>
+          <listitem
+><para
+>Gri: i shkëputur (qe lidhur në njëfarë kohe, por u shkëput)</para
+></listitem>
+          <listitem
+><para
+>E tejdukshme: askush s’provoi të lidhet duke përdorur këto kredenciale.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>fjalëkalim_lidhjeje_pajisjeje_e_shkëputur_e_palidhur</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Veprimtari</title>
+    <para
+>Kjo faqe lejon të shfaqen përfundimet e ndryshme të filtruara sipas datash, grupesh, nxënësish dhe veprimtarish. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>veprimtari</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Figura vijuese shfaq përfundimet për veprimtarinë <quote
+>Zbritje vertikale</quote
+> (çdo veprimtari që merret me dërgim të dhënash te shërbyesi ka figurën e vet). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>përfundime_veprimtarish</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Mund të shohim se nxënësi dha një përgjigje të pasaktë herën e parë dhe një përgjigje të saktë herën e dytë, si dhe hollësitë e përgjigjes, për të pikasur gabimet. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Grupe të dhënash</title>
+    <para
+>Faqja grupe të dhënash u lejon mësuesve të krijojnë/përditësojnë/fshijnë grupe specifike të dhënash për veprimtaritë, në përputhje me nevoja specifike dhe për t’i dërguar/hequr ata te/nga klientët. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>grupe të dhënash</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Një kufizim, tani për tani, është se mund të përpunohen vetëm veprimtari që ndjekin formatin GCompris për grupe të dhënash (pra, për shembull, jo <quote
+>Klasa gramatikore</quote
+>, ose <quote
+>Fjalë që bien</quote
+>). Listën e veprimtarive që mbulohen (të cilat mund të dërgojnë të dhëna, ose kanë përpunues grupi të dhënash) mund ta gjeni në këtë faqe të wiki-t tonë të zhvillimit: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Ja një shembull për veprimtarinë <quote
+>Llamba dyore</quote
+>. Pjesa e përbashkët e krejt përpunuesve të veprimtarive përmban fusha për të dhënë emrin e grupit të të dhënave, objektivin dhe vështirësinë. Mandej çdo veprimtari do të ketë një përpunues specifik. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>krijim_përditësim_grupi_të_dhënash</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Butoni <quote
+>Udhëzime</quote
+> poshtë majtas jepet për të dhëna disa hollësi specifike rreth se si të plotësohet grupi i të dhënave, kur nevojitet. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>udhëzime_grupi_të_dhënash</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Nëse doni të fshini një grup të dhënash: përzgjidheni, shtypni butonin <quote
+>Hiq grup të dhënash</quote
+> dhe ripohojeni te dialogu vijues: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>fshirje_grupi_të_dhënash</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Nëse keni klientë të lidhur, mund të doni t’u dërgoni një grup specifik të dhënash, që ta kenë të përdorshëm në anën e tyre. Përzgjidhni grupin e të dhënave dhe shtypni butonin <quote
+>Dërgoje te klientë</quote
+>. Do të shfaqet lista e krejt klientëve të lidhur dhe do të jeni në gjendje të përzgjidhni cili ta marrë. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dërgim_grupi_të_dhënash_te_klient</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Veprimtari të caktuara për shërbyesin</title>
+      <para
+>Kemi krijuar një veprimtari <quote
+>Pyetje me shumë përgjigje</quote
+>, e cila është e dukshme vetëm kur pajisja përmban grupe të dhënash për të. Kjo veprimtari i lejon mësuesit të krijojnë pyetësorë me shumë zgjedhje për përgjigjen, për çfarëdo subjekti. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pyetje_gcompris_me_disa_zgjedhje</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Grafikë</title>
+    <para
+>Faqja Grafikë është e ngjashme me faqen Veprimtari dhe lejon të shfaqen si grafikë përfundime të ndryshme të filtruara sipas datash, grupesh, nxënësish dhe veprimtarish. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>grafikë</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Tani për tani, vizualizimet janë përnjëmend të kufizuara, por do të përmirësohen kur mësuesit të japin përshtypjet e tyre. Pas klikimit në një veprimtari te grafiku, ka një pamje të ngjashme me atë që shfaqet te faqja Veprimtari. Nëse është përzgjedhur skeda <quote
+>Nxënës</quote
+>, mund të shihni krejt përfundimet për një nxënës të caktuar: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>shihni_përfundime_nxënësi_si_grafik</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Nëse është përzgjedhur skeda <quote
+>Veprimtari</quote
+>, mund të shihni krejt përfundimet për një veprimtari të caktuar: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>shihni_përfundime_veprimtarie_si_grafik</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Rregullime</title>
+    <para
+>Faqja e rregullimeve lejon të përshtatet ndërfaqja dhe të merret ca informacion rreth bazës së të dhënave të tanishme dhe sesionit aktual. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>rregullime</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Kredite dhe Licencë</title>
+
+<para
+>&gcompris; </para>
+<para
+>Të drejta kopjimi programi 2000-2025 Timothée Giet dhe të tjerë </para>
+
+<para
+>Përkthimi në shqip : ekipi i përkthimit në shqip tëKDE-së<email
+>kde-i18n-sq@kde.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
