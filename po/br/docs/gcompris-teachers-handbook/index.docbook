@@ -21,7 +21,7 @@
 
 <bookinfo>
 <title
->Doracaku i Administrimit të “GCompris Teachers”</title>
+>Dornlev GCompris evit ar gelennerien</title>
 
 <authorgroup>
 <author>
@@ -43,23 +43,23 @@
 
 <othercredit role="developer">
 <othername
->Ekipi i &gcompris;-së</othername>
+>Skipailh &gcompris; </othername>
 <contrib
->Zhvillues</contrib>
+>Diorroerien</contrib>
 </othercredit
 > 
 
 <othercredit role="translator"
 ><surname
->Ekipi ipërkthimit në shqip të&kde;-së</surname
+>Skipailh troerien &gcompris; evit ar brezhoneg </surname
 ><affiliation
 ><address
 ><email
->kde-i18n-sq@kde.org</email
+>envelkervoas@free.fr</email
 ></address
 ></affiliation
 ><contrib
->Përkthyes</contrib
+>Envel Kervoas</contrib
 ></othercredit
 > 
 </authorgroup>
@@ -72,7 +72,7 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->30.11.2025</date>
+>2026-01-31</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
@@ -84,145 +84,145 @@ for example 'xx.yy.zz'
 
 <abstract>
 <para
->GCompris-ja është një program edukativ me shumë veprimtari. Ky dokumentim është për mjetin administrativ gcompris-teachers që ne ofrojmë. </para>
+>Ur meziant kelennadurel gant meur a obererezhioù eo GCompris. An titouroù-mañ a vez kinniget d'ar gelennerien evit implijout  benveg-merañ GCompris (gcompris_teachers) </para>
 </abstract>
 
 <keywordset>
 <keyword
 >KDE</keyword>
 <keyword
->edukim</keyword>
+>deskadurezh </keyword>
 <keyword
->fëmijë</keyword>
+>bugale</keyword>
 <keyword
->lojëra</keyword>
+>c'hoarioù</keyword>
 </keywordset>
 
 </bookinfo>
 
 <chapter id="overview">
   <title
->Përmbledhje</title>
+>Gwel hollek</title>
   <para
->Synimi i gcompris-teachers është t’u bëjë të mundur mësuesve: </para>
+>Gcompris_teachers a zo e bal reiñ d'ar gelennerien kement-mañ : </para>
   <itemizedlist>
     <listitem
 ><para
->të krijojnë dhe administrojnë grupe nxënësish.</para
+>krouiñ ha merañ strolladoù skolidi.</para
 ></listitem>
     <listitem
 ><para
->të krijojnë plane specifike pune.</para
+>krouiñ rolloù-labour spis</para
 ></listitem>
     <listitem
 ><para
->të lidhin nxënës dhe t’u dërgojnë një plan pune.</para
+>kevreañ ha kas ur roll-labour d'ar skolidi.</para
 ></listitem>
     <listitem
 ><para
->të vizualizojnë përfundime pune për grup dhe nxënës.</para
+>gwelout disoc'hoù-labour pep strollad ha pep skoliad.</para
 ></listitem>
     <listitem
 ><para
->të analizojnë përgjigje nxënësish.</para
+>dielfennañ respontoù ar skolidi</para
 ></listitem>
   </itemizedlist>
 </chapter>
 <chapter id="specifications">
   <title
->Specifikime</title>
+>Spisverkoù</title>
   <para
->Pjesa vijuese përshkruar skenat e ndryshme që sendërtojnë këto funksione. </para>
+>Deskrivañ a ra ar rann da heul skrammoù liesseurt ar meziant. </para>
   <sect1 id="main-screen-overview">
     <title
->Përmbledhje e skenës kryesore</title>
+>Gwel hollek ar skramm pennañ</title>
     <para
->Skena kryesore lejon të përdoret: </para>
+>Gant ar skramm pennañ e c'heller mont betek : </para>
     <itemizedlist>
       <listitem
 ><para
->Faqja e pultit.</para
+>Pajenn an daolenn-stur.</para
 ></listitem>
       <listitem
 ><para
->Administroni faqen e nxënësve.</para
+>Pajenn-verañ ar skolidi.</para
 ></listitem>
       <listitem
 ><para
->Faqja “Lidhni pajisje”.</para
+>Pajenn-gevreañ an ardivinkoù.</para
 ></listitem>
       <listitem
 ><para
->Ndiqni faqe përfundimesh veprimtarish.</para
+>Pajenn disoc'hoù an obererezhioù.</para
 ></listitem>
       <listitem
 ><para
->Administroni faqe grupesh të dhënash.</para
+>Pajenn-verañ teskadoù an data.</para
 ></listitem>
       <listitem
 ><para
->Shfaqi përfundimet si një faqe grafikësh.</para
+>Pajenn embann an disoc'hoù gant grafoù</para
 ></listitem>
       <listitem
 ><para
->Faqe rregullimesh.</para
+>Pajenn an dibarzhioù</para
 ></listitem>
     </itemizedlist>
     <para
->Si parazgjedhje, shfaqet faqja Pult, që përmban dialogun e hyrjeve, ndërsa shtylla e menusë anësore për kalim te faqe të tjera është e fshehur, deri sa të jetë bërë hyrje te një llogari mësuesi. <mediaobject>
+>Dre ziouer e vez diskouezet pajenn an daolenn-stur, enni prenestr al login, ha barrenn ar roll war-gostez evit tizhout ar pajennoù all zo kuzhet keit ha ma chomo kont ur c'helenner kevreet. <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen.png"/>
         </imageobject>
         <textobject>
           <phrase
->skena_kryesore</phrase>
+>skramm pennañ</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Një buton për shfaqje/fshehje të titullit të shtyllës së menusë anësore (ikona hamburger) lejon të kursehet ca vend, pasi përdoruesit të dinë domethënien e secilës ikonë.<mediaobject>
+>Ar bouton a servij da ziskouez/ da guzhat  titl ar boutonoù e barrenn ar roll war-gostez (skeudennig an hamburger) a ro tu da c'hounit un tamm plas ur wech anavezet ster pep skeudennig gant an implijer.<mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>
         <textobject>
           <phrase
->menuja_hamburger_e_skenës_kryesore</phrase>
+>skeudenn hambuger ar skramm pennañ</phrase>
         </textobject>
       </mediaobject>
     </para>
   </sect1>
   <sect1 id="dashboard---login-dialog">
     <title
->Pult - Dialog hyrjesh</title>
+>Taolenn-stur - Prenestr ar c'hevreañ</title>
     <para
->Që të krijoni kredenciale të reja mësuesi dhe bazë të dhënash, jepni emrin dhe fjalëkalimin. Mandej do të jeni në gjendje të zgjidhni nëse dëshironi të fshehtëzohet baza e të dhënave (që të shmanget leximi i saj nga cilido pa fjalëkalimin). <mediaobject>
+>A-benn krouiñ login nevez ur c'helenner hag un teskad data eo dav leuniañ an anv hag ar ger-tremen. Bez e c'heller goude dibab ma ranker kriptañ an teskad data (evit mirout a c'hallfe nep a gar lenn anezhañ hep kaout ar ger-tremen).  <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_create_db.png"/>
         </imageobject>
         <textobject>
           <phrase
->krijoni_bd_skena_kryesore</phrase>
+>skramm pennañ evit krouiñ teskadoù data</phrase>
         </textobject>
       </mediaobject>
     </para>
   </sect1>
   <sect1 id="manage-groups-and-pupils">
     <title
->Administroni grupe dhe nxënës</title>
+>Merañ strolladoù ha skolidi</title>
     <para
->Kjo faqe lejon krijimin e nxënësve dhe grupeve të ndryshëm për klasën tuaj. <mediaobject>
+>Gant ar bajenn-mañ e c'haller krouiñ rolloù ar strolladoù hag ar skolidi evit ar c'hlas. <mediaobject>
         <imageobject>
           <imagedata fileref="pupils_groups.png"/>
         </imageobject>
         <textobject>
           <phrase
->grupe_nxënësish</phrase>
+>strolladoù/skolidi</phrase>
         </textobject>
       </mediaobject>
     </para>
     <sect2 id="create-a-group">
       <title
->Krijoni një grup</title>
+>Krouiñ ur strollad</title>
       <para
 >Click on the <quote
 >Add a group</quote
@@ -236,97 +236,97 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->shtim_grupi</phrase>
+>ouzhpennañ ur strollad </phrase>
           </textobject>
         </mediaobject>
       </para>
     </sect2>
     <sect2 id="modify-a-group-name-or-delete-it">
       <title
->Ndryshoni emrin e një grupi, ose Fshijeni</title>
+>Kemm anv ur strollad pe dizober anezhañ</title>
       <para
->Që të përpunoni, ose fshini një grup, kaloni kursorin sipër tij dhe do të shfaqen butonat <quote
->Përpunoni</quote
-> dhe <quote
->Fshije</quote
->. <mediaobject>
+>Evit krouiñ pe lemel ur strollad, dav tremen a-us da roll ar strolladoù hag ar boutonoù <quote
+>Kemm</quote
+> ha <quote
+>Lemel</quote
+> a zeuio war-wel. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_button.png"/>
           </imageobject>
           <textobject>
             <phrase
->buton_fshirjeje_grupesh</phrase>
+>bouton evit lemel ur strollad</phrase>
           </textobject>
         </mediaobject>
       </para>
       <para
->Klikimi mbi butonin <quote
->Fshije</quote
-> do t’ju lejojë të fshini grupin. Kini parasysh se nxënësit do të hiqen prej grupeve, por s’do të fshihen në bazën e të dhënave. Nëse doni të hiqni nxënës, ndiqni pjesën pasuese. <mediaobject>
+>Pa glker war ar bouton <quote
+>Lemel</quote
+> e c'haller lemel ar strollad. Evezh : lamet e vez ar skolidi eus ar strolladoù, met chom a reont e-barzh an teskad data. Evit lemel ar skolidi, dav ober evel er rann da heul. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
           <textobject>
             <phrase
->ripohim_fshirjeje_grupi</phrase>
+>kadarnaat lemel ur strollad </phrase>
           </textobject>
         </mediaobject>
       </para>
     </sect2>
     <sect2 id="create-a-single-pupil">
       <title
->Krijoni një nxënës</title>
+>Krouiñ ur skoliad e-unan</title>
       <para
->Që të krijoni një nxënës të ri te baza e të dhënave, klikoni mbi <quote
->Shtoni një nxënës</quote
->. Atje mund të caktoni emrin dhe fjalëkalimin e nxënësit për t’u lidhur nga klientët. Mundeni edhe t’i shtoni drejtpërdrejt te grupe paraparkë. <mediaobject>
+>Evit krouiñ ur skoliad nevez en teskad data e ranker klikañ war <quote
+>Ouzhpennañ ur skoliad</quote
+>. Aze e c'haller lakaat anv ar skoliad hag ar ger-tremen evit kevreañ anezhañ gant ar pratikoù. Posupl eo ivez ouzhpennañ skolidi end-eeun e strolladoù krouet a-raok. <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_create.png"/>
           </imageobject>
           <textobject>
             <phrase
->krijim_nxënësi</phrase>
+>krouiñ ur skoliad</phrase>
           </textobject>
         </mediaobject>
       </para>
     </sect2>
     <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
       <title
->Krijoni disa nxënës duke përdorur vargje csv / Eksportoni nxënës në një kartelë</title>
+>Krouiñ meur a skoliad en ur implijout restroù csv  / treuzkas skolidi d'ur restr</title>
       <para
->Duke përdorur një kartelë csv, mundeni të importoni drejtpërdrejt një listë nxënësish. <mediaobject>
+>Bez' e c'haller treuzkas ur roll skolidi end-eeun en ur ober gant ur restr csv.  <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_import.png"/>
           </imageobject>
           <textobject>
             <phrase
->importim_nxënësish</phrase>
+>treuzkas skolidi</phrase>
           </textobject>
         </mediaobject>
       </para>
       <para
->Është e mundshme edhe eksportimi i një liste nxënësish: <mediaobject>
+>Posupl eo ivez treuzkas ur roll skolidi : <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_export_csv.png"/>
           </imageobject>
           <textobject>
             <phrase
->eksportim_nxënësish_si_csv</phrase>
+>csv treuzkas skolidi</phrase>
           </textobject>
         </mediaobject>
       </para>
     </sect2>
     <sect2 id="managing-pupils">
       <title
->Administrim nxënësish</title>
+>Merañ skolidi</title>
       <para
->Ndërfaqja propozon gjithashtu butona për përpunim nxënësish, shtim, ose heqje të tyre nga grupe. <mediaobject>
+>Kinnig a ra ivez an etrefas boutonoù evit krouiñ skolidi, ouzhpennañ pe lemel anezhe diiouzh strolladoù. <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_add_to_group.png"/>
           </imageobject>
           <textobject>
             <phrase
->shtim_nxënësi_te_grup</phrase>
+>ouzhpennet ur skoliad d'ur strollad</phrase>
           </textobject>
         </mediaobject
 > <mediaobject>
@@ -335,18 +335,18 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->heqje_nxënësi_nga_grupi</phrase>
+>lemel ur skoliad diouzh ur strollad</phrase>
           </textobject>
         </mediaobject>
       </para>
       <para
->Mundeni edhe të fshini nxënës. Kini parasysh se një nxënës s’fshin dot grupin e vet. <mediaobject>
+>Bez' e c'heller ivez lemel skolidi. Lemel ur skoliad ne lam ket e strollad. <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_delete.png"/>
           </imageobject>
           <textobject>
             <phrase
->fshirje_nxënësi</phrase>
+>lemel ur skoliad</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -354,145 +354,145 @@ for example 'xx.yy.zz'
   </sect1>
   <sect1 id="connect-devices">
     <title
->Lidhni pajisje</title>
+>Kevreañ ardivinkoù</title>
     <para
->Pasi të jetë gati baza e të dhënave, tani është koha të komunikoni me klientë të ndryshëm. Faqja <quote
->Pajisje të lidhura</quote
-> shfaq grupet e ndryshme dhe nxënësit. Si parazgjedhje, s’ka ndonjë grup të përzgjedhur, ndaj janë të dukshëm krejt nxënësit. Përzgjedhja e një grupi do të sjellë filtrimin e nxënësve të dukshëm, për të lënë vetëm ata që punojnë në këtë grup specifik. <mediaobject>
+>Ur wech savet an teskad data eo poent mont e darempred gant ar pratikoù. Diskouez a ra ar bajenn <quote
+>Kevreañ ardivinkoù</quote
+> ar strolladoù hag ar skolidi. Dre ziouer n'eus strollad ebet dibabet, evel-se e weler roll an holl skolidi. En ur zibab ur strollad e vo silet ar skolidi war-wel gouest da labourat er strollad-mañ hepken.  <mediaobject>
         <imageobject>
           <imagedata fileref="connect_devices.png"/>
         </imageobject>
         <textobject>
           <phrase
->lidhni_pajisje</phrase>
+>kevreañ ardivinkoù</phrase>
         </textobject>
       </mediaobject>
     </para>
     <sect2 id="configuration-of-the-server-and-devices">
       <title
->Formësim i shërbyesit dhe pajisjeve klient</title>
+>Kefluniadur ar servijour hag an ardivinkoù</title>
       <para
->Lypset që mësuesi të formësojë pajisjet shërbyes dhe klientë që dëshirohet të lidhen, para se të jenë në gjendje të lidhen. Duhet që krejt pajisjet të lidhen në të njëjtin rrjet vendor. Te shërbyesi, kaloni te faqja <quote
->Rregullime</quote
-> dhe zgjidhni një <quote
->ID Shërbyesi</quote
-> unike (të paktën unike për rrjetin vendor) dhe një <quote
->Portë</quote
-> (nëse s’dini si, mbani atë parazgjedhje). <mediaobject>
+>Rankout a ra ar c'helenner kefluniañ ar servijour hag ardivinkoù ar pratikoù a fell dezhañ kevreañ a-raok dezhe bezañ gouest da gevreañ. Ret eo d'an holl ardivinkoù bezañ kevreet gant ar memes kenrouedad lec'hel. War ar servijour eo dav mont war ar bajenn <quote
+>Dibarzhioù</quote
+> ha dibab un <quote
+>Identelezh ar servijour ID</quote
+> hepken (evit ar c'henrouedad lec'hel da nebeutañ) hag ur <quote
+>Porzh</quote
+> (ma n'eo ket sklaer pehini dibab, kenkoulz eo mirout an hini dre ziouer); <mediaobject>
           <imageobject>
             <imagedata fileref="settings.png"/>
           </imageobject>
           <textobject>
             <phrase
->rregullime</phrase>
+>dibarzhioù</phrase>
           </textobject>
         </mediaobject>
       </para>
       <para
->Te ana e pajisjeve GCompris, kaloni te faqja <quote
->Formësim</quote
-> që nga menuja kryesore dhe shkoni drejt fundit të gjeni butonin <quote
->Formësim shërbyesi mësuesi</quote
+>War zu ardivinkoù GCompris e ranker mont d'ar bajenn <quote
+>Kefluniañ</quote
+> war ar skramm pennañ ha diskenn ar roll evit kavout bouton  <quote
+>Keflunier servijour ar c'helenner</quote
 >. <mediaobject>
           <imageobject>
             <imagedata fileref="gcompris_teacher_config_button.png"/>
           </imageobject>
           <textobject>
             <phrase
->buton_formësimi_gcompris_teacher</phrase>
+>bouton kefluniañ gcompris_teachers</phrase>
           </textobject>
         </mediaobject>
       </para>
       <para
->Pasi ta klikoni, sigurohuni se keni të njëjtat rregullimet si shërbyesi: <mediaobject>
+>Ur wech bezañ kliket, ret eo bezañ sur da gaout memes dibarzhioù eget ar servijour : <mediaobject>
           <imageobject>
             <imagedata fileref="gcompris_teacher_settings.png"/>
           </imageobject>
           <textobject>
             <phrase
->rregullime_gcompris-je_për_mësuesin</phrase>
+>dibarzhioù gcompris_teachers</phrase>
           </textobject>
         </mediaobject>
       </para>
       <para
->Tjetër, nëse pajisja që xhiron shërbyesin, ose klientin ka një “firewall”, garantoni hapjen e portës së zgjedhur te formësimi i firewall-it, që të lejohen pajisjet të komunikojnë. </para>
+>Ouzhpenn da se, ma 'z eus un arc'hwel maltouter gant ar servijour pe ar pratik, ret eo digeriñ ar porzh dereat e-barzh dibarzhioù an arc'hwel maltouter a-benn lakaat an ardivinkoù da gehentiñ kenetreze. </para>
     </sect2>
     <sect2 id="daily-connection-workflow">
       <title
->Rrjedhë pune e përditshme lidhjesh</title>
+>Roudenn bemdeziek ar c'hevreañ</title>
       <para
->Rrjedha e punës me lidhjet është si vijon: <emphasis
->Mësuesi u kërkon nxënësve të ndezin pajisjet e tyre dhe të nisin GCompris-në dhe mandej, nga faqja <quote
->Lidhni pajisje</quote
->, të shtypin butonin <quote
->Lidhni pajisjet</quote
->.</emphasis
-> Te pajisjet klient do të shfaqet një dialog që kërkon të ripohohet lidhja me shërbyesin. Kini parasysh se pajisjet klient duhet të gjenden te menuja kryesore e GCompris-së, jo te ndonjë faqe veprimtarie apo formësimi. <mediaobject>
+>Setu roudenn ar c'hevreañ : <emphasis
+>Goulenn a ra ar c'helenner digant ar skolidi lakaat o ardivinkoù war elum ha loc'hañ GCompris, ha diwar ar bajenn <quote
+>Kevreañ ardivinkoù</quote
+> pouezhañ war ar bouton <quote
+>Kevreañ ardivinkoù</quote
+> .</emphasis
+>  <mediaobject>
           <imageobject>
             <imagedata fileref="gcompris_connect.png"/>
           </imageobject>
           <textobject>
             <phrase
->lidhje_gcompris-je</phrase>
+>kevreañ da GCompris</phrase>
           </textobject>
         </mediaobject>
         <itemizedlist>
           <listitem
 ><para
->Pas ripohimit nga nxënësit, mësuesi përzgjedh cilat kredenciale hyrjeje duan të dërgojnë nga lista <quote
->Nxënës</quote
-> dhe shtyp <quote
->Dërgo listë kredecialesh hyrjeje</quote
+>Ur wech resevet kadarnaat ar skolidi e tibab ar c'helenner peseurt loginoù e c'hoanta kas diwar roll ar <quote
+>Skolidi</quote
+> ha pouezhañ goude war s <quote
+>Kas roll al loginoù </quote
 ></para
 ></listitem>
           <listitem
 ><para
->Pajisjet klient do të shfaqin një dialog të ri që lejon të përzgjidhen kredencialet për hyrje që duan. <mediaobject>
+>Ardivinkoù ar pratikoù a ziskouez ur prenestr nevez evit dibab al login a blij dezhe. <mediaobject>
                 <imageobject>
                   <imagedata fileref="gcompris_select_login.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
->përzgjidhni_kredenciale_hyrjeje_gcompris</phrase>
+>dibab ar c'hont GCompris</phrase>
                 </textobject>
               </mediaobject>
           </para
 ></listitem>
           <listitem
 ><para
->Pasi të ripohohet, do të hapet një dialog i dytë për të dhënë fjalëkalimin. <mediaobject>
+>Ur wech kadarnaet e teuio un eil prenestr war-wel evit bizskrivañ ar ger-tremen. <mediaobject>
                 <imageobject>
                   <imagedata fileref="gcompris_password.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
->fjalëkalim_gcompris-je</phrase>
+>ger-tremen e-barzh GCompris</phrase>
                 </textobject>
               </mediaobject>
           </para
 ></listitem>
           <listitem
 ><para
->Nëse fjalëkalimi është i saktë, klienti do të shohë te shtylla një buton të gjelbër, çka tregon një lidhje të suksesshme. <mediaobject>
+>Ma 'z eo reizh ar ger-tremen e welo ar pratik ur bouton glas-gwer war ar varrenn o tiskouez pennvad ar c'hevreañ.  <mediaobject>
                 <imageobject>
                   <imagedata fileref="gcompris_connect_ok.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
->lidhje_gcompris-je_ok</phrase>
+>Kevreañ gant ar servijour OK</phrase>
                 </textobject>
               </mediaobject>
           </para
 ></listitem>
           <listitem
 ><para
->Dhe shërbyesi do të marrë një njoftim: <mediaobject>
+>Hag ar servijour a resevo ur c'hemenn : <mediaobject>
                 <imageobject>
                   <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
                 </imageobject>
                 <textobject>
                   <phrase
->fjalëkalim_lidhjeje_pajisjeje_i_saktë_i_passktë</phrase>
+>kevreañ c'hwitet abalamour d'ur ger-tremen fall</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -500,22 +500,22 @@ for example 'xx.yy.zz'
         </itemizedlist>
       </para>
       <para
->Ngjyrat e ndryshme janë: <itemizedlist>
+>Setu al livioù liesseurt : <itemizedlist>
           <listitem
 ><para
->E gjelbër: i lidhur</para
+>Gwer : kevreet</para
 ></listitem>
           <listitem
 ><para
->E kuqe: fjalëkalim i gabuar</para
+>Ruz : ger-tremen fall</para
 ></listitem>
           <listitem
 ><para
->Gri: i shkëputur (qe lidhur në njëfarë kohe, por u shkëput)</para
+>Gris : digevreet (digevreet goude bezañ bet kevreet d'ur poent zo)</para
 ></listitem>
           <listitem
 ><para
->E tejdukshme: askush s’provoi të lidhet duke përdorur këto kredenciale.</para
+>Treuswelus : den ebet bet o klask en em gevreañ gant al login.</para
 ></listitem>
         </itemizedlist>
         <mediaobject>
@@ -524,7 +524,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->fjalëkalim_lidhjeje_pajisjeje_e_shkëputur_e_palidhur</phrase>
+>kevreañ gant ar servjour c'hwitet abalamour d'un digrevrañ pe kevre ebet</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -532,121 +532,121 @@ for example 'xx.yy.zz'
   </sect1>
   <sect1 id="activities-view">
     <title
->Veprimtari</title>
+>Obererezhioù</title>
     <para
->Kjo faqe lejon të shfaqen përfundimet e ndryshme të filtruara sipas datash, grupesh, nxënësish dhe veprimtarish. <mediaobject>
+>Gant ar bajenn-mañ e c'haller diskouez an disoc'hoù bet silet hervez an deiziad, ar strolladoù, ar skolidi hag an obererezhioù. <mediaobject>
         <imageobject>
           <imagedata fileref="activities.png"/>
         </imageobject>
         <textobject>
           <phrase
->veprimtari</phrase>
+>obererezhioù</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Figura vijuese shfaq përfundimet për veprimtarinë <quote
->Zbritje vertikale</quote
-> (çdo veprimtari që merret me dërgim të dhënash te shërbyesi ka figurën e vet). <mediaobject>
+>Diskouez a ra ar skeudenn da heul an disoc'hoù evit an obererezh <quote
+>lamadenn a-serzh</quote
+> (pep obererezh gouest da gas roadennoù d'ar servijour a ginnig un diskouez dezhañ e-unan). <mediaobject>
         <imageobject>
           <imagedata fileref="activities_results.png"/>
         </imageobject>
         <textobject>
           <phrase
->përfundime_veprimtarish</phrase>
+>disoc'hoù an obererezhioù</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Mund të shohim se nxënësi dha një përgjigje të pasaktë herën e parë dhe një përgjigje të saktë herën e dytë, si dhe hollësitë e përgjigjes, për të pikasur gabimet. </para>
+>Gwelout a reer en deus bizskrivet ar skoliad ur respont fall ar wech kentañ hag ur respont mat en eil tro, hag ar respontoù a zispleg pelec'h emañ ar fazioù. </para>
   </sect1>
   <sect1 id="dataset-handling">
     <title
->Grupe të dhënash</title>
+>Teskadoù data</title>
     <para
->Faqja grupe të dhënash u lejon mësuesve të krijojnë/përditësojnë/fshijnë grupe specifike të dhënash për veprimtaritë, në përputhje me nevoja specifike dhe për t’i dërguar/hequr ata te/nga klientët. <mediaobject>
+>Gant pajenn an teskadoù data e c'hell ar gelennerien krouiñ/adnevesaat/lemel teskadoù data resis evit an obererezhioù gant ezhommoù resis da dizhout, ha kas/lemel anezhe d'ar/diwar ar pratikoù. <mediaobject>
         <imageobject>
           <imagedata fileref="datasets.png"/>
         </imageobject>
         <textobject>
           <phrase
->grupe të dhënash</phrase>
+>Teskadoù an data</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Një kufizim, tani për tani, është se mund të përpunohen vetëm veprimtari që ndjekin formatin GCompris për grupe të dhënash (pra, për shembull, jo <quote
->Klasa gramatikore</quote
->, ose <quote
->Fjalë që bien</quote
->). Listën e veprimtarive që mbulohen (të cilat mund të dërgojnë të dhëna, ose kanë përpunues grupi të dhënash) mund ta gjeni në këtë faqe të wiki-t tonë të zhvillimit: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+>Harzet eo evit poent an obererezhioù rak ne c'heller embann nemet ar re stummet gant un teskad data (da skouer n'ez eus na <quote
+>Rummadoù yezhadurel</quote
+> pe <quote
+>Ar gerioù o kouezhañ</quote
+>. Roll an obererezhioù reizh (a c'hall kas data pe c'hoazh kaout un embanner teskadoù data) a vez kavet war ar bajenn-mañ eus hon diorren wiki:  <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
 ></ulink
 > </para>
     <para
->Ja një shembull për veprimtarinë <quote
->Llamba dyore</quote
->. Pjesa e përbashkët e krejt përpunuesve të veprimtarive përmban fusha për të dhënë emrin e grupit të të dhënave, objektivin dhe vështirësinë. Mandej çdo veprimtari do të ketë një përpunues specifik. <mediaobject>
+>Setu ur skouer evit an obererezh <quote
+>Klogorennoù-tredan daouredel</quote
+>. Pep embanner obererezhioù a zo ennañ tachennoù evit reiñ anv  an teskad data, ar pal hag an diaester. Pep obererezh he deus hec'h embanner dezhi. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_create_update.png"/>
         </imageobject>
         <textobject>
           <phrase
->krijim_përditësim_grupi_të_dhënash</phrase>
+>adnevesaat an teskadoù data</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Butoni <quote
->Udhëzime</quote
-> poshtë majtas jepet për të dhënë disa hollësi specifike rreth se si të plotësohet grupi i të dhënave, kur nevojitet. <mediaobject>
+>Bouton an <quote
+>Titouriñ</quote
+> en traoñ a-gleiz a vez kinniget evit reiñ titouroù resis diwar-benn an doare da leuniañ an teskad data ma vez ezhomm. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_instructions.png"/>
         </imageobject>
         <textobject>
           <phrase
->udhëzime_grupi_të_dhënash</phrase>
+>titouroù an teskadoù data</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Nëse doni të fshini një grup të dhënash: përzgjidheni, shtypni butonin <quote
->Hiq grup të dhënash</quote
-> dhe ripohojeni te dialogu vijues: <mediaobject>
+>Evit lemel un teskad data : diuz anezhañ, pouezañ war ar bouton <quote
+>Lemel teskad data</quote
+> ha gwiriañ er prenestr da heul : <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_delete.png"/>
         </imageobject>
         <textobject>
           <phrase
->fshirje_grupi_të_dhënash</phrase>
+>dilemel teskad an data</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Nëse keni klientë të lidhur, mund të doni t’u dërgoni një grup specifik të dhënash, që ta kenë të përdorshëm në anën e tyre. Përzgjidhni grupin e të dhënave dhe shtypni butonin <quote
->Dërgoje te klientë</quote
->. Do të shfaqet lista e krejt klientëve të lidhur dhe do të jeni në gjendje të përzgjidhni cili ta marrë. <mediaobject>
+>Ma 'z eus pratikoù kevreet e c'hell ar c'helenner kas dezhe un teskad data resis da vezañ implijet gante. Dav eo diuzañ an teskad data ha pouezañ war ar bouton  <quote
+>Kas d'ar pratikoù</quote
+>. Diskouezet e vo roll an holl bratikoù gevreet ha dibab pere a resevo an teskad data. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_send_client.png"/>
         </imageobject>
         <textobject>
           <phrase
->dërgim_grupi_të_dhënash_te_klient</phrase>
+>kas teskadoù data</phrase>
         </textobject>
       </mediaobject>
     </para>
     <sect2 id="specific-activities">
       <title
->Veprimtari të caktuara për shërbyesin</title>
+>Obererezhioù spis evit ar servijour</title>
       <para
->Kemi krijuar një veprimtari <quote
->Pyetje me shumë përgjigje</quote
->, e cila është e dukshme vetëm kur pajisja përmban grupe të dhënash për të. Kjo veprimtari u lejon mësuesve të krijojnë pyetësorë me shumë zgjedhje për përgjigjen, për çfarëdo subjekti. <mediaobject>
+>Krouet hon eus an obererezh We have created the <quote
+>Goulennaoueg liesdibab</quote
+> na weler nemet ma 'z eus teskadoù data en ardivink. Gant an obererezh-mañ e c'hell ar gelennerien krouiñ goulennaouegoù liesdibab a bep seurt.  <mediaobject>
         <imageobject>
           <imagedata fileref="gcompris_multiple-choice_questions.png"/>
         </imageobject>
         <textobject>
           <phrase
->pyetje_gcompris_me_disa_zgjedhje</phrase>
+>obererezh goulennaoueg  liesdibab</phrase>
         </textobject>
       </mediaobject>
       </para>
@@ -654,56 +654,56 @@ for example 'xx.yy.zz'
   </sect1>
   <sect1 id="charts-view">
     <title
->Grafikë</title>
+>Grafoù</title>
     <para
->Faqja Grafikë është e ngjashme me faqen Veprimtari dhe lejon të shfaqen si grafikë përfundime të ndryshme të filtruara sipas datash, grupesh, nxënësish dhe veprimtarish. <mediaobject>
+>Heñvel ouzh pajenn an obererezhioù eo evit ar poent pajenn ar grafoù, ganti e c'heller diskouez an disoc'hoù en ur silañ an deiziad, ar strolladoù, ar skolidi hag an obererezhioù e stumm grafoù. <mediaobject>
         <imageobject>
           <imagedata fileref="charts.png"/>
         </imageobject>
         <textobject>
           <phrase
->grafikë</phrase>
+>grafoù</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Tani për tani, vizualizimet janë përnjëmend të kufizuara, por do të përmirësohen kur mësuesit të japin përshtypjet e tyre. Pas klikimit në një veprimtari te grafiku, ka një pamje të ngjashme me atë që shfaqet te faqja Veprimtari. Nëse është përzgjedhur skeda <quote
->Nxënës</quote
->, mund të shihni krejt përfundimet për një nxënës të caktuar: <mediaobject>
+>Evit poent, treut a-walc'h eo an diskouez, met gwellaet e vo diwar evezhiadennoù ar gelennerien. Ur wech kliket war un obererezh er graf e vez diskouezet ur gwel heñvel hini pajenn an obererezhioù. Pa vez diuzet an taolennata  <quote
+>skolidi</quote
+> e c'heller gwelout all disoc'hoù ur skoliad resis : <mediaobject>
         <imageobject>
           <imagedata fileref="charts_view_results_pupil.png"/>
         </imageobject>
         <textobject>
           <phrase
->shihni_përfundime_nxënësi_si_grafik</phrase>
+>gwel grafoù disoc'hoù ur skoliad</phrase>
         </textobject>
       </mediaobject>
     </para>
     <para
->Nëse është përzgjedhur skeda <quote
->Veprimtari</quote
->, mund të shihni krejt përfundimet për një veprimtari të caktuar: <mediaobject>
+>Pa vez diuzet an taolennata <quote
+>Obererezhioù</quote
+> e c'heller gwelout holl disoc'hoù evit un obererezh resis : <mediaobject>
         <imageobject>
           <imagedata fileref="charts_view_results_activity.png"/>
         </imageobject>
         <textobject>
           <phrase
->shihni_përfundime_veprimtarie_si_grafik</phrase>
+>gwel grafoù disoc'h un obererezh</phrase>
         </textobject>
       </mediaobject>
     </para>
   </sect1>
   <sect1 id="settings">
     <title
->Rregullime</title>
+>Dibarzhioù</title>
     <para
->Faqja e rregullimeve lejon të përshtatet ndërfaqja dhe të merret ca informacion rreth bazës së të dhënave të tanishme dhe sesionit aktual. <mediaobject>
+>Gant pajenn an dibarzhioù e c'heller kemm an etrefas diouzh ar c'hoant ha kaout titouroù diwar-benn an teskad data implijet hag an abadenn. <mediaobject>
         <imageobject>
           <imagedata fileref="settings.png"/>
         </imageobject>
         <textobject>
           <phrase
->rregullime</phrase>
+>dibarzhioù</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -713,16 +713,16 @@ for example 'xx.yy.zz'
 <chapter id="credits">
 
 <title
->Kredite dhe Licencë</title>
+>Lañvaz ha trugarekaat</title>
 
 <para
 >&gcompris; </para>
 <para
->Të drejta kopjimi programi 2000-2025 Timothée Giet dhe të tjerë </para>
+>Copyright ar meziant © 2000–2025 Timothée Giet hag all </para>
 
 <para
->Përkthimi në shqip : ekipi i përkthimit në shqip tëKDE-së<email
->kde-i18n-sq@kde.org</email
+>Troidigezh vrezhoneg : Skipailh treiñ GCompris evit ar brezhoneg <email
+>envelkervoas@free.fr</email
 ></para
 > &underFDL; &underGPL; </chapter>
 
