@@ -155,10 +155,6 @@ for example 'xx.yy.zz'
 ><para
 >Instellingenpagina.</para
 ></listitem>
-      <listitem
-><para
->De Pagina voor ontwikkeling (WIP) alleen gebruikt voor debuggen en zal hier niet beschreven worden.</para
-></listitem>
     </itemizedlist>
     <para
 >Standaard wordt de Dashboard-pagina weergegeven, met het aanmeldvenster en het zijbalkmenu, de toegang tot de andere pagina's is verborgen totdat er een docentaccount is aangemeld. <mediaobject>
@@ -216,9 +212,9 @@ for example 'xx.yy.zz'
       <title
 >Een groep aanmaken</title>
       <para
->Klik rechtsonder op de knop <quote
+>Klik linksonder op de knop <quote
 >Groep toevoegen</quote
-> envul in het dialoogvenster de <quote
+> en vul, in het dialoogvenster, de <quote
 >Naam</quote
 > en eventueel de<quote
 >Beschrijving</quote

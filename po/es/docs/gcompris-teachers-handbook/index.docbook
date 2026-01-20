@@ -169,10 +169,6 @@ for example 'xx.yy.zz'
 ><para
 >La página de preferencias.</para
 ></listitem>
-      <listitem
-><para
->La página de Desarrollo (WIP) solo se usa con propósitos de depuración y no se describirá aquí.</para
-></listitem>
     </itemizedlist>
     <para
 >La página que se muestra de forma predeterminada es la del «Tablero de mando», que contiene el diálogo de inicio de sesión. La barra de menú lateral que permite acceder al resto de páginas está oculta hasta que el profesor inicia sesión en su cuenta. <mediaobject>
@@ -230,7 +226,7 @@ for example 'xx.yy.zz'
       <title
 >Crear un grupo</title>
       <para
->Pulse el botón «Añadir un grupo» de la parte inferior derecha y rellene en el diálogo el «Nombre» y, opcionalmente, la «Descripción». <mediaobject>
+>Pulse el botón «Añadir un grupo» de la parte inferior izquierda y rellene en el diálogo el «Nombre» y, opcionalmente, la «Descripción». <mediaobject>
           <imageobject>
             <imagedata fileref="group_add.png"/>
           </imageobject>

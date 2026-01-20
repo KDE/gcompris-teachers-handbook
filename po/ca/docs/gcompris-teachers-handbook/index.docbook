@@ -155,10 +155,6 @@ for example 'xx.yy.zz'
 ><para
 >Pàgina de configuració.</para
 ></listitem>
-      <listitem
-><para
->La pàgina de Desenvolupament (WIP) només s'utilitza per a finalitats de depuració i no es descriu aquí.</para
-></listitem>
     </itemizedlist>
     <para
 >De manera predeterminada es mostra la pàgina del tauler, que conté el diàleg d'inici de sessió, i la barra de menús lateral per a accedir a les altres pàgines s'oculta fins que s'hi connecti un compte de professor. <mediaobject>
@@ -216,7 +212,7 @@ for example 'xx.yy.zz'
       <title
 >Crea un grup</title>
       <para
->Feu clic al botó «Afegeix un grup» a la part inferior dreta i al diàleg ompliu el «Nom» i opcionalment la «Descripció». <mediaobject>
+>Feu clic al botó «Afegeix un grup» a la part inferior esquerra i al diàleg ompliu el «Nom» i opcionalment la «Descripció». <mediaobject>
           <imageobject>
             <imagedata fileref="group_add.png"/>
           </imageobject>
