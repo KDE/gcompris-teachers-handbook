@@ -51,13 +51,27 @@
 
 <othercredit role="translator"
 ><firstname
->Rolandas</firstname
+>Bernardas</firstname
+><surname
+>Liukaitis</surname
+><affiliation
+><address
+><email
+>BernardasL@protonmail.com</email
+></address
+></affiliation
+><contrib
+>Vertėjas</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Jonas</firstname
 ><surname
 >Jakštys</surname
 ><affiliation
 ><address
 ><email
->rolandas@jakstys.lt</email
+>jonasjakstys1@gmail.com</email
 ></address
 ></affiliation
 ><contrib
@@ -110,23 +124,23 @@ for example 'xx.yy.zz'
   <itemizedlist>
     <listitem
 ><para
->kurti ir valdyti mokinių grupes.</para
+>Kurti ir valdyti mokinių grupes.</para
 ></listitem>
     <listitem
 ><para
->kurti konkrečius darbo planus.</para
+>Kurti konkrečius darbo planus.</para
 ></listitem>
     <listitem
 ><para
->prisijungti ir siųsti darbo planą mokiniams.</para
+>Prisijungti ir siųsti darbo planą mokiniams.</para
 ></listitem>
     <listitem
 ><para
->vizualizuoti darbo rezultatus pagal grupę ir mokinį.</para
+>Vizualizuoti darbo rezultatus pagal grupę ir mokinį.</para
 ></listitem>
     <listitem
 ><para
->analizuoti mokinių atsakymus.</para
+>Analizuoti mokinių atsakymus.</para
 ></listitem>
   </itemizedlist>
 </chapter>
@@ -134,7 +148,7 @@ for example 'xx.yy.zz'
   <title
 >Specifikacijos</title>
   <para
->Toliau pateiktoje skiltyje aprašomi įvairūs ekranai, įgyvendinantys šias funkcijas. </para>
+>Toliau aprašomi įvairūs ekranai, kurie įgyvendina šias funkcijas. </para>
   <sect1 id="main-screen-overview">
     <title
 >Pagrindinio ekrano apžvalga</title>
@@ -143,35 +157,35 @@ for example 'xx.yy.zz'
     <itemizedlist>
       <listitem
 ><para
->Valdymo skydelio puslapis.</para
+>Valdymo skydelio puslapį.</para
 ></listitem>
       <listitem
 ><para
->Mokinių valdymo puslapis.</para
+>Mokinių valdymo puslapį.</para
 ></listitem>
       <listitem
 ><para
->Įrenginių prijungimo puslapis.</para
+>Įrenginių prijungimo puslapį.</para
 ></listitem>
       <listitem
 ><para
->Pamokėlių rezultatų stebėjimo puslapis.</para
+>Pamokėlių rezultatų stebėjimo puslapį.</para
 ></listitem>
       <listitem
 ><para
->Duomenų rinkinių valdymo puslapis.</para
+>Duomenų rinkinių valdymo puslapį.</para
 ></listitem>
       <listitem
 ><para
->Rezultatų rodymo diagramose puslapis.</para
+>Rezultatų atvaizdavimo diagramose puslapį.</para
 ></listitem>
       <listitem
 ><para
->Nustatymų puslapis.</para
+>Nustatymų puslapį.</para
 ></listitem>
     </itemizedlist>
     <para
->Pagal numatytuosius nustatymus rodomas valdymo skydelio puslapis, kuriame yra prisijungimo dialogo langas, o šoninė meniu juosta, skirta pasiekti kitus puslapius, yra paslėpta, kol neprisijungta prie mokytojo paskyros. <mediaobject>
+>Pagal numatytuosius nustatymus rodomas valdymo skydelio puslapis, kuriame yra prisijungimo langas, o šoninė meniu juosta, skirta pasiekti kitus puslapius, yra paslėpta, kol neprisijungta prie mokytojo paskyros. <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen.png"/>
         </imageobject>
@@ -182,7 +196,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Mygtukas, skirtas rodyti / slėpti šoninės meniu juostos mygtukų pavadinimus, leidžia sutaupyti vietos, kai vartotojas jau žino kiekvienos piktogramos reikšmę.<mediaobject>
+>Mygtukas, skirtas rodyti ir slėpti šoninės meniu juostos mygtukų pavadinimus, kuris leidžia sutaupyti vietos, kai vartotojas jau žino visų piktogramų reikšmes.<mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_hamburger.png"/>
         </imageobject>
@@ -195,9 +209,9 @@ for example 'xx.yy.zz'
   </sect1>
   <sect1 id="dashboard---login-dialog">
     <title
->Valdymo skydelis – prisijungimo dialogo langas</title>
+>Valdymo skydelis – prisijungimo langas</title>
     <para
->Norėdami sukurti naują mokytojo paskyrą ir duomenų bazę, įveskite vardą ir slaptažodį Vardas turi būti bent iš 4 simbolių. Tada galėsite pasirinkti, ar norite šifruoti duomenų bazę (kad niekas negalėtų jos perskaityti be slaptažodžio). <mediaobject>
+>Norėdami sukurti naują mokytojo paskyrą ir duomenų bazę, įveskite vardą ir slaptažodį. Vardas turi būti bent 4 simbolių ilgio. Tada galėsite pasirinkti, ar norite šifruoti duomenų bazę (kad niekas negalėtų jos perskaityti be slaptažodžio). <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen_create_db.png"/>
         </imageobject>
@@ -212,7 +226,7 @@ for example 'xx.yy.zz'
     <title
 >Grupių ir mokinių valdymas</title>
     <para
->Šiame puslapyje galite sukurti skirtingus mokinius ir grupes savo klasei. <mediaobject>
+>Šiame puslapyje galite tvarkyti savo klasės mokinių profilius ir grupes. <mediaobject>
         <imageobject>
           <imagedata fileref="pupils_groups.png"/>
         </imageobject>
@@ -226,9 +240,9 @@ for example 'xx.yy.zz'
       <title
 >Grupės kūrimas</title>
       <para
->Apatiniame dešiniajame kampe spustelėkite mygtuką <quote
+>Apatiniame kairiajame kampe spustelėkite mygtuką <quote
 >Pridėti grupę</quote
-> ir dialogo lange užpildykite <quote
+> ir atsidariusiame lange užpildykite laukelius <quote
 >Pavadinimas</quote
 > ir <quote
 >Aprašymas</quote
@@ -247,10 +261,10 @@ for example 'xx.yy.zz'
       <title
 >Grupės pavadinimo keitimas arba grupės ištrynimas</title>
       <para
->Norėdami redaguoti arba ištrinti grupę, užveskite ant jos pelės žymeklį grupių sąraše – pasirodys mygtukai <quote
->Redaguoti</quote
+>Norėdami redaguoti arba ištrinti grupę, užveskite ant jos pelės žymeklį grupių sąraše – atsiras mygtukai <quote
+>Redaguoti grupę</quote
 > ir <quote
->Ištrinti</quote
+>Ištrinti grupę</quote
 >. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_button.png"/>
@@ -264,7 +278,7 @@ for example 'xx.yy.zz'
       <para
 >Paspaudus <quote
 >Ištrinti</quote
->, grupė bus ištrinta. Mokiniai bus pašalinti iš grupės, bet liks duomenų bazėje. Norėdami pašalinti mokinius, vadovaukitės kitomis instrukcijomis. <mediaobject>
+>, grupė bus ištrinta. Mokinių profiliai bus pašalinti iš grupės, bet liks duomenų bazėje. Norėdami pašalinti profilius, vadovaukitės instrukcijomis, esančiomis toliau. <mediaobject>
           <imageobject>
             <imagedata fileref="group_delete_confirmation.png"/>
           </imageobject>
@@ -277,11 +291,11 @@ for example 'xx.yy.zz'
     </sect2>
     <sect2 id="create-a-single-pupil">
       <title
->Vieno mokinio sukūrimas</title>
+>Mokinio profilio sukūrimas</title>
       <para
 >Spustelėkite <quote
 >Pridėti mokinį</quote
->, kad duomenų bazėje sukurtumėte naują mokinį. Čia galite nurodyti mokinio vardą ir slaptažodį, skirtą prisijungti iš mokinio kompiuterio. Taip pat galite iš karto priskirti jį jau esamoms grupėms. <mediaobject>
+>, kad duomenų bazėje sukurtumėte naują mokinio profilį. Čia galite nurodyti mokinio vardą ir slaptažodį, skirtą prisijungti iš mokinio kompiuterio. Taip pat galite iš karto priskirti jį jau esamoms grupėms. <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_create.png"/>
           </imageobject>
@@ -294,7 +308,7 @@ for example 'xx.yy.zz'
     </sect2>
     <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
       <title
->Kelių mokinių sukūrimas naudojant CSV eilutes / Mokinių eksportas į failą</title>
+>Kelių mokinių profilių sukūrimas naudojant CSV eilutes / Mokinių profilių išsaugojimas faile</title>
       <para
 >Mokinių sąrašą galite importuoti iš CSV failo. <mediaobject>
           <imageobject>
@@ -320,9 +334,9 @@ for example 'xx.yy.zz'
     </sect2>
     <sect2 id="managing-pupils">
       <title
->Mokinių valdymas</title>
+>Mokinių profilių valdymas</title>
       <para
->Sąsaja taip pat siūlo mygtukus mokiniams redaguoti, taip pat juos pridėti prie grupių arba pašalinti iš jų. <mediaobject>
+>Sąsaja taip pat suteikia mygtukus, skirtus redaguoti mokinių profilius ir juos pridėti prie grupių arba pašalinti iš jų. <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_add_to_group.png"/>
           </imageobject>
@@ -342,7 +356,7 @@ for example 'xx.yy.zz'
         </mediaobject>
       </para>
       <para
->Taip pat galite ištrinti mokinius. Atkreipkite dėmesį, kad ištrinant mokinį jo grupė neištrinama. <mediaobject>
+>Taip pat galite ištrinti mokinių profilius. Atkreipkite dėmesį, kad ištrinant profilį jo grupė neištrinama. <mediaobject>
           <imageobject>
             <imagedata fileref="pupil_delete.png"/>
           </imageobject>
@@ -358,9 +372,9 @@ for example 'xx.yy.zz'
     <title
 >Įrenginių prijungimas</title>
     <para
->Kai duomenų bazė paruošta, galima pradėti bendrauti su mokiniais. Puslapyje <quote
+>Kai duomenų bazė paruošta, galima pradėti bendrauti su mokinių įrenginiais. Puslapyje <quote
 >Prijungti įrenginius</quote
-> matomos grupės ir mokiniai. Pagal nutylėjimą nepasirinkta jokia grupė, todėl rodomi visi mokiniai. Pasirinkus grupę, bus rodomi tik tos grupės mokiniai. <mediaobject>
+> matomos grupės ir mokiniai. Iš pradžių nepasirinkta jokia grupė, todėl rodomi visi mokiniai. Pasirinkus grupę, bus rodomi tik tos grupės mokiniai. <mediaobject>
         <imageobject>
           <imagedata fileref="connect_devices.png"/>
         </imageobject>
@@ -372,9 +386,9 @@ for example 'xx.yy.zz'
     </para>
     <sect2 id="configuration-of-the-server-and-devices">
       <title
->Serverio ir kliento įrenginio konfigūravimas</title>
+>Serverio ir mokinio įrenginių konfigūravimas</title>
       <para
->Prieš prisijungdamas mokytojas turi sukonfigūruoti serverį ir mokinio įrenginius, prie kurių nori prisijungti. Visi įrenginiai turi būti tame pačiame vietiniame tinkle. Serveryje eikite į <quote
+>Prieš prisijungdamas, mokytojas turi sukonfigūruoti serverį ir mokinio įrenginius, prie kurių nori prisijungti. Visi įrenginiai turi būti tame pačiame vietiniame tinkle. Serveryje eikite į <quote
 >Nustatymų</quote
 > puslapį ir pasirinkite unikalų <quote
 >Serverio ID</quote
@@ -393,9 +407,9 @@ for example 'xx.yy.zz'
       <para
 >GCompris įrenginyje (mokinio kompiuteryje) pagrindiniame meniu eikite į puslapį <quote
 >Konfigūracija</quote
->, slinkite žemyn, raskite mygtuką <quote
+>, slinkite žemyn ir raskite mygtuką <quote
 >Mokytojo serverio konfigūracija</quote
-> <mediaobject>
+>. <mediaobject>
           <imageobject>
             <imagedata fileref="gcompris_teacher_config_button.png"/>
           </imageobject>
@@ -417,19 +431,19 @@ for example 'xx.yy.zz'
         </mediaobject>
       </para>
       <para
->Be to, jei įrenginyje, kuriame veikia serveris arba klientas, veikia ugniasienė, įsitikinkite, kad pasirinktas prievadas atidarytas, kad įrenginiai galėtų bendrauti. </para>
+>Be to, jei mokinio įrenginyje arba įrenginyje, kuriame veikia serveris, yra įjungta ugniasienė, įsitikinkite, kad pasirinktas prievadas atidarytas, kad įrenginiai galėtų bendrauti tarpusavyje. </para>
     </sect2>
     <sect2 id="daily-connection-workflow">
       <title
 >Kasdienis prisijungimo procesas</title>
       <para
->Ryšio eiga: <emphasis
->Mokytojas prašo mokinių įjungti įrenginius ir paleisti GCompris, tada puslapyje <quote
->Prijungti įrenginius</quote
-> reikia paspausti mygtuką <quote
+>Prisijungimo eiga: <emphasis
+>mokytojas prašo mokinių įjungti įrenginius ir paleisti GCompris, o tada puslapyje <quote
+>Įrenginių prijungimas</quote
+> mokytojas paspaudžia mygtuką <quote
 >Prijungti įrenginius</quote
 >.</emphasis
-> Mokinių įrenginiuose pasirodys dialogo langas, kuriame reikia patvirtinti prisijungimą prie serverio. Įsitikinkite, kad mokiniai yra &gcompris; pagrindiniame meniu, o ne pamokėlės ar konfigūracijos puslapyje. <mediaobject>
+> Atlikus šį veiksmą, mokinių įrenginiuose pasirodo langas, kuriame reikia patvirtinti prisijungimą prie serverio. Įsitikinkite, kad prieš pradedant prisijungimą mokinio įrenginyje GCompris rodo pagrindinį meniu, o ne pamokėlės ar nustatymų puslapį. <mediaobject>
           <imageobject>
             <imagedata fileref="gcompris_connect.png"/>
           </imageobject>
@@ -441,9 +455,9 @@ for example 'xx.yy.zz'
         <itemizedlist>
           <listitem
 ><para
->Gavus patvirtinimą iš mokinių, mokytojas pasirenka, kuriuos prisijungimus nori siųsti iš <quote
+>Gavus patvirtinimą iš mokinių, mokytojas pasirenka, kuriuos prisijungimus nori siųsti iš sąrašo <quote
 >Mokiniai</quote
-> sąrašo, ir paspaudžia <quote
+>, ir paspaudžia <quote
 >Siųsti prisijungimų sąrašą</quote
 ></para
 ></listitem>
@@ -462,7 +476,7 @@ for example 'xx.yy.zz'
 ></listitem>
           <listitem
 ><para
->Patvirtinus, atsidarys antrasis langas, skirtas įvesti slaptažodį. <mediaobject>
+>Patvirtinus atsidarys antrasis langas, skirtas įvesti slaptažodį. <mediaobject>
                 <imageobject>
                   <imagedata fileref="gcompris_password.png"/>
                 </imageobject>
@@ -475,7 +489,7 @@ for example 'xx.yy.zz'
 ></listitem>
           <listitem
 ><para
->Jei slaptažodis teisingas, mokinys juostoje matys žalią mygtuką, rodantį sėkmingą prisijungimą. <mediaobject>
+>Jei slaptažodis teisingas, mokinys įrankių juostoje matys žalią mygtuką, rodantį sėkmingą prisijungimą. <mediaobject>
                 <imageobject>
                   <imagedata fileref="gcompris_connect_ok.png"/>
                 </imageobject>
@@ -505,7 +519,7 @@ for example 'xx.yy.zz'
 >Spalvų reikšmės: <itemizedlist>
           <listitem
 ><para
->Žalia: prijungta</para
+>Žalia: prisijungta</para
 ></listitem>
           <listitem
 ><para
@@ -513,7 +527,7 @@ for example 'xx.yy.zz'
 ></listitem>
           <listitem
 ><para
->Pilka: atjungtas (kažkuriuo metu buvo prijungtas, bet vėliau atsijungė)</para
+>Pilka: atsijungta (kažkuriuo metu mokinys buvo prisijungęs, bet vėliau atsijungė)</para
 ></listitem>
           <listitem
 ><para
@@ -536,7 +550,7 @@ for example 'xx.yy.zz'
     <title
 >Pamokėlės</title>
     <para
->Šis puslapis leidžia rodyti rezultatus, filtruojant pagal datą, grupes, mokinius ir veiklas. <mediaobject>
+>Šis puslapis leidžia rodyti rezultatus bei juos filtruoti pagal datą, grupes, mokinius ir veiklas. <mediaobject>
         <imageobject>
           <imagedata fileref="activities.png"/>
         </imageobject>
@@ -549,7 +563,7 @@ for example 'xx.yy.zz'
     <para
 >Toliau pateikta iliustracija rodo <quote
 >Atimties stulpeliu</quote
-> veiklos rezultatus (kiekviena pamokėlė, kuri siunčia duomenis į serverį, turi savo vizualizaciją). <mediaobject>
+> pamokėlės rezultatus (kiekviena pamokėlė, kuri siunčia duomenis į serverį, turi savo vizualizaciją). <mediaobject>
         <imageobject>
           <imagedata fileref="activities_results.png"/>
         </imageobject>
@@ -560,13 +574,13 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Matyti, kad mokinys pirmuoju bandymu atsakė neteisingai, o antruoju – teisingai. Taip pat pateikiami atsakymų duomenys, leidžiantys atpažinti klaidas. </para>
+>Galime matyti, kad mokinys pirmuoju bandymu atsakė neteisingai, o antruoju – teisingai. Taip pat pateikiami atsakymų duomenys, leidžiantys atpažinti klaidas. </para>
   </sect1>
   <sect1 id="dataset-handling">
     <title
 >Duomenų rinkiniai</title>
     <para
->Puslapis „Duomenų rinkiniai“ leidžia mokytojams kurti, redaguoti arba trinti duomenų rinkinius, skirtus pamokėlėms pagal specifinius poreikius, bei siųsti juos mokiniams arba pašalinti iš jų. <mediaobject>
+>Puslapis „Duomenų rinkiniai“ leidžia mokytojams kurti, redaguoti arba trinti pamokėlių duomenų rinkinius pagal specifinius poreikius. Iš šio puslapio taip pat galima duomenų rinkinius siųsti į mokinių įrenginius arba juos iš ten pašalinti. <mediaobject>
         <imageobject>
           <imagedata fileref="datasets.png"/>
         </imageobject>
@@ -578,16 +592,16 @@ for example 'xx.yy.zz'
     </para>
     <para
 >Šiuo metu galima redaguoti tik pamokėles, kurios atitinka GCompris duomenų rinkinio formatą (pvz., <quote
->Gramatinės klasės</quote
+>Kalbos dalys</quote
 > arba <quote
->Krentančios raidės</quote
-> negalimos). Palaikomų pamokėlių, kurios gali siųsti duomenis arba turi duomenų rinkinio redagavimo įrankį, sąrašą rasite mūsų kūrėjų wiki puslapyje: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+>Krintantys žodžiai</quote
+> pamokėlės negalimos). Palaikomų pamokėlių, kurios gali siųsti duomenis arba turi duomenų rinkinio redagavimo įrankį, sąrašą rasite mūsų kūrėjų vikio puslapyje: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
 ></ulink
 > </para>
     <para
-><quote
->Dvejetainės lemputės</quote
-> pamokėlės pavyzdys. Visų pamokėlių redaktorių bendroje dalyje yra laukai, skirti įvesti duomenų rinkinio pavadinimą, tikslą ir sudėtingumą. Tada kiekviena pamokėlė turės specialų redaktorių. <mediaobject>
+>Žemiau matomas <quote
+>Dvejetainių lempučių</quote
+> pamokėlės pavyzdys. Visų pamokėlių redaktoriuje yra pagrindiniai laukeliai, skirti įvesti duomenų rinkinio pavadinimą, tikslą ir sudėtingumą. Toliau kiekviena pamokėlė turės specialų redaktorių su konkrečiai pamokėlei skirtais nustatymais. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_create_update.png"/>
         </imageobject>
@@ -600,7 +614,7 @@ for example 'xx.yy.zz'
     <para
 >Mygtukas <quote
 >Instrukcijos</quote
->, esantis apatiniame kairiajame kampe, pateikia papildomos informacijos apie tai, kaip prireikus užpildyti duomenų rinkinį. <mediaobject>
+>, esantis apatiniame kairiajame kampe, pateikia papildomos informacijos, kaip pildyti duomenų rinkinį. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_instructions.png"/>
         </imageobject>
@@ -611,9 +625,9 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Jei norite ištrinti duomenų rinkinį: pasirinkite jį, paspauskite mygtuką <quote
->Ištrinti duomenų rinkinį</quote
-> ir patvirtinkite atsidariusiame dialogo lange: <mediaobject>
+>Jei norite ištrinti duomenų rinkinį, pasirinkite jį, paspauskite mygtuką <quote
+>Pašalinti duomenų rinkinį iš mokinių</quote
+> ir patvirtinkite atsidariusiame lange: <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_delete.png"/>
         </imageobject>
@@ -624,9 +638,9 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Jei turite prisijungusius mokinius, galite siųsti jiems konkretų duomenų rinkinį. Pasirinkite duomenų rinkinį ir spustelėkite <quote
->Siųsti mokiniams</quote
->. Atsiras visų prijungtų mokinių sąrašas, iš kurio galėsite pasirinkti gavėjus. <mediaobject>
+>Jei turite prisijungusių mokinių, galite siųsti jiems konkretų duomenų rinkinį. Pasirinkite duomenų rinkinį ir spustelėkite <quote
+>Siųsti duomenų rinkinį mokiniams</quote
+>. Atsiras visų prisijungusių mokinių sąrašas, iš kurio galėsite pasirinkti gavėjus. <mediaobject>
         <imageobject>
           <imagedata fileref="dataset_send_client.png"/>
         </imageobject>
@@ -641,8 +655,8 @@ for example 'xx.yy.zz'
 >Specifinės serverio veiklos</title>
       <para
 >Mes sukūrėme <quote
->Klausimų su kelias atsakymais</quote
-> pamokėlę, kuri matoma tik tuomet, kai įrenginyje yra jos duomenų rinkinių. Ši pamokėlė leidžia mokytojams kurti klausimynus su keletu atsakymų bet kuria tema. <mediaobject>
+>Klausimų su pasirenkamais atsakymais</quote
+> pamokėlę, kuri matoma tik tuomet, kai įrenginyje yra jos duomenų rinkiniai. Ši pamokėlė leidžia mokytojams kurti klausimynus su keliais pasirenkamais atsakymais bet kokia tema. <mediaobject>
         <imageobject>
           <imagedata fileref="gcompris_multiple-choice_questions.png"/>
         </imageobject>
@@ -658,7 +672,7 @@ for example 'xx.yy.zz'
     <title
 >Diagramos</title>
     <para
->Puslapis „Diagramos“ veikia panašiai kaip „Pamokėlės“ puslapis ir leidžia peržiūrėti rezultatus diagramomis, filtruojant pagal datą, grupes, mokinius ir veiklas. <mediaobject>
+>Puslapis „Diagramos“ veikia panašiai kaip puslapis „Pamokėlės“ ir leidžia peržiūrėti rezultatus, atvaizduojamus diagramomis, bei juos filtruoti pagal datą, grupes, mokinius ir veiklas. <mediaobject>
         <imageobject>
           <imagedata fileref="charts.png"/>
         </imageobject>
@@ -669,7 +683,7 @@ for example 'xx.yy.zz'
       </mediaobject>
     </para>
     <para
->Šiuo metu vizualizacija yra ribota, bet bus patobulinta pagal mokytojų atsiliepimus. Spustelėjus veiklą diagramoje, pasirodo vaizdas panašus į „Pamokėlės“ puslapio. Pasirinkus skiltį <quote
+>Šiuo metu rezultatų vizualizacija yra ribota, bet bus patobulinta atsižvelgiant į mokytojų atsiliepimus. Spustelėjus veiklą diagramoje, pasirodo vaizdas panašus į puslapio „Pamokėlės“. Pasirinkus skiltį <quote
 >Mokiniai</quote
 >, matomi visi konkretaus mokinio rezultatai: <mediaobject>
         <imageobject>
@@ -683,8 +697,8 @@ for example 'xx.yy.zz'
     </para>
     <para
 >Jeigu pasirinkta <quote
->Pamokėlės</quote
-> kortelė, galite matyti visus rezultatus konkrečiai pamokėlei: <mediaobject>
+>Pamokėlių</quote
+> sritis, galite matyti visus konkrečios pamokėlės rezultatus: <mediaobject>
         <imageobject>
           <imagedata fileref="charts_view_results_activity.png"/>
         </imageobject>
@@ -699,7 +713,7 @@ for example 'xx.yy.zz'
     <title
 >Nustatymai</title>
     <para
->Nustatymų puslapis leidžia pritaikyti sąsają ir gauti informaciją apie dabartinę duomenų bazę bei sesiją. <mediaobject>
+>Nustatymų puslapis leidžia pritaikyti sąsają ir pasiekti informaciją apie dabartinę duomenų bazę bei sesiją. <mediaobject>
         <imageobject>
           <imagedata fileref="settings.png"/>
         </imageobject>
@@ -715,7 +729,7 @@ for example 'xx.yy.zz'
 <chapter id="credits">
 
 <title
->Licencija</title>
+>Padėkos ir licencija</title>
 
 <para
 >&gcompris; </para>
@@ -723,8 +737,10 @@ for example 'xx.yy.zz'
 >Programos autorių teisės © 2000–2025 Timothée Giet ir kiti </para>
 
 <para
->Vertimas GCompris-teachers : Rolandas Jakštys<email
->rolandas@jakstys.lt</email
+>Vertimas GCompris-mokytojams: Bernardas Liukaitis <email
+>BernardasL@protonmail.com</email
+>, Jonas Jakštys <email
+>jonasjakstys1@gmail.com</email
 ></para
 > &underFDL; &underGPL; </chapter>
 
