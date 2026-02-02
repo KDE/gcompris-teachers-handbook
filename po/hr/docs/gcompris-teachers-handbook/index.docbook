@@ -226,12 +226,12 @@ for example 'xx.yy.zz'
       <title
 >Stvori grupu</title>
       <para
->Kliknite na gumb <quote
->Dodaj grupu</quote
-> u donjem desnom kutu i u dijalogu navedite <quote
->Ime</quote
-> učenika i ako treba možete dodate <quote
->Opis</quote
+>Click on the <quote
+>Add a group</quote
+> button on the bottom right and in the dialog fill the <quote
+>Name</quote
+> and optionally the <quote
+>Description</quote
 >. <mediaobject>
           <imageobject>
             <imagedata fileref="group_add.png"/>
