@@ -46,12 +46,12 @@
 Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
-<date>2025-11-30</date>
+<date>2026-03-11</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
-<releaseinfo>26.0</releaseinfo>
+<releaseinfo>26.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -615,7 +615,7 @@ GCompris is a multi-activity educational software. This documentation is for the
 &gcompris;
 </para>
 <para>
-Program copyright © 2000–2025 Timothée Giet and others
+Program copyright © 2000–2026 Timothée Giet and others
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
