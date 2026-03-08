@@ -60,13 +60,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025-11-30</date>
+>2026-03-11</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->26.0</releaseinfo>
+>26.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -154,10 +154,6 @@ for example 'xx.yy.zz'
       <listitem
 ><para
 >Instellingenpagina.</para
-></listitem>
-      <listitem
-><para
->De Pagina voor ontwikkeling (WIP) alleen gebruikt voor debuggen en zal hier niet beschreven worden.</para
 ></listitem>
     </itemizedlist>
     <para
@@ -710,7 +706,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Programma copyright © 2000-2025 Timothée Giet en anderen </para>
+>Programma copyright © 2000-2026 Timothée Giet en anderen </para>
 
 &meld.fouten;&vertaling.freek; &underFDL; &underGPL; </chapter>
 
