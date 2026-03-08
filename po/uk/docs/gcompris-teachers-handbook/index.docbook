@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->30 листопада 2025 року</date>
+>11 березня 2026 року</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->26.0</releaseinfo>
+>26.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -720,7 +720,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Авторські права на програму належать Timothée Giet та іншим, 2000–2025 </para>
+>Авторські права на програму належать Timothée Giet та іншим, 2000–2026 </para>
 
 <para
 >Переклад українською: Юрій Чорноіван <email
