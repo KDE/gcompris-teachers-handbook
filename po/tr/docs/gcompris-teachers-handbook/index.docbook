@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2025‒11‒30</date>
+>2026‒03‒11</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->26.0</releaseinfo>
+>26.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -169,10 +169,6 @@ for example 'xx.yy.zz'
 ><para
 >Ayarlar sayfası</para
 ></listitem>
-      <listitem
-><para
->Geliştirme (Yapım aşamasında) sayfası yalnızca hata ayıklama amacıyla kullanılır ve burada açıklanmayacaktır.</para
-></listitem>
     </itemizedlist>
     <para
 >Varsayılan olarak, giriş iletişim kutusunu içeren Gösterge Paneli sayfası görüntülenir ve diğer sayfalara erişmek için kullanılan yan menü çubuğu, bir öğretmen hesabı oturum açana kadar gizli kalır. <mediaobject>
@@ -230,7 +226,7 @@ for example 'xx.yy.zz'
       <title
 >Grup oluştur</title>
       <para
->Sağ alt köşedeki “Grup ekle” düğmesine tıklayın ve açılan iletişim kutusunda “Ad” ve isteğe bağlı olarak “Açıklama” alanlarını doldurun. <mediaobject>
+>Sol alt köşedeki “Grup ekle” düğmesine tıklayın ve açılan iletişim kutusunda “Ad” ve isteğe bağlı olarak “Açıklama” alanlarını doldurun. <mediaobject>
           <imageobject>
             <imagedata fileref="group_add.png"/>
           </imageobject>
@@ -668,7 +664,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Program telif hakkı © 2000–2025 Timothée Giet ve diğerleri </para>
+>Program telif hakkı © 2000–2026 Timothée Giet ve diğerleri </para>
 
 <para
 >Çeviri: Emir SARI<email
