@@ -163,7 +163,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen</phrase>
+>La pantalla principal del professorat del GCompris mostra el tauler i la interfície d'inici de sessió.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -174,7 +174,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen_hamburger</phrase>
+>Una vista del menú de la barra lateral amb la icona d'hamburguesa utilitzada per a ampliar o col·lapsar les etiquetes.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -189,7 +189,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen_create_db</phrase>
+>El diàleg per a crear un compte nou de professor amb un nom d'usuari i contrasenya i triar la configuració d'encriptatge de la base de dades.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -204,7 +204,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->pupils_groups</phrase>
+>La pantalla de gestió on un professor pot veure la llista de grups i alumnes.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -218,7 +218,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_add</phrase>
+>El quadre de diàleg per a afegir un grup d'alumnes nou introduint el seu nom i la descripció.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -233,7 +233,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_delete_button</phrase>
+>La interfície que mostra com apareixen els botons d'edició i eliminació en passar per sobre d'un nom de grup.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -244,7 +244,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_delete_confirmation</phrase>
+>La pregunta de confirmació demana al professor si està segur que vol eliminar un grup.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -259,7 +259,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_create</phrase>
+>La finestra «Afegeix un alumne» que mostra els camps del nom d'alumne, la contrasenya i la selecció de grup.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -274,7 +274,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_import</phrase>
+>La interfície d'importació utilitzada per a carregar diversos perfils d'alumnes a partir d'un fitxer CSV.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -300,7 +300,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_add_to_group</phrase>
+>La interfície mostrant els botons utilitzats per a assignar un alumne específic a un grup de classe.</phrase>
           </textobject>
         </mediaobject
 > <mediaobject>
@@ -309,7 +309,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_remove_from_group</phrase>
+>La interfície que mostra com eliminar un alumne del seu grup assignat actualment.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -320,7 +320,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_delete</phrase>
+>La pantalla de gestió d'alumnes ressaltant el botó de supressió de comptes d'alumnes.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -336,7 +336,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->connect_devices</phrase>
+>El tauler «Connecta dispositius» que mostra l'estat de tots els alumnes i grups disponibles.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -350,7 +350,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->configuració</phrase>
+>La pàgina de configuració on es configuren l'ID i el número del port del servidor per a la comunicació de xarxa.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -361,7 +361,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->gcompris_teacher_config_button</phrase>
+>Un diàleg de confirmació al dispositiu de l'alumne que demana connectar-se al servidor del professor.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -372,7 +372,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->gcompris_teacher_settings</phrase>
+>La pantalla de configuració del costat del client on els alumnes introdueixen l'ID i el port del servidor que coincideixi.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -391,7 +391,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->gcompris_connect</phrase>
+>Una finestra emergent al dispositiu de l'alumne que demana permís per a connectar-se al servidor del professor.</phrase>
           </textobject>
         </mediaobject>
         <itemizedlist>
@@ -407,7 +407,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_select_login</phrase>
+>La pantalla de selecció d'inici de sessió al dispositiu de l'alumne que mostra la llista de noms enviats pel professor.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -420,7 +420,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_password</phrase>
+>El diàleg d'entrada de contrasenya al dispositiu de l'alumne per a iniciar sessió en el seu perfil específic.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -433,7 +433,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_connect_ok</phrase>
+>La barra de navegació del GCompris mostra un indicador verd per a una connexió correcta amb el servidor.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -446,7 +446,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->connect_devices_password_correct_incorrect</phrase>
+>El tauler del professor que mostra indicadors d'estat codificats en color d'intents d'inici de sessió correctes i erronis.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -478,7 +478,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->connect_devices_password_disconnected_not_connected</phrase>
+>La llista de connexions que mostra colors diferents per als alumnes desconnectats en contra d'aquells que encara no s'han connectat.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -494,7 +494,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->activitats</phrase>
+>La pàgina de resultats de les activitats mostra filtres de data, grup i les tasques educatives específiques.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -505,7 +505,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->activities_results</phrase>
+>Desglossament detallat dels resultats de l'alumne en l'activitat de «resta vertical», mostrant errors i èxits.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -522,7 +522,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->conjunts de dades</phrase>
+>La pàgina de gestió de conjunts de dades on els professors creen contingut personalitzat per a diverses activitats.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -537,7 +537,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_create_update</phrase>
+>L'editor d'activitats per a l'activitat «Bombetes binàries», que permet personalitzar els noms dels conjunts de dades i els nivells de dificultat.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -548,7 +548,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_instructions</phrase>
+>La subfinestra d'instruccions que proporciona orientació sobre com omplir correctament les dades d'activitat personalitzades.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -559,7 +559,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_delete</phrase>
+>La pregunta de confirmació que s'utilitza per a suprimir de manera segura un conjunt de dades personalitzat de l'eina del professor.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -570,7 +570,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_send_client</phrase>
+>La interfície per a seleccionar quins dispositius d'alumnes connectats han de rebre un conjunt de dades nou.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -584,7 +584,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->gcompris_multiple-choice_questions</phrase>
+>La previsualització de l'activitat «Preguntes d'elecció múltiple» al dispositiu de l'alumne.</phrase>
         </textobject>
       </mediaobject>
       </para>
@@ -600,7 +600,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->gràfics</phrase>
+>La pàgina de gràfics de resum proporciona una visualització gràfica del progrés de l'alumne i del grup.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -611,7 +611,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->charts_view_results_pupil</phrase>
+>Una visió gràfica que mostra la relació d'èxit i la història d'un alumne concret.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -622,7 +622,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->charts_view_results_activity</phrase>
+>Un gràfic que mostra el rendiment general de la classe d'una activitat individual seleccionada.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -637,7 +637,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->configuració</phrase>
+>La pàgina de configuració general mostrant informació sobre la sessió actual.</phrase>
         </textobject>
       </mediaobject>
     </para>

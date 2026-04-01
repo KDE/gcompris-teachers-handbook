@@ -177,7 +177,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen</phrase>
+>Головне вікно «GCompris Teachers» з показаною панеллю керування та інтерфейсом входу до системи.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -188,7 +188,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen_hamburger</phrase>
+>Меню бічної панелі з піктограмою гамбургера, якою можна скористатися для розгортання і згортання міток.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -203,7 +203,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen_create_db</phrase>
+>Вікно створення облікового запису учителя з полями імені користувача і пароля та вибором параметрів шифрування бази даних.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -218,7 +218,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->pupils_groups</phrase>
+>Вікно керування, де учитель може переглядати список груп і учнів.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -238,7 +238,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_add</phrase>
+>Панель для додавання нової групи учнів шляхом введення її назви і опису.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -257,7 +257,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->Кнопка вилучення групи</phrase>
+>Інтерфейс, який показує, як кнопки редагування та вилучення буде показано при наведенні вказівника на назву групи.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -270,7 +270,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_delete_confirmation</phrase>
+>Запит підтвердження до вчителя щодо того, чи справді слід вилучити групу.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -287,7 +287,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_create</phrase>
+>Вікно «Додавання учня», де показано поля для імені учня, пароля та вибору групи.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -302,7 +302,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_import</phrase>
+>Інтерфейс імпортування, яким користуються для вивантаження декількох профілів учнів з файла CSV.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -328,7 +328,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_add_to_group</phrase>
+>В інтерфейсі показано кнопки для призначення певного учня до груп класів.</phrase>
           </textobject>
         </mediaobject
 > <mediaobject>
@@ -337,7 +337,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_remove_from_group</phrase>
+>Інтерфейс, що показує, як вилучити учня з поточної пов'язаної із ним групи.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -348,7 +348,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_delete</phrase>
+>Вікно керування записами учнів із підсвічуванням кнопки вилучення для облікових записів учнів.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -366,7 +366,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->connect_devices</phrase>
+>Панель «З'єднання з пристроями», на якій показано стан усіх доступних учнів та груп.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -386,7 +386,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->параметри</phrase>
+>Сторінка параметрів, на якій ідентифікатор сервера і номер порту налаштовуються шляхом обміну даними у мережі.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -401,7 +401,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->Кнопка налаштовування для учителя у gcompris</phrase>
+>Вікно підтвердження на пристрої учня із запитом щодо з'єднання з сервером учителя.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -412,7 +412,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->Параметри учителя у gcompris</phrase>
+>Параметри на боці клієнта, де учням слід ввести відповідний ідентифікатор і порт сервера.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -435,7 +435,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->gcompris_connect</phrase>
+>Контекстна панель на пристрої учня із запитом щодо надання прав доступу до з'єднання із сервером учителя.</phrase>
           </textobject>
         </mediaobject>
         <itemizedlist>
@@ -455,7 +455,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_select_login</phrase>
+>Вікно вибору облікового запису на пристрої учня, де показано список імен, надісланий учителем.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -468,7 +468,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_password</phrase>
+>Вікно введення пароля на пристрої учня для входу до власного профілю.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -481,7 +481,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_connect_ok</phrase>
+>Панель навігації GCompris, де показано зелений індикатор для успішного з'єднання з сервером.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -494,7 +494,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->connect_devices_password_correct_incorrect</phrase>
+>Панель інструментів учителя, де кольорами позначено успішні і неуспішні спроби входу.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -526,7 +526,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->connect_devices_password_disconnected_not_connected</phrase>
+>Список з'єднань, де показано різні кольори для від'єднаних записів і записів, які ще не було з'єднано.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -542,7 +542,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->вправи</phrase>
+>Сторінка результатів вправ, де показано фільтри для дати, групи і специфічних навчальних завдань.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -555,7 +555,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->Результати вправи</phrase>
+>Докладний розподілі даних щодо роботи учня у вправі «вертикальне віднімання», де показано помилки і успіхи.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -572,7 +572,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->набори даних</phrase>
+>Сторінка керування наборами даних, де вчителі можуть створювати нетипові набори даних для різних вправ.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -593,7 +593,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_create_update</phrase>
+>Редактор вправ для вправи «Двійкові лампи», де можна налаштувати назви наборів даних і рівні складності.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -606,7 +606,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_instructions</phrase>
+>Панель настанов, де наведено настанови щодо того, як правильно заповнювати дані нетипової вправи.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -619,7 +619,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_delete</phrase>
+>Запит щодо підтвердження, який використовують для безпечного вилучення нетипового набору даних з засобу керування вчителя.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -632,7 +632,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_send_client</phrase>
+>Інтерфейс для вибору, які зі з'єднаних пристроїв користувача мають отримати новий набір даних.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -648,7 +648,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->gcompris_multiple-choice_questions</phrase>
+>Попередній перегляд вправи «Питання з вибором відповіді» на пристрої учня.</phrase>
         </textobject>
       </mediaobject>
       </para>
@@ -664,7 +664,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->діаграми</phrase>
+>Сторінка огляду діаграм, де наведено графічну візуалізацію поступу навчання учня і групи.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -677,7 +677,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->Діаграма перегляду результатів виконання вправи учнем</phrase>
+>Графічна панель, де показано оцінку успішності та журнал дій для певного учня.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -690,7 +690,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->charts_view_results_activity</phrase>
+>Діаграма, на якій показано загальний поступ навчання класу для однієї вибраної вправи.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -705,7 +705,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->параметри</phrase>
+>За допомогою сторінки загальних параметрів ви можете переглядати відомості щодо поточного сеансу.</phrase>
         </textobject>
       </mediaobject>
     </para>
