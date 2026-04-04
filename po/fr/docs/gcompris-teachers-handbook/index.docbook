@@ -84,14 +84,14 @@ for example 'xx.yy.zz'
 
 <abstract>
 <para
->&gcompris; est un jeu éducatif multi-activités. Cette documentation décrit le logiciel d'administration gcompris-teachers que l'équipe fournit. </para>
+>&gcompris; est un jeu éducatif multi-activités. Cette documentation décrit le logiciel d'administration « gcompris-teachers » fourni par l'équipe. </para>
 </abstract>
 
 <keywordset>
 <keyword
 >KDE</keyword>
 <keyword
->education</keyword>
+>éducation</keyword>
 <keyword
 >enfants</keyword>
 <keyword
@@ -104,7 +104,7 @@ for example 'xx.yy.zz'
   <title
 >Vue d'ensemble</title>
   <para
->L'objectif de gcompris-teachers est de permettre aux enseignants de : </para>
+>L'objectif du module « gcompris-teachers » est de permettre aux enseignants de : </para>
   <itemizedlist>
     <listitem
 ><para
@@ -224,13 +224,13 @@ for example 'xx.yy.zz'
       <title
 >Créer un groupe</title>
       <para
->Cliquez sur le bouton <quote
+>Veuillez cliquer sur le bouton <quote
 >Ajouter un groupe</quote
-> en bas à droite et dans la fenêtre remplissez le <quote
+> en bas à droite et dans la fenêtre, veuillez remplir le <quote
 >Nom</quote
-> and la <quote
+> et la <quote
 >Description</quote
-> (champ optionnel). <mediaobject>
+> (Champ optionnel). <mediaobject>
           <imageobject>
             <imagedata fileref="group_add.png"/>
           </imageobject>
@@ -372,7 +372,7 @@ for example 'xx.yy.zz'
       <title
 >Configuration du serveur et des appareils</title>
       <para
->Le professseur doit configurer le serveur et les appareils des élèves afin qu'ils puissent communiquer entre eux. Tous les appareils doivent être connectés au même réseau local. Dans le serveur, aller sur la page <quote
+>Le professeur doit configurer le serveur et les appareils des élèves afin qu'ils puissent communiquer entre eux. Tous les appareils doivent être connectés au même réseau local. Dans le serveur, aller sur la page <quote
 >Configuration</quote
 > et choisissez un <quote
 >identifiant de serveur</quote
