@@ -21,7 +21,7 @@
 
 <bookinfo>
 <title
->Manual de gestión docente de GCompris</title>
+>Manual de gestión de GCompris Profesores</title>
 
 <authorgroup>
 <author>
@@ -143,7 +143,7 @@ for example 'xx.yy.zz'
     <itemizedlist>
       <listitem
 ><para
->La página del «Tablero de mando».</para
+>La página del «Tablero de control».</para
 ></listitem>
       <listitem
 ><para
@@ -171,7 +171,7 @@ for example 'xx.yy.zz'
 ></listitem>
     </itemizedlist>
     <para
->La página que se muestra de forma predeterminada es la del «Tablero de mando», que contiene el diálogo de inicio de sesión. La barra de menú lateral que permite acceder al resto de páginas está oculta hasta que el profesor inicia sesión en su cuenta. <mediaobject>
+>La página que se muestra de forma predeterminada es la del «Tablero de control», que contiene el diálogo de inicio de sesión. La barra de menú lateral que permite acceder al resto de páginas está oculta hasta que el profesor inicia sesión en su cuenta. <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen.png"/>
         </imageobject>
@@ -195,7 +195,7 @@ for example 'xx.yy.zz'
   </sect1>
   <sect1 id="dashboard---login-dialog">
     <title
->Tablero de mando: diálogo de inicio de sesión</title>
+>Tablero de control: diálogo de inicio de sesión</title>
     <para
 >Para crear un nuevo nombre de usuario y una nueva base de datos para profesores, introduzca el nombre y la contraseña. Podrá elegir si desea cifrar la base de datos (para evitar que alguien acceda a ella sin la contraseña). <mediaobject>
         <imageobject>
