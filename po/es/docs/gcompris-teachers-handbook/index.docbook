@@ -21,7 +21,7 @@
 
 <bookinfo>
 <title
->Manual de gestión docente de GCompris</title>
+>Manual de gestión de GCompris Profesores</title>
 
 <authorgroup>
 <author>
@@ -143,7 +143,7 @@ for example 'xx.yy.zz'
     <itemizedlist>
       <listitem
 ><para
->La página del «Tablero de mando».</para
+>La página del «Tablero de control».</para
 ></listitem>
       <listitem
 ><para
@@ -171,13 +171,13 @@ for example 'xx.yy.zz'
 ></listitem>
     </itemizedlist>
     <para
->La página que se muestra de forma predeterminada es la del «Tablero de mando», que contiene el diálogo de inicio de sesión. La barra de menú lateral que permite acceder al resto de páginas está oculta hasta que el profesor inicia sesión en su cuenta. <mediaobject>
+>La página que se muestra de forma predeterminada es la del «Tablero de control», que contiene el diálogo de inicio de sesión. La barra de menú lateral que permite acceder al resto de páginas está oculta hasta que el profesor inicia sesión en su cuenta. <mediaobject>
         <imageobject>
           <imagedata fileref="main_screen.png"/>
         </imageobject>
         <textobject>
           <phrase
->main_screen</phrase>
+>La pantalla principal de GCompris Profesores mostrando el tablero de control y la interfaz de inicio de sesión.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -188,14 +188,14 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen_hamburger</phrase>
+>Una vista del menú de la barra lateral con el icono de hamburguesa que se usa para expandir o contraer las etiquetas.</phrase>
         </textobject>
       </mediaobject>
     </para>
   </sect1>
   <sect1 id="dashboard---login-dialog">
     <title
->Tablero de mando: diálogo de inicio de sesión</title>
+>Tablero de control: diálogo de inicio de sesión</title>
     <para
 >Para crear un nuevo nombre de usuario y una nueva base de datos para profesores, introduzca el nombre y la contraseña. Podrá elegir si desea cifrar la base de datos (para evitar que alguien acceda a ella sin la contraseña). <mediaobject>
         <imageobject>
@@ -203,7 +203,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->main_screen_create_db</phrase>
+>El diálogo para crear una nueva cuenta de profesor con un nombre de usuario y una contraseña. También contiene las preferencias de cifrado de la base de datos.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -218,7 +218,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->pupils_groups</phrase>
+>La pantalla de gestión donde el profesor puede ver la lista de grupos y alumnos.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -232,7 +232,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_add</phrase>
+>El diálogo para añadir un nuevo grupo de alumnos introduciendo su nombre y descripción.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -247,7 +247,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_delete_button</phrase>
+>La interfaz mostrando cómo aparecen los botones de edición y de borrado cuando se sitúa el puntero sobre un nombre de grupo.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -258,7 +258,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->group_delete_confirmation</phrase>
+>La confirmación que pregunta al profesor si está seguro de querer borrar un grupo.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -273,7 +273,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_create</phrase>
+>La ventana «Añadir un alumno» mostrando los campos de nombre, contraseña y selección de grupo.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -288,7 +288,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_import</phrase>
+>La interfaz de importación que se usa para enviar múltiples perfiles de alumnos a partir de un archivo CSV.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -314,7 +314,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_add_to_group</phrase>
+>La interfaz mostrando los botones que se usan para asignar un determinado alumno a un grupo de clase.</phrase>
           </textobject>
         </mediaobject
 > <mediaobject>
@@ -323,7 +323,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_remove_from_group</phrase>
+>La interfaz mostrando cómo eliminar un alumno del grupo que tiene asignado.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -334,7 +334,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->pupil_delete</phrase>
+>La pantalla de gestión de alumnos con el botón de borrado de cuentas de alumno resaltado.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -350,7 +350,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->connect_devices</phrase>
+>La sección «Conectar dispositivos» del tablero de control mostrando el estado de todos los alumnos y grupos disponibles.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -364,7 +364,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->ajustes</phrase>
+>La página de preferencias donde se configuran el identificador del servidor y el número de puerto para comunicarse con la red.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -375,7 +375,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->gcompris_teacher_config_button</phrase>
+>Un diálogo de confirmación en el dispositivo del alumno solicitando conectarse al servidor del profesor.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -386,7 +386,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->gcompris_teacher_settings</phrase>
+>La pantalla de preferencias del cliente donde los alumnos introducen el identificador y el puerto del servidor.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -405,7 +405,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->gcompris_connect</phrase>
+>Una ventana emergente en el dispositivo del alumno solicitando permiso para conectarse al servidor del profesor.</phrase>
           </textobject>
         </mediaobject>
         <itemizedlist>
@@ -421,7 +421,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_select_login</phrase>
+>La pantalla de selección de inicio de sesión en el dispositivo del alumno mostrando la lista de nombres enviada por el profesor.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -434,7 +434,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_password</phrase>
+>El diálogo de introducción de contraseña en el dispositivo del alumno para iniciar sesión en un determinado perfil.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -447,7 +447,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->gcompris_connect_ok</phrase>
+>La barra de navegación de GCompris mostrando un indicador verde para una conexión correcta con el servidor.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -460,7 +460,7 @@ for example 'xx.yy.zz'
                 </imageobject>
                 <textobject>
                   <phrase
->connect_devices_password_correct_incorrect</phrase>
+>El tablero de control del profesor mostrando indicadores de estado codificados con colores de los intentos de inicio de sesión correctos y fallidos.</phrase>
                 </textobject>
               </mediaobject>
           </para
@@ -492,7 +492,7 @@ for example 'xx.yy.zz'
           </imageobject>
           <textobject>
             <phrase
->connect_devices_password_disconnected_not_connected</phrase>
+>La lista de conexiones mostrando distintos colores para los alumnos desconectados frente a los que todavía no se han conectado.</phrase>
           </textobject>
         </mediaobject>
       </para>
@@ -508,7 +508,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->actividades</phrase>
+>La página de resultados de las actividades mostrando filtros por fecha, grupo y determinadas tareas educativas.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -519,7 +519,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->activities_results</phrase>
+>Un análisis detallado del desempeño de los alumnos en la actividad de «resta vertical», que muestra los errores y los aciertos.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -536,7 +536,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->conjuntos de datos</phrase>
+>La página de gestión de conjuntos de datos donde los profesores pueden crear contenido personalizado para diversas actividades.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -551,7 +551,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_create_update</phrase>
+>El editor de actividades con la actividad «Bombillas binarias», permitiendo la personalización de los nombres de los conjuntos de datos y de los niveles de dificultad.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -562,7 +562,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_instructions</phrase>
+>El panel de instrucciones mostrando una guía para rellenar correctamente los datos de una actividad personalizada.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -573,7 +573,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_delete</phrase>
+>La confirmación que se usa para borrar con seguridad un conjunto de datos personalizado de la herramienta del profesor.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -584,7 +584,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->dataset_send_client</phrase>
+>La interfaz para seleccionar los dispositivos de los alumnos conectados que deben recibir un nuevo conjunto de datos.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -598,7 +598,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->gcompris_multiple-choice_questions</phrase>
+>La vista previa de la actividad «Preguntas con múltiple elección» en el dispositivo del alumno.</phrase>
         </textobject>
       </mediaobject>
       </para>
@@ -614,7 +614,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->gráficos</phrase>
+>La página de resumen de gráficos proporciona una visualización gráfica del progreso de los alumnos y de los grupos.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -625,7 +625,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->charts_view_results_pupil</phrase>
+>Una vista gráfica que muestra la tasa de éxito y el historial de un determinado alumno.</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -636,7 +636,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->charts_view_results_activity</phrase>
+>Un gráfico que muestra el desempeño general de la clase en la actividad seleccionada</phrase>
         </textobject>
       </mediaobject>
     </para>
@@ -651,7 +651,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->ajustes</phrase>
+>La página de ajustes generales mostrando información sobre la sesión actual.</phrase>
         </textobject>
       </mediaobject>
     </para>
