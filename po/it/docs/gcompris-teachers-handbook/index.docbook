@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->30/11/2025</date>
+>11/3/2026</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->26.0</releaseinfo>
+>26.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -168,10 +168,6 @@ for example 'xx.yy.zz'
       <listitem
 ><para
 >Pagina delle impostazioni.</para
-></listitem>
-      <listitem
-><para
->La pagina Sviluppo (WIP) è utilizzata solo per scopi di debug e non sarà descritta qui.</para
 ></listitem>
     </itemizedlist>
     <para
@@ -360,7 +356,7 @@ for example 'xx.yy.zz'
   </sect1>
   <sect1 id="connect-devices">
     <title
->Connettere i dispositivi</title>
+>Connetti i dispositivi</title>
     <para
 >Una volta che la banca dati è pronta, è il momento di comunicare con i diversi client. La pagina <quote
 >Connetti dispositivi</quote
@@ -724,7 +720,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Copyright del programma © 2000-2025 Timothée Giet e altri </para>
+>Copyright del programma © 2000-2026 Timothée Giet e altri </para>
 
 <para
 >Traduzione italiana di Vincenzo Reale <email
