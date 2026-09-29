@@ -1,0 +1,745 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Russian "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>Руководство по администрированию GCompris для учителей</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Команда &gcompris;</othername>
+<contrib
+>Разработчики</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Александр</firstname
+><surname
+>Яворский</surname
+><affiliation
+><address
+><email
+>kekcuha@gmail.com</email
+></address
+></affiliation
+><contrib
+>Перевод на русский</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2026-03-11</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>GCompris — многофункциональное обучающее приложение. Эта документация посвящена предоставляемому инструменту администрирования gcompris-teachers. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>образование</keyword>
+<keyword
+>дети</keyword>
+<keyword
+>игры</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>Обзор</title>
+  <para
+>Цель gcompris-teachers — дать учителям возможность: </para>
+  <itemizedlist>
+    <listitem
+><para
+>создавать группы учеников и управлять ими.</para
+></listitem>
+    <listitem
+><para
+>создавать конкретные планы работы.</para
+></listitem>
+    <listitem
+><para
+>подключаться и отправлять ученикам план работы.</para
+></listitem>
+    <listitem
+><para
+>визуализировать результаты работы по группам и отдельным ученикам.</para
+></listitem>
+    <listitem
+><para
+>анализировать ответы учеников.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>Спецификации</title>
+  <para
+>В следующем разделе описываются экраны, реализующие эти возможности. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>Обзор главного экрана</title>
+    <para
+>Главный экран позволяет получить доступ к: </para>
+    <itemizedlist>
+      <listitem
+><para
+>Страница обзора.</para
+></listitem>
+      <listitem
+><para
+>Страница управления учениками.</para
+></listitem>
+      <listitem
+><para
+>Страница подключения устройств.</para
+></listitem>
+      <listitem
+><para
+>Страница отслеживания результатов заданий.</para
+></listitem>
+      <listitem
+><para
+>Страница управления наборами данных.</para
+></listitem>
+      <listitem
+><para
+>Страница отображения результатов в виде диаграмм.</para
+></listitem>
+      <listitem
+><para
+>Страница параметров.</para
+></listitem>
+    </itemizedlist>
+    <para
+>По умолчанию показывается страница обзора с диалогом входа, а боковая панель меню для доступа к остальным страницам скрыта, пока не выполнен вход в учётную запись учителя. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Кнопка показа и скрытия подписей кнопок на боковой панели меню (значок гамбургера) позволяет сэкономить место, когда пользователь знает назначение каждого значка.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_hamburger</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>Обзор — диалоговое окно входа</title>
+    <para
+>Чтобы создать новую учётную запись учителя и базу данных, введите имя и пароль. Затем можно будет выбрать, шифровать ли базу данных (чтобы никто не смог прочитать её без пароля). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>main_screen_create_db</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>Управление группами и учениками</title>
+    <para
+>Эта страница позволяет создавать учеников и группы для класса. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>pupils_groups</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>Создание группы</title>
+      <para
+>Нажмите кнопку <quote
+>Добавить группу</quote
+> в правом нижнем углу и в диалоговом окне заполните поля <quote
+>Имя</quote
+> и, при необходимости, <quote
+>Описание</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_add</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>Изменение имени группы или её удаление</title>
+      <para
+>Чтобы изменить или удалить группу, наведите на неё указатель в списке групп — появятся кнопки <quote
+>Изменить</quote
+> и <quote
+>Удалить</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Чтобы удалить группу, нажмите кнопку <quote
+>Удалить</quote
+>. Учтите, что ученики будут исключены из групп, но не удалены из базы данных. Чтобы удалить учеников, см. следующий раздел. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>group_delete_confirmation</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>Создание одного ученика</title>
+      <para
+>Чтобы создать нового ученика в базе данных, нажмите <quote
+>Добавить ученика</quote
+>. Там можно задать имя ученика и пароль для подключения с клиентов. Также можно сразу добавить их в уже существующие группы. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_create</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>Создание нескольких учеников с помощью строк CSV / Экспорт учеников в файл</title>
+      <para
+>Список учеников можно напрямую импортировать из файла CSV. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_import</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Экспорт списка учеников также возможен: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>Управление учениками</title>
+      <para
+>Интерфейс также содержит кнопки для изменения учеников, добавления их в группы и удаления из них. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_add_to_group</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_remove_from_group</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Удалить учеников также можно. Учтите, что при удалении ученика его группа не удаляется. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_delete</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>Подключение устройств</title>
+    <para
+>Когда база данных готова, можно переходить к взаимодействию с различными клиентами. На странице <quote
+>Подключение устройств</quote
+> показываются различные группы и ученики. По умолчанию ни одна группа не выбрана, поэтому видны все ученики. При выборе группы список видимых учеников фильтруется, чтобы работать только с этой группой. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>connect_devices</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>Настройка сервера и клиентских устройств</title>
+      <para
+>Прежде чем подключиться, учителю нужно настроить сервер и клиентские устройства, к которым требуется подключение. Все устройства должны быть подключены к одной локальной сети. На сервере перейдите на страницу <quote
+>Параметры</quote
+> и выберите уникальный <quote
+>идентификатор сервера</quote
+> (как минимум уникальный в пределах локальной сети) и <quote
+>порт</quote
+> (если не знаете, оставьте значение по умолчанию). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>На стороне устройств GCompris перейдите из главного меню на страницу <quote
+>Настройка</quote
+> и прокрутите вниз, чтобы найти кнопку <quote
+>Настройка сервера учителя</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_config_button</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>После нажатия убедитесь, что параметры совпадают с параметрами сервера: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_teacher_settings</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>Кроме того, если на устройстве, на котором запущен сервер или клиент, работает межсетевой экран, откройте выбранный порт в параметрах межсетевого экрана, чтобы устройства могли обмениваться данными. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>Ежедневный порядок подключения</title>
+      <para
+>Порядок подключения следующий: <emphasis
+>учитель просит учеников включить свои устройства и запустить GCompris, а затем на странице <quote
+>Подключение устройств</quote
+> нажать кнопку <quote
+>Подключение устройств</quote
+>.</emphasis
+> На клиентских устройствах появится диалоговое окно с запросом подтверждения подключения к серверу. Учтите, что клиентские устройства должны находиться в главном меню GCompris, а не в каком-либо упражнении или на странице настройки. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>gcompris_connect</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>После того как ученики подтвердят, учитель выбирает, какие учётные записи отправить из списка <quote
+>Ученики</quote
+>, и нажимает <quote
+>Отправить список учётных записей</quote
+></para
+></listitem>
+          <listitem
+><para
+>Клиентские устройства покажут новое диалоговое окно, позволяющее выбрать нужную учётную запись. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_select_login</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>После подтверждения откроется второе диалоговое окно для ввода пароля. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_password</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>Если пароль верен, на панели клиента появится зелёная кнопка, обозначающая успешное подключение. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>gcompris_connect_ok</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>И сервер получит уведомление: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>connect_devices_password_correct_incorrect</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Различные цвета: <itemizedlist>
+          <listitem
+><para
+>Зелёный: подключено</para
+></listitem>
+          <listitem
+><para
+>Красный: неверный пароль</para
+></listitem>
+          <listitem
+><para
+>Серый: отключено (подключение было установлено, но затем прервано)</para
+></listitem>
+          <listitem
+><para
+>Прозрачный: никто не пытался подключиться с этой учётной записью.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>connect_devices_password_disconnected_not_connected</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>Задания</title>
+    <para
+>Эта страница позволяет показывать различные результаты, отфильтрованные по дате, группам, ученикам и заданиям. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>На следующем изображении показаны результаты упражнения <quote
+>Вычитание в столбик</quote
+> (у каждого упражнения, отправляющего данные на сервер, есть собственное представление). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>activities_results</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Видно, что при первой попытке ученик ввёл неверный ответ, а при второй — верный, а также показаны подробности ответов, позволяющие обнаружить ошибки. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>Наборы данных</title>
+    <para
+>Страница наборов данных позволяет учителям создавать, обновлять и удалять отдельные наборы данных для заданий с учётом конкретных потребностей, а также отправлять их клиентам и удалять с клиентов. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>datasets</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Пока есть одно ограничение: изменять можно только задания, использующие формат набора данных GCompris (так что, например, <quote
+>Грамматические классы</quote
+> или <quote
+>Падающие слова</quote
+> — нельзя). Список поддерживаемых заданий (которые могут отправлять данные или имеют редактор набора данных) можно найти на этой странице нашей вики по разработке: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>Вот пример для упражнения <quote
+>Двоичные лампочки</quote
+>. Общая часть всех редакторов упражнений содержит поля для ввода имени набора данных, цели и сложности. Далее у каждого упражнения будет собственный редактор. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_create_update</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Кнопка <quote
+>Инструкции</quote
+> в левом нижнем углу предназначена для вывода конкретной информации о заполнении набора данных при необходимости. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_instructions</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Чтобы удалить набор данных, выберите его, нажмите кнопку <quote
+>Удалить набор данных</quote
+> и подтвердите действие в следующем диалоговом окне: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_delete</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Если клиенты подключены, может потребоваться отправить им определённый набор данных, чтобы он был доступен на их стороне. Выберите набор данных и нажмите кнопку <quote
+>Отправить клиентам</quote
+>. Будет показан список всех подключённых клиентов, и можно будет выбрать, кто его получит. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>dataset_send_client</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>Отдельные задания для сервера</title>
+      <para
+>Создано упражнение <quote
+>Вопросы с несколькими вариантами ответа</quote
+>, которое показывается, только если на устройстве есть наборы данных для него. Это упражнение позволяет учителям создавать опросники с несколькими вариантами ответа на любую тему. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>gcompris_multiple-choice_questions</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>Диаграммы</title>
+    <para
+>Страница диаграмм похожа на страницу заданий и позволяет показывать различные результаты, отфильтрованные по дате, группам, ученикам и заданиям, в виде диаграмм. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Пока возможности визуализации довольно ограничены, но они будут улучшены с учётом отзывов учителей. После нажатия на упражнение на диаграмме открывается представление, похожее на то, что показывается на странице «Задания». Если выбрана вкладка <quote
+>Ученики</quote
+>, можно увидеть все результаты конкретного ученика: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_pupil</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>Если выбрана вкладка <quote
+>Задания</quote
+>, показываются все результаты для конкретного упражнения: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>charts_view_results_activity</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>Параметры</title>
+    <para
+>Страница параметров позволяет настроить интерфейс и получить некоторые сведения о текущей базе данных и сеансе. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>settings</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Авторские права и лицензия</title>
+
+<para
+>&gcompris; </para>
+<para
+>Авторские права на программу © 2000–2026 Timothée Giet и другие </para>
+
+<para
+>Перевод на русский — Александр Яворский<email
+>kekcuha@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
