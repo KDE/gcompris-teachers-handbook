@@ -1,0 +1,745 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris Teachers</application
+>">
+  <!ENTITY kappname "&gcompris-teachers;"
+><!-- replace kmyapplication here
+                                              do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Arabic "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris_teachers_doc" lang="&language;">
+
+<bookinfo>
+<title
+>دليل إدارة معلمي فهمت</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>طاقم فهمت</othername>
+<contrib
+>المطورون</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2026-03-11</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>فهمت هو برنامج تعليمي متعدد الأنشطة. هذه الوثائق مخصصة لأداة إدارة المعلمين فهمت للمعلمين التي نوفرها. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>كيدي</keyword>
+<keyword
+>تعليم</keyword>
+<keyword
+>أبناء</keyword>
+<keyword
+>ألعاب</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="overview">
+  <title
+>نظرة عامة</title>
+  <para
+>هدف فهمت للمعلمين هو تمكين المعلمين من: </para>
+  <itemizedlist>
+    <listitem
+><para
+>إنشاء وإدارة مجموعات التلاميذ.</para
+></listitem>
+    <listitem
+><para
+>إنشاء خطط عمل محددة.</para
+></listitem>
+    <listitem
+><para
+>توصيل وإرسال خطة عمل إلى التلاميذ.</para
+></listitem>
+    <listitem
+><para
+>عرض نتائج العمل لكل مجموعة وتلميذ.</para
+></listitem>
+    <listitem
+><para
+>تحليل إجابات التلاميذ.</para
+></listitem>
+  </itemizedlist>
+</chapter>
+<chapter id="specifications">
+  <title
+>المواصفات</title>
+  <para
+>يصف القسم التالي الشاشات المختلفة التي تنفذ هذه الوظائف. </para>
+  <sect1 id="main-screen-overview">
+    <title
+>نظرة عامة على الشاشة الرئيسة</title>
+    <para
+>تسمح الشاشة الرئيسة بالوصول إلى: </para>
+    <itemizedlist>
+      <listitem
+><para
+>صفحة لوحة المعلومات.</para
+></listitem>
+      <listitem
+><para
+>صفحة إدارة التلاميذ.</para
+></listitem>
+      <listitem
+><para
+>صفحة توصيل الأجهزة.</para
+></listitem>
+      <listitem
+><para
+>صفحة متابعة نتائج الأنشطة.</para
+></listitem>
+      <listitem
+><para
+>صفحة إدارة مجموعات البيانات.</para
+></listitem>
+      <listitem
+><para
+>صفحة عرض النتائج كمخططات بيانية.</para
+></listitem>
+      <listitem
+><para
+>صفحة الإعدادات.</para
+></listitem>
+    </itemizedlist>
+    <para
+>بشكل مبدئي، تُعرض صفحة لوحة المعلومات التي تحتوي على حوار تسجيل الدخول، ويكون شريط القوائم الجانبي للوصول إلى الصفحات الأخرى مخفيًا حتى يتم تسجيل الدخول بحساب معلم. <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>الشاشة الرئيسة لفهمت للمعلمين تظهر لوحة المعلومات وواجهة تسجيل الدخول.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>زر لإظهار/إخفاء عنوان الأزرار في شريط القوائم الجانبي (أيقونة الهامبرغر) يسمح بتوفير بعض المساحة بمجرد أن يعرف المستخدم معنى كل أيقونة.<mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_hamburger.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>منظر لشريط القوائم الجانبي مع أيقونة الهامبرغر المستخدمة لتوسيع أو طي التسميات.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="dashboard---login-dialog">
+    <title
+>لوحة المعلومات - حوار تسجيل الدخول</title>
+    <para
+>لإنشاء تسجيل دخول جديد للمعلم وقاعدة بيانات، أدخل الاسم وكلمة المرور. ستتمكن بعد ذلك من اختيار ما إذا كنت تريد تعمية قاعدة البيانات (لتجنب قراءتها من قبل أي شخص دون كلمة المرور). <mediaobject>
+        <imageobject>
+          <imagedata fileref="main_screen_create_db.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>حوار إنشاء حساب معلم جديد باسم مستخدم وكلمة مرور واختيار إعدادات تعمية قاعدة البيانات.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="manage-groups-and-pupils">
+    <title
+>إدارة المجموعات والتلاميذ</title>
+    <para
+>تسمح هذه الصفحة بإنشاء التلاميذ والمجموعات المختلفة لصفك. <mediaobject>
+        <imageobject>
+          <imagedata fileref="pupils_groups.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>شاشة الإدارة حيث يمكن للمعلم عرض قائمة المجموعات والتلاميذ.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="create-a-group">
+      <title
+>إنشاء مجموعة</title>
+      <para
+>انقر على زر <quote
+>أضف مجموعة</quote
+> في الأسفل يسارًا، وفي الحوار املأ <quote
+>الاسم</quote
+> واختياريًا <quote
+>الوصف</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_add.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>مربع الحوار لإضافة مجموعة تلاميذ جديدة بإدخال اسمها ووصفها.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="modify-a-group-name-or-delete-it">
+      <title
+>تعديل اسم مجموعة أو حذفها</title>
+      <para
+>لتعديل مجموعة أو حذفها، مرّر المؤشر فوقها في قائمة المجموعات وستظهر أزرار <quote
+>تعديل</quote
+> و<quote
+>حذف</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>الواجهة التي تظهر كيفية ظهور أزرار التعديل والحذف عند المرور فوق اسم مجموعة.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>النقر على زر <quote
+>حذف</quote
+> سيسمح لك بحذف المجموعة. لاحظ أن التلاميذ سيُزالون من المجموعات لكن لن يُحذفوا من قاعدة البيانات. إذا أردت إزالة تلاميذ، اتبع القسم التالي. <mediaobject>
+          <imageobject>
+            <imagedata fileref="group_delete_confirmation.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>الموجه التأكيدي الذي يسأل المدرس إذا كان متأكدًا من رغبته في حذف مجموعة.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-a-single-pupil">
+      <title
+>إنشاء تلميذ واحد</title>
+      <para
+>انقر على <quote
+>إضافة تلميذ</quote
+> لإنشاء تلميذ جديد في قاعدة البيانات. هناك، يمكنك ضبط اسم التلميذ وكلمة المرور للاتصال من الأجهزة العميلة. يمكنك أيضًا إضافتهم مباشرةً في مجموعات موجودة مسبقًا. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_create.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>نافذة 'إضافة تلميذ' التي تظهر حقول اسم التلميذ وكلمة المرور واختيار المجموعة.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="create-several-pupils-using-csv-strings-export-pupils-in-a-file">
+      <title
+>إنشاء عدة تلاميذ باستخدام سلاسل csv / تصدير التلاميذ إلى ملف</title>
+      <para
+>يمكنك استيراد قائمة تلاميذ مباشرةً باستخدام ملف csv. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_import.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>واجهة الاستيراد المستخدمة لرفع تشكيلات تلاميذ متعددة من ملف CSV.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>تصدير قائمة تلاميذ ممكن أيضًا: <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_export_csv.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>pupil_export_csv</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+    <sect2 id="managing-pupils">
+      <title
+>إدارة التلاميذ</title>
+      <para
+>تقترح الواجهة أيضًا أزرارًا لتعديل التلاميذ، أو إضافتهم إلى مجموعات أو إزالتهم منها. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_add_to_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>الواجهة التي تظهر الأزرار المستخدمة لتعيين تلميذ معين إلى مجموعة صفية.</phrase>
+          </textobject>
+        </mediaobject
+> <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_remove_from_group.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>الواجهة التي تظهر كيفية إزالة تلميذ من مجموعته الحالية.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>يمكنك أيضًا حذف التلاميذ. لاحظ أن حذف تلميذ لا يحذف مجموعته. <mediaobject>
+          <imageobject>
+            <imagedata fileref="pupil_delete.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>شاشة إدارة التلاميذ التي تبرز زر الحذف لحسابات التلاميذ.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="connect-devices">
+    <title
+>صلِ الأجهزة</title>
+    <para
+>بمجرد أن تصبح قاعدة البيانات جاهزة، حان الوقت للتواصل مع الأجهزة العميلة المختلفة. صفحة <quote
+>توصيل الأجهزة</quote
+> تظهر المجموعات والتلاميذ المختلفين. افتراضيًا، لا تُحدد أي مجموعة لذا يكون جميع التلاميذ مرئيين. اختيار مجموعة سيرشح التلاميذ المرئيين للعمل مع هذه المجموعة المحددة فقط. <mediaobject>
+        <imageobject>
+          <imagedata fileref="connect_devices.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>لوحة 'توصيل الأجهزة' التي تعرض حالة جميع التلاميذ والمجموعات المتاحة.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="configuration-of-the-server-and-devices">
+      <title
+>ضبط الخادم والأجهزة العميلة</title>
+      <para
+>يحتاج المدرس إلى ضبط الخادم والأجهزة العميلة التي يريد الاتصال بها قبل أن يتمكن من الاتصال. يجب أن تكون جميع الأجهزة متصلة على نفس الشبكة المحلية. على الخادم، اذهب إلى صفحة <quote
+>الإعدادات</quote
+> واختر <quote
+>معرف خادم</quote
+> فريدًا (فريدًا على الأقل للشبكة المحلية) و<quote
+>منفذًا</quote
+> (إذا كنت لا تعرف، اترك المبدئي). <mediaobject>
+          <imageobject>
+            <imagedata fileref="settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>صفحة الإعدادات حيث يُضبط معرف الخادم ورقم المنفذ للاتصال الشبكي.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>على جانب أجهزة فهمت، اذهب إلى صفحة <quote
+>الضبط</quote
+> من القائمة الرئيسة، وانتقل إلى الأسفل لتجد زر <quote
+>ضبط خادم المدرس</quote
+>. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_config_button.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>حوار تأكيد على جهاز التلميذ يسأل عن الاتصال بخادم المدرس.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>بعد النقر عليه، تأكد من أن لديك نفس الإعدادات الموجودة على الخادم: <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_teacher_settings.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>شاشة الإعدادات من جانب العميل حيث يدخل التلاميذ معرف الخادم والمنفذ المطابقين.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+      <para
+>أيضًا، إذا كان الجهاز الذي يشغل الخادم أو العميل لديه جدار ناري، تأكد من فتح المنفذ المختار في ضبط الجدار الناري للسماح للأجهزة بالتواصل. </para>
+    </sect2>
+    <sect2 id="daily-connection-workflow">
+      <title
+>سير عمل الاتصال اليومي</title>
+      <para
+>سير عمل الاتصال هو التالي: <emphasis
+>يطلب المعلّم من التلاميذ تشغيل أجهزتهم وبدء فهمت، ثم من صفحة <quote
+>توصيل الأجهزة</quote
+> يضغط زر <quote
+>توصيل الأجهزة</quote
+>.</emphasis
+> على أجهزة العميل، سيظهر حوار يطلب تأكيد الاتصال بالخادم. لاحظ أن أجهزة العميل يجب أن تكون في القائمة الرئيسة لـ فهمت، وليس في أي نشاط أو صفحة ضبط. <mediaobject>
+          <imageobject>
+            <imagedata fileref="gcompris_connect.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>نافذة منبثقة على جهاز التلميذ تطلب الإذن بالاتصال بخادم المعلّم.</phrase>
+          </textobject>
+        </mediaobject>
+        <itemizedlist>
+          <listitem
+><para
+>بعد التأكيد من التلاميذ، يختار المعلّم أسماء الدخول التي يريد إرسالها من قائمة <quote
+>التلاميذ</quote
+> ويضغط <quote
+>إرسال قائمة أسماء الدخول</quote
+></para
+></listitem>
+          <listitem
+><para
+>ستعرض أجهزة العميل حوارًا جديدًا يسمح باختيار اسم الدخول المطلوب. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_select_login.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>شاشة اختيار اسم الدخول على جهاز التلميذ تعرض قائمة الأسماء التي أرسلها المعلّم.</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>بمجرد التأكيد، سيفتح حوار ثانٍ لإدخال كلمة المرور. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_password.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>حوار إدخال كلمة المرور على جهاز التلميذ لتسجيل الدخول إلى تشكيلتهم الخاصة.</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>إذا كانت كلمة المرور صحيحة، سيرى العميل زرًا أخضر على الشريط يشير إلى اتصال ناجح. <mediaobject>
+                <imageobject>
+                  <imagedata fileref="gcompris_connect_ok.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>شريط التنقل في فهمت يعرض مؤشرًا أخضر لاتصال ناجح بالخادم.</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+          <listitem
+><para
+>وسيتلقى الخادم إشعارًا: <mediaobject>
+                <imageobject>
+                  <imagedata fileref="connect_devices_password_correct_incorrect.png"/>
+                </imageobject>
+                <textobject>
+                  <phrase
+>لوحة بيانات المعلّم تعرض مؤشرات حالة مرمّزة بالألوان لمحاولات تسجيل الدخول الناجحة والفاشلة.</phrase>
+                </textobject>
+              </mediaobject>
+          </para
+></listitem>
+        </itemizedlist>
+      </para>
+      <para
+>الألوان المختلفة هي: <itemizedlist>
+          <listitem
+><para
+>أخضر: متصل</para
+></listitem>
+          <listitem
+><para
+>أحمر: كلمة مرور خاطئة</para
+></listitem>
+          <listitem
+><para
+>رمادي: مفصول (كان متصلًا في وقت ما لكنه فُصل)</para
+></listitem>
+          <listitem
+><para
+>شفاف: لم يحاول أحد الاتصال باستخدام اسم الدخول هذا.</para
+></listitem>
+        </itemizedlist>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="connect_devices_password_disconnected_not_connected.png"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>قائمة الاتصال تعرض ألوانًا مختلفة للتلاميذ المفصولين مقابل أولئك الذين لم يتصلوا بعد.</phrase>
+          </textobject>
+        </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="activities-view">
+    <title
+>الأنشطة</title>
+    <para
+>تسمح هذه الصفحة بعرض النتائج المختلفة مصفّاة حسب التاريخ والمجموعات والتلاميذ والأنشطة. <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>صفحة نتائج الأنشطة تعرض مرشّحات للتاريخ والمجموعة والمهام التعليمية المحددة.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>الصورة التالية تظهر نتائج نشاط <quote
+>الطرح العمودي</quote
+> (كل نشاط يعالج إرسال البيانات إلى الخادم له تصوّره الخاص). <mediaobject>
+        <imageobject>
+          <imagedata fileref="activities_results.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>تفصيل مفصل لأداء التلميذ في نشاط 'الطرح العمودي'، يعرض الأخطاء والنجاحات.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>يمكننا رؤية أن التلميذ أدخل إجابة خاطئة في المحاولة الأولى وإجابة صحيحة في المحاولة الثانية، وتفاصيل الإجابات لاكتشاف الأخطاء. </para>
+  </sect1>
+  <sect1 id="dataset-handling">
+    <title
+>مجموعات البيانات</title>
+    <para
+>تسمح صفحة مجموعات البيانات للمعلّمين بإنشاء/تحديث/حذف مجموعات بيانات محددة للأنشطة لاستهداف احتياجات معينة، وإرسالها/إزالتها إلى/من العملاء. <mediaobject>
+        <imageobject>
+          <imagedata fileref="datasets.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>صفحة إدارة مجموعات البيانات حيث ينشئ المعلّمون محتوى مخصصًا لأنشطة مختلفة.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>أحد القيود حاليًا هو أنه يمكن تحرير الأنشطة التي تتبع تنسيق مجموعة بيانات فهمت فقط (لذا لا توجد <quote
+>فئات نحوية</quote
+> أو <quote
+>كلمات متساقطة</quote
+> على سبيل المثال). يمكنك العثور على قائمة الأنشطة المدعومة (التي يمكنها إرسال البيانات أو تحتوي على محرر مجموعة بيانات) في هذه الصفحة من ويكي التطوير الخاص بنا: <ulink url="https://invent.kde.org/education/gcompris/-/wikis/Teacher-administration-tool#supported-activities"
+></ulink
+> </para>
+    <para
+>هذا مثال لنشاط <quote
+>المصابيح الثنائية</quote
+>. الجزء المشترك لجميع محرّري الأنشطة يحتوي على حقول لإدخال اسم مجموعة البيانات والهدف والصعوبة. ثم، سيكون لكل نشاط محرّر خاص. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_create_update.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>محرّر النشاط لنشاط 'المصابيح الثنائية'، يسمح بتخصيص أسماء مجموعات البيانات ومستويات الصعوبة.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>زر <quote
+>التعليمات</quote
+> في الأسفل اليسار يُوفّر لإعطاء بعض المعلومات المحددة حول كيفية ملء مجموعة البيانات عند الحاجة. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_instructions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>لوحة التعليمات التي توفّر إرشادات حول كيفية ملء بيانات النشاط المخصص بشكل صحيح.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>إذا أردت حذف مجموعة بيانات: حددها، اضغط زر <quote
+>إزالة مجموعة البيانات</quote
+> وأكد في الحوار التالي: <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_delete.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>موجه التأكيد المستخدم لحذف مجموعة بيانات مخصصة بأمان من أداة المعلم.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>إذا كان لديك عملاء متصلون، قد ترغب في إرسال مجموعة بيانات محددة إليهم لتكون متاحة على جانبهم. حدد مجموعة البيانات واضغط زر <quote
+>إرسال إلى العملاء</quote
+>. ستظهر قائمة بجميع العملاء المتصلين وستتمكن من اختيار من سيتلقاها. <mediaobject>
+        <imageobject>
+          <imagedata fileref="dataset_send_client.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>واجهة اختيار أجهزة التلاميذ المتصلة التي ينبغي أن تتلقى مجموعة بيانات جديدة.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <sect2 id="specific-activities">
+      <title
+>أنشطة محددة للخادم</title>
+      <para
+>أنشأنا نشاط <quote
+>أسئلة الاختيار من متعدد</quote
+> الذي يظهر فقط عندما يحتوي الجهاز على مجموعات بيانات له. يتيح هذا النشاط للمعلمين إنشاء استبيانات اختيار من متعدد حول أي موضوع. <mediaobject>
+        <imageobject>
+          <imagedata fileref="gcompris_multiple-choice_questions.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>معاينة نشاط 'أسئلة الاختيار من متعدد' على جهاز التلميذ.</phrase>
+        </textobject>
+      </mediaobject>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="charts-view">
+    <title
+>رسوم بيانية</title>
+    <para
+>صفحة الرسوم البيانية مشابهة لصفحة الأنشطة وتتيح عرض النتائج المختلفة مصفاة حسب التاريخ والمجموعات والتلاميذ والأنشطة كرسوم بيانية. <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>صفحة نظرة عامة على الرسوم البيانية توفر تصورًا بيانيًا لتقدم التلاميذ والمجموعات.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>حاليًا، التصور محدود جدًا ولكنه سيتحسن بناءً على ملاحظات المعلمين. بعد النقر على نشاط في الرسم البياني، يظهر عرض مشابه لما يظهر في صفحة الأنشطة. إذا تم تحديد لسان <quote
+>التلاميذ</quote
+>، يمكنك رؤية جميع النتائج لتلميذ معين: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_pupil.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>عرض بياني يظهر معدل النجاح والتاريخ لتلميذ معين.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+    <para
+>إذا تم تحديد لسان <quote
+>الأنشطة</quote
+>، يمكنك رؤية جميع النتائج لنشاط معين: <mediaobject>
+        <imageobject>
+          <imagedata fileref="charts_view_results_activity.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>رسم بياني يعرض أداء الصف الكلي لنشاط واحد محدد.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+  <sect1 id="settings">
+    <title
+>إعدادات</title>
+    <para
+>تتيح صفحة الإعدادات تخصيص الواجهة والحصول على بعض المعلومات حول قاعدة البيانات والجلسة الحالية. <mediaobject>
+        <imageobject>
+          <imagedata fileref="settings.png"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>صفحة الإعدادات العامة تظهر معلومات حول الجلسة الحالية.</phrase>
+        </textobject>
+      </mediaobject>
+    </para>
+  </sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>الحقوق والترخيص</title>
+
+<para
+>فهمت </para>
+<para
+>حقوق البرنامج © 2000–2026 Timothée Giet وآخرين </para>
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
