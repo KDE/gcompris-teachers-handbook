@@ -344,7 +344,7 @@ for example 'xx.yy.zz'
     <title
 >Aygıtlar bağla</title>
     <para
->Veri tabanı hazır olduğunda, artık farklı istemcilerle iletişim kurma zamanı gelir. “Aygıtlar bağla” sayfası, farklı grupları ve öğrencileri gösterir. Öntanımlı olarak, hiçbir grup seçili değildir, bu nedenle tüm öğrenciler görünür durumdadır. Bir grup seçmek, görünür öğrencileri süzerek yalnızca bu belirli grupla çalışmayı sağlar. <mediaobject>
+>Veri tabanı hazır olduğunda, artık farklı istemcilerle iletişim kurma zamanı gelir. “Aygıtlar bağla” sayfası, farklı grupları ve öğrencileri gösterir. Varsayılan olarak, hiçbir grup seçili değildir, bu nedenle tüm öğrenciler görünür durumdadır. Bir grup seçmek, görünür öğrencileri süzerek yalnızca bu belirli grupla çalışmayı sağlar. <mediaobject>
         <imageobject>
           <imagedata fileref="connect_devices.png"/>
         </imageobject>
@@ -358,7 +358,7 @@ for example 'xx.yy.zz'
       <title
 >Sunucu ve istemci aygıtlarının yapılandırılması</title>
       <para
->Öğretmenin, bağlantı kurabilmek için önce bağlanmak istediği sunucu ve istemci aygıtlarını yapılandırması gerekir. Tüm aygıtların aynı yerel ağa bağlı olması şarttır. Sunucuda, “Ayarlar” sayfasına gidin ve benzersiz bir “Sunucu kimliği” (en azından yerel ağ için benzersiz) ve bir “Kapı” seçin (bilmiyorsanız öntanımlıyı kullanın). <mediaobject>
+>Öğretmenin, bağlantı kurabilmek için önce bağlanmak istediği sunucu ve istemci aygıtlarını yapılandırması gerekir. Tüm aygıtların aynı yerel ağa bağlı olması şarttır. Sunucuda, “Ayarlar” sayfasına gidin ve benzersiz bir “Sunucu kimliği” (en azından yerel ağ için benzersiz) ve bir “Kapı” seçin (bilmiyorsanız varsayılanı kullanın). <mediaobject>
           <imageobject>
             <imagedata fileref="settings.png"/>
           </imageobject>
@@ -596,7 +596,7 @@ for example 'xx.yy.zz'
         </imageobject>
         <textobject>
           <phrase
->Öğrenci aygıtında “Çoktan Seçmeli Sorular” etkinliğinin önizlemesi</phrase>
+>Öğrenci aygıtında “Çoktan Seçmeli Sorular” etkinliğinin ön izlemesi</phrase>
         </textobject>
       </mediaobject>
       </para>
